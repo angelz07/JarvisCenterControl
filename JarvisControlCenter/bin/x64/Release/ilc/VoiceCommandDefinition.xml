@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<VoiceCommands xmlns="http://schemas.microsoft.com/voicecommands/1.2">
+  <CommandSet xml:lang="fr-fr" Name="CustomCommands">
+    <AppName> Jarvis </AppName>
+    <Example> Ouvrir Fichier, Ouvrir Site Web </Example>
+
+    <Command Name="appelFibaro">
+      <Example> Jarvis Allume lustre de la salle à mangé </Example>
+      <ListenFor RequireAppName="BeforeOrAfterPhrase"> {action} [le][la][les] {device} </ListenFor>
+      <ListenFor RequireAppName="ExplicitlySpecified"> {action}  {builtin:AppName} [le][la][les] {device} </ListenFor>
+      <Feedback> Etat {device} {action}</Feedback>
+      <Navigate/>
+    </Command>
+
+    <Command Name="OpenFile">
+      <Example> Ouvrir Fichier </Example>
+      <ListenFor> Ouvrir fichier </ListenFor>
+      <Feedback> Ouverture du fichier </Feedback>
+      <Navigate/>
+    </Command>
+
+    <Command Name="CreateFile">
+      <Example> Crée un Fichier </Example>
+      <ListenFor> Crée un Fichier  </ListenFor>
+      <Feedback> Création du fichier </Feedback>
+      <Navigate/>
+    </Command>
+
+
+    <PhraseList Label="action">
+      <Item>allume</Item>
+      <Item>Allume</Item>
+      <Item>éteint</Item>
+      <Item>Eteint</Item>
+      <Item>ouvre</Item>
+      <Item>Ouvre</Item>
+      <Item>ferme</Item>
+      <Item>Ferme</Item>
+      <Item>lance</Item>
+      <Item>Lance</Item>
+      <Item>arrête</Item>
+      <Item>arrête</Item>
+      <Item>règle sur 50%</Item>
+      <Item>Règle sur 100%</Item>
+    </PhraseList>
+
+
+    <PhraseList Label="device">
+      <Item>lustre de la salle à mangé</Item>
+      <Item>lumière de la salle à mangé</Item>
+      <Item>lumière de la cave</Item>
+    </PhraseList>
+
+  </CommandSet>
+
+</VoiceCommands>
+

@@ -1,0 +1,1 @@
+C:\JarvisControlCenter\JarvisControlCenter\JarvisControlCenter.csproj;x64
