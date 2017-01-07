@@ -47,9 +47,9 @@
 
 
     <PhraseList Label="device">
-      <Item>lustre de la salle à mangé</Item>
-      <Item>lumière de la salle à mangé</Item>
-      <Item>lumière de la cave</Item>
+      <Item>le lustre de la salle à mangé</Item>
+      <Item>la lumière de la salle à mangé</Item>
+      <Item>la lumière de la cave</Item>
     </PhraseList>
 
   </CommandSet>

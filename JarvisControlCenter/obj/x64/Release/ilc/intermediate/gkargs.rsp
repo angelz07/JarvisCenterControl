@@ -1,6 +1,6 @@
 /In:"C:\JarvisControlCenter\JarvisControlCenter\obj\x64\Release\ilc\in"
 /Lib:"C:\JarvisControlCenter\JarvisControlCenter\obj\x64\Release\ilc\in"
-/Lib:"C:\Program Files (x86)\MSBuild\15.0\.Net\.NetNative\15.0.24208\x64\ilc\lib\Private"
+/Lib:"C:\Program Files (x86)\MSBuild\Microsoft\.NetNative\x64\ilc\lib\Private"
 /WinMD:"C:\JarvisControlCenter\JarvisControlCenter\obj\x64\Release\ilc\in\WinMetadata\Windows.winmd"
-/RdXmlPath:"C:\Program Files (x86)\MSBuild\15.0\.Net\.NetNative\15.0.24208\LibraryXML"
+/RdXmlPath:"C:\Program Files (x86)\MSBuild\Microsoft\.NetNative\LibraryXML"
 /RunOnlyPreDR

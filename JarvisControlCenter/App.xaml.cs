@@ -22,14 +22,40 @@ using Windows.Storage;
 using System.Diagnostics;
 using Windows.UI.Popups;
 
+using System.Threading;
+using System.Diagnostics;
+
+using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
+
+using System.Net;
+using System.Text;
+using System.Collections.Specialized;
+
 
 namespace JarvisControlCenter
 {
+   
+
+    struct objJson
+    {
+        public string test { get; set; }
+    }
+
     /// <summary>
     /// Fournit un comportement spécifique à l'application afin de compléter la classe Application par défaut.
     /// </summary>
     sealed partial class App : Application
     {
+        private static string ipFhem = "192.168.1.25";
+        private static string portFhem = "8083";
+        private static string loginFhem = "cuesmes";
+        private static string passFhem = "cuesmes";
+
+
+       
+
+
         /// <summary>
         /// Initialise l'objet d'application de singleton.  Il s'agit de la première ligne du code créé
         /// à être exécutée. Elle correspond donc à l'équivalent logique de main() ou WinMain().
@@ -47,6 +73,11 @@ namespace JarvisControlCenter
         /// <param name="e">Détails concernant la requête et le processus de lancement.</param>
         protected async override void OnLaunched(LaunchActivatedEventArgs e)
         {
+
+            string[] infos = decryptJsonDevices("le lustre de la salle à mangé");
+
+            string[] sendCmdFhemResult = sendCmdFhem(infos, "allume");
+
             Frame rootFrame = Window.Current.Content as Frame;
 
             // Ne répétez pas l'initialisation de l'application lorsque la fenêtre comporte déjà du contenu,
@@ -93,25 +124,160 @@ namespace JarvisControlCenter
             base.OnActivated(args);
 
             if (args.Kind == ActivationKind.VoiceCommand) {
-                VoiceCommandActivatedEventArgs cmd = args as VoiceCommandActivatedEventArgs;
-                SpeechRecognitionResult result = cmd.Result;
+                var commandArgs = args as VoiceCommandActivatedEventArgs;
+                Windows.Media.SpeechRecognition.SpeechRecognitionResult speechRecognitionResult = commandArgs.Result;
 
-                string commandName = result.RulePath[0];
+               
 
+                // Get the name of the voice command and the text spoken. 
+                // See VoiceCommands.xml for supported voice commands.
+                string voiceCommandName = speechRecognitionResult.RulePath[0];
+                string textSpoken = speechRecognitionResult.Text;
+
+                // commandMode indicates whether the command was entered using speech or text.
+                // Apps should respect text mode by providing silent (text) feedback.
+                string commandMode = this.SemanticInterpretation("commandMode", speechRecognitionResult);
+
+                
                 MessageDialog dialog = new MessageDialog("");
-                switch (commandName) {
+
+                switch (voiceCommandName)
+                {
                     case "appelFibaro":
-                        dialog.Content = "Action";
+                        // Access the value of {destination} in the voice command.
+                        string action = this.SemanticInterpretation("action", speechRecognitionResult);
+                        string device = this.SemanticInterpretation("device", speechRecognitionResult);
+
+                        dialog.Content = "voiceCommandName : " + voiceCommandName + " -- action : " + action + " -- device : " + device + " -- textSpoken : " + textSpoken ;
+
+                        string[] infos = decryptJsonDevices(device);
+
+                        string[] sendCmdFhemResult = sendCmdFhem(infos, action);
+
                         break;
                     default:
+                        // If we can't determine what page to launch, go to the default entry point.
                         Debug.WriteLine("Impossible de trouver la commande");
-                        break;    
-
+                        break;
                 }
 
                 await dialog.ShowAsync();
             }
         }
+
+
+        static string[] decryptJsonDevices(string device_texte)
+        {
+
+            string[] retour = new string[4];
+            try
+            {
+                string jsonFile = File.ReadAllText("devices.json").ToString();
+                JObject dataJson = JObject.Parse(jsonFile);
+                var devices = dataJson["devices"];
+
+                foreach (var line in devices)
+                {
+                    JObject dataLine = JObject.Parse(line.ToString());
+                    string name = dataLine["name"].ToString();
+                    string id = dataLine["id"].ToString();
+                    string type = dataLine["type"].ToString();
+                    string timer = dataLine["timer"].ToString();
+
+                    if (device_texte == name)
+                    {
+                        retour[0] = name;
+                        retour[1] = id;
+                        retour[2] = type;
+                        retour[3] = timer;
+                    }
+
+                }
+
+                return retour;
+
+            }
+            catch (Exception)
+            {
+
+                debug_popup("erreur dans le parsing json device");
+                return retour;
+                throw;
+
+            }
+
+            
+
+        }
+
+        static string[] sendCmdFhem(string[] device_infos, string action)
+        {
+            string[] retour = new string[4];
+            string name = device_infos[0];
+            string id = device_infos[1];
+            string type = device_infos[2];
+            string timer = device_infos[3];
+
+            string actionDecrypt = "";
+            if (action == "allume" || action == "Allume" || action == "ouvre" || action == "Ouvre")
+            {
+                actionDecrypt = "on";
+            }
+
+            if (action == "éteint" || action == "Eteint" || action == "ferme" || action == "Ferme")
+            {
+                actionDecrypt = "off";
+            }
+
+            /*
+             string ipFhem = "192.168.1.25";
+            string portFhem = "8083";
+            string loginFhem = "cuesmes";
+            string passFhem = "cuesmes";
+
+
+            http://192.168.1.25:8083/fhem?cmd.lustre_salle_a_mangee=set%20lustre_salle_a_mangee%20off&XHR=1
+
+             */
+            UriBuilder uriB = new UriBuilder();
+            uriB.Host = ipFhem;
+            uriB.Port = int.Parse(portFhem);
+            uriB.Path = "fhem";
+            uriB.Query = "cmd." + id + "=set%20" + id + "%20" + actionDecrypt + "&XHR=1";
+
+            string url = "http://" + ipFhem + ":" + portFhem + "/fhem?cmd." + id + "=set%20" + id + "%20" + actionDecrypt + "&XHR=1";
+            try
+            {
+                debug_popup(uriB.ToString());
+               
+            }
+            catch (Exception)
+            {
+                debug_popup("erreur http request commande fhem");
+                throw;
+            }
+            
+
+           
+            
+
+            return retour;
+        }
+
+
+        private static async void debug_popup(string texte)
+        {
+            MessageDialog dialog2 = new MessageDialog("");
+            dialog2.Content = texte;
+            dialog2.ShowAsync();
+
+        }
+
+        private string SemanticInterpretation(string interpretationKey, SpeechRecognitionResult speechRecognitionResult)
+        {
+            return speechRecognitionResult.SemanticInterpretation.Properties[interpretationKey].FirstOrDefault();
+        }
+
         /// <summary>
         /// Appelé lorsque la navigation vers une page donnée échoue
         /// </summary>
@@ -135,5 +301,9 @@ namespace JarvisControlCenter
             //TODO: enregistrez l'état de l'application et arrêtez toute activité en arrière-plan
             deferral.Complete();
         }
+
+
     }
+
+
 }

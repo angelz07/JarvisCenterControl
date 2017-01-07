@@ -3,7 +3,7 @@
 <VoiceCommands xmlns="http://schemas.microsoft.com/voicecommands/1.2">
   <CommandSet xml:lang="fr-fr" Name="CustomCommands">
     <AppName> Jarvis </AppName>
-    <Example> Ouvrir Fichier, Ouvrir Site Web </Example>
+    <Example> Jarvis Allume lustre de la salle à mangé </Example>
 
     <Command Name="appelFibaro">
       <Example> Jarvis Allume lustre de la salle à mangé </Example>
@@ -47,9 +47,9 @@
 
 
     <PhraseList Label="device">
-      <Item>lustre de la salle à mangé</Item>
-      <Item>lumière de la salle à mangé</Item>
-      <Item>lumière de la cave</Item>
+      <Item>le lustre de la salle à mangé</Item>
+      <Item>la lumière de la salle à mangé</Item>
+      <Item>la lumière de la cave</Item>
     </PhraseList>
 
   </CommandSet>

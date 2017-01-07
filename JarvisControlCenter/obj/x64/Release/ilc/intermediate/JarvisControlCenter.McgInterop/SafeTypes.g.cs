@@ -50,9 +50,206 @@ using System.Runtime.InteropServices.WindowsRuntime;
 // warning CS0628 new protected member declared in sealed class
 #pragma warning disable 628
 
+namespace McgInterop
+{
+	[global::System.Runtime.InteropServices.StructLayout(global::System.Runtime.InteropServices.LayoutKind.Sequential, CharSet=global::System.Runtime.InteropServices.CharSet.Unicode, Size=520)]
+	public unsafe partial struct InlineArray_ushort___260
+	{
+		// Copies characters from this buffer, up to the first null or end of buffer, into a new string.
+		public string CopyToString()
+		{
+			fixed (ushort* ptrFirstElement = &(firstElement))
+			{
+				char* ptr = ((char*)ptrFirstElement);
+				char* end = ptr;
+				char* limit = (ptr + 260);
+				while (end < limit 
+							&& (*(end)) != 0)
+				{
+					end = end + 1;
+				}
+				return new string(ptr, 0, ((int)(end - ptr)));
+			}
+		}
+
+		public ushort this[uint index]
+		{
+			get
+			{
+				if (index < 0 
+							|| index >= 260)
+					throw new global::System.IndexOutOfRangeException();
+				fixed (global::McgInterop.InlineArray_ushort___260* pThis = &(this))
+					return ((ushort*)pThis)[index];
+			}
+			set
+			{
+				if (index < 0 
+							|| index >= 260)
+					throw new global::System.IndexOutOfRangeException();
+				fixed (global::McgInterop.InlineArray_ushort___260* pThis = &(this))
+					((ushort*)pThis)[index] = value;
+			}
+		}
+		public const int Length = 260;
+		ushort firstElement;
+	}
+
+	[global::System.Runtime.InteropServices.StructLayout(global::System.Runtime.InteropServices.LayoutKind.Sequential, CharSet=global::System.Runtime.InteropServices.CharSet.Unicode, Size=28)]
+	public unsafe partial struct InlineArray_ushort___14
+	{
+		// Copies characters from this buffer, up to the first null or end of buffer, into a new string.
+		public string CopyToString()
+		{
+			fixed (ushort* ptrFirstElement = &(firstElement))
+			{
+				char* ptr = ((char*)ptrFirstElement);
+				char* end = ptr;
+				char* limit = (ptr + 14);
+				while (end < limit 
+							&& (*(end)) != 0)
+				{
+					end = end + 1;
+				}
+				return new string(ptr, 0, ((int)(end - ptr)));
+			}
+		}
+
+		public ushort this[uint index]
+		{
+			get
+			{
+				if (index < 0 
+							|| index >= 14)
+					throw new global::System.IndexOutOfRangeException();
+				fixed (global::McgInterop.InlineArray_ushort___14* pThis = &(this))
+					return ((ushort*)pThis)[index];
+			}
+			set
+			{
+				if (index < 0 
+							|| index >= 14)
+					throw new global::System.IndexOutOfRangeException();
+				fixed (global::McgInterop.InlineArray_ushort___14* pThis = &(this))
+					((ushort*)pThis)[index] = value;
+			}
+		}
+		public const int Length = 14;
+		ushort firstElement;
+	}
+}
+
+namespace Microsoft.Win32.SafeHandles
+{
+	[global::System.Runtime.InteropServices.McgRedirectedType("Microsoft.Win32.SafeHandles.SafeThreadPoolIOHandle,System.Threading.Overlapped, Version=4.0.2.0, Culture=neutral" +
+		", PublicKeyToken=b03f5f7f11d50a3a")]
+	public unsafe class SafeThreadPoolIOHandle__System_Threading_Overlapped : global::System.Runtime.InteropServices.SafeHandle
+	{
+		public SafeThreadPoolIOHandle__System_Threading_Overlapped() : 
+				base(default(global::System.IntPtr), false)
+		{
+		}
+
+		public override bool IsInvalid
+		{
+			get
+			{
+				return false;
+			}
+		}
+
+		protected override bool ReleaseHandle()
+		{
+			return false;
+		}
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("Microsoft.Win32.SafeHandles.SafeFileHandle,System.IO.FileSystem, Version=4.0.2.0, Culture=neutral, PublicKeyToke" +
+		"n=b03f5f7f11d50a3a")]
+	public unsafe class SafeFileHandle__System_IO_FileSystem : global::System.Runtime.InteropServices.SafeHandle
+	{
+		public SafeFileHandle__System_IO_FileSystem() : 
+				base(default(global::System.IntPtr), false)
+		{
+		}
+
+		public override bool IsInvalid
+		{
+			get
+			{
+				return false;
+			}
+		}
+
+		protected override bool ReleaseHandle()
+		{
+			return false;
+		}
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("Microsoft.Win32.SafeHandles.SafeFindHandle,System.IO.FileSystem, Version=4.0.2.0, Culture=neutral, PublicKeyToke" +
+		"n=b03f5f7f11d50a3a")]
+	public unsafe class SafeFindHandle__System_IO_FileSystem : global::System.Runtime.InteropServices.SafeHandle
+	{
+		public SafeFindHandle__System_IO_FileSystem() : 
+				base(default(global::System.IntPtr), false)
+		{
+		}
+
+		public override bool IsInvalid
+		{
+			get
+			{
+				return false;
+			}
+		}
+
+		protected override bool ReleaseHandle()
+		{
+			return false;
+		}
+	}
+}
+
+namespace System
+{
+	[global::System.Runtime.InteropServices.McgRedirectedType("System.Enum,System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
+	public unsafe partial class Enum__System_Private_CoreLib
+	{
+	}
+}
+
+namespace System.IO
+{
+	[global::System.Flags]
+	[global::System.Runtime.InteropServices.McgRedirectedType("System.IO.FileShare,System.IO.FileSystem.Primitives, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11" +
+		"d50a3a")]
+	public enum FileShare__System_IO_FileSystem_Primitives
+	{
+		None = 0,
+		Read = 1,
+		Write = 2,
+		ReadWrite = 3,
+		Delete = 4,
+		Inheritable = 16,
+	}
+
+	[global::System.Runtime.InteropServices.McgRedirectedType("System.IO.FileMode,System.IO.FileSystem.Primitives, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d" +
+		"50a3a")]
+	public enum FileMode__System_IO_FileSystem_Primitives
+	{
+		CreateNew = 1,
+		Create = 2,
+		Open = 3,
+		OpenOrCreate = 4,
+		Truncate = 5,
+		Append = 6,
+	}
+}
+
 namespace System.Runtime.InteropServices
 {
-	[global::System.Runtime.InteropServices.McgRedirectedType("System.Runtime.InteropServices.IMarshal,System.Runtime.WindowsRuntime, Version=4.0.11.0, Culture=neutral, Public" +
+	[global::System.Runtime.InteropServices.McgRedirectedType("System.Runtime.InteropServices.IMarshal,System.Runtime.WindowsRuntime, Version=4.0.12.0, Culture=neutral, Public" +
 		"KeyToken=b77a5c561934e089")]
 	public unsafe interface IMarshal__System_Runtime_WindowsRuntime
 	{
@@ -96,7 +293,7 @@ namespace System.Runtime.InteropServices
 		void DisconnectObject(uint dwReserved);
 	}
 
-	[global::System.Runtime.InteropServices.McgRedirectedType("System.Runtime.InteropServices.IAgileObject,System.Runtime.WindowsRuntime, Version=4.0.11.0, Culture=neutral, Pu" +
+	[global::System.Runtime.InteropServices.McgRedirectedType("System.Runtime.InteropServices.IAgileObject,System.Runtime.WindowsRuntime, Version=4.0.12.0, Culture=neutral, Pu" +
 		"blicKeyToken=b77a5c561934e089")]
 	public unsafe interface IAgileObject__System_Runtime_WindowsRuntime
 	{
@@ -367,12 +564,26 @@ namespace System.Runtime.InteropServices.ComTypes
 
 namespace System.Runtime.InteropServices.WindowsRuntime
 {
-	[global::System.Runtime.InteropServices.McgRedirectedType("System.Runtime.InteropServices.WindowsRuntime.IBufferByteAccess,System.Runtime.WindowsRuntime, Version=4.0.11.0," +
+	[global::System.Runtime.InteropServices.McgRedirectedType("System.Runtime.InteropServices.WindowsRuntime.IBufferByteAccess,System.Runtime.WindowsRuntime, Version=4.0.12.0," +
 		" Culture=neutral, PublicKeyToken=b77a5c561934e089")]
 	public unsafe interface IBufferByteAccess__System_Runtime_WindowsRuntime
 	{
 		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
 		global::System.IntPtr GetBuffer();
+	}
+}
+
+namespace System.Threading
+{
+	[global::System.Runtime.InteropServices.McgRedirectedType("System.Threading.NativeOverlapped,System.Threading.Overlapped, Version=4.0.2.0, Culture=neutral, PublicKeyToken=" +
+		"b03f5f7f11d50a3a")]
+	public unsafe partial struct NativeOverlapped__System_Threading_Overlapped
+	{
+		public global::System.IntPtr InternalLow;
+		public global::System.IntPtr InternalHigh;
+		public int OffsetLow;
+		public int OffsetHigh;
+		public global::System.IntPtr EventHandle;
 	}
 }
 
@@ -2938,6 +3149,24 @@ namespace Windows.Media.SpeechRecognition
 	public unsafe sealed class SpeechRecognitionResult : global::System.__ComObject, global::Windows.Media.SpeechRecognition.ISpeechRecognitionResult, global::Windows.Media.SpeechRecognition.ISpeechRecognitionResult2
 	{
 		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Text")]
+		public string get_Text()
+		{
+			string __retVal = global::Windows.Media.SpeechRecognition.ISpeechRecognitionResult__Impl.StubClass.get_Text(this);
+			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
+			return __retVal;
+		}
+
+		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "SemanticInterpretation")]
+		public global::Windows.Media.SpeechRecognition.SpeechRecognitionSemanticInterpretation get_SemanticInterpretation()
+		{
+			global::Windows.Media.SpeechRecognition.SpeechRecognitionSemanticInterpretation __retVal = global::Windows.Media.SpeechRecognition.ISpeechRecognitionResult__Impl.StubClass.get_SemanticInterpretation(this);
+			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
+			return __retVal;
+		}
+
+		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
 		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "RulePath")]
 		public global::System.Collections.Generic.IReadOnlyList<string> get_RulePath()
 		{
@@ -2951,13 +3180,50 @@ namespace Windows.Media.SpeechRecognition
 		}
 	}
 
+	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.Media.SpeechRecognition.ISpeechRecognitionSemanticInterpretation))]
+	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(0)]
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe sealed class SpeechRecognitionSemanticInterpretation : global::System.__ComObject, global::Windows.Media.SpeechRecognition.ISpeechRecognitionSemanticInterpretation
+	{
+		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Properties")]
+		public global::System.Collections.Generic.IReadOnlyDictionary<string, global::System.Collections.Generic.IReadOnlyList<string>> get_Properties()
+		{
+			global::System.Collections.Generic.IReadOnlyDictionary<string, global::System.Collections.Generic.IReadOnlyList<string>> __retVal = global::Windows.Media.SpeechRecognition.ISpeechRecognitionSemanticInterpretation__Impl.StubClass.get_Properties(this);
+			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
+			return __retVal;
+		}
+
+		public SpeechRecognitionSemanticInterpretation(global::System.IntPtr dummy)
+		{
+		}
+	}
+
 	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
 	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
 	public unsafe interface ISpeechRecognitionResult
 	{
 		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Text")]
+		string get_Text();
+
+		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "SemanticInterpretation")]
+		global::Windows.Media.SpeechRecognition.SpeechRecognitionSemanticInterpretation get_SemanticInterpretation();
+
+		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
 		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "RulePath")]
 		global::System.Collections.Generic.IReadOnlyList<string> get_RulePath();
+	}
+
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe interface ISpeechRecognitionSemanticInterpretation
+	{
+		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Properties")]
+		global::System.Collections.Generic.IReadOnlyDictionary<string, global::System.Collections.Generic.IReadOnlyList<string>> get_Properties();
 	}
 
 	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
@@ -3167,7 +3433,8 @@ namespace Windows.Storage
 {
 	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.Storage.IStorageFile))]
 	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.Storage.IStorageItem))]
-	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(0)]
+	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.Storage.IStorageFilePropertiesWithAvailability))]
+	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(65536)]
 	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
 	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
 	public unsafe sealed class StorageFile : global::System.__ComObject, global::Windows.Storage.IStorageFile, global::Windows.Storage.Streams.IInputStreamReference, global::Windows.Storage.Streams.IRandomAccessStreamReference, global::Windows.Storage.IStorageItem, global::Windows.Storage.IStorageItemProperties, global::Windows.Storage.IStorageItemProperties2, global::Windows.Storage.IStorageItem2, global::Windows.Storage.IStorageItemPropertiesWithProvider, global::Windows.Storage.IStorageFilePropertiesWithAvailability, global::Windows.Storage.IStorageFile2
@@ -3184,12 +3451,58 @@ namespace Windows.Storage
 		}
 
 		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+		public global::Windows.Foundation.IAsyncAction DeleteAsync()
+		{
+			global::Windows.Foundation.IAsyncAction __retVal = global::Windows.Storage.IStorageItem__Impl.StubClass.DeleteAsync(this);
+			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
+			return __retVal;
+		}
+
+		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
 		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Path")]
 		public string get_Path()
 		{
 			string __retVal = global::Windows.Storage.IStorageItem__Impl.StubClass.get_Path(this);
 			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
 			return __retVal;
+		}
+
+		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "IsAvailable")]
+		public bool get_IsAvailable()
+		{
+			bool __retVal = global::Windows.Storage.IStorageFilePropertiesWithAvailability__Impl.StubClass.get_IsAvailable(this);
+			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
+			return __retVal;
+		}
+
+		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+		public static global::Windows.Foundation.IAsyncOperation<global::Windows.Storage.StorageFile> GetFileFromPathAsync(string path)
+		{
+			global::Windows.Foundation.IAsyncOperation<global::Windows.Storage.StorageFile> retval;
+			retval = __Factory_Windows_Storage__IStorageFileStatics_GetFileFromPathAsync(
+								"Windows.Storage.StorageFile", 
+								path
+							);
+			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
+			return retval;
+		}
+
+		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+		static global::Windows.Foundation.IAsyncOperation<global::Windows.Storage.StorageFile> __Factory_Windows_Storage__IStorageFileStatics_GetFileFromPathAsync(
+					string typeName, 
+					string path)
+		{
+			global::Windows.Foundation.IAsyncOperation<global::Windows.Storage.StorageFile> __pRetVal;
+			__pRetVal = global::Windows.Storage.IStorageFileStatics__Impl.StubClass.GetFileFromPathAsync(
+								global::System.Runtime.InteropServices.McgModuleManager.GetActivationFactory(
+													typeName, 
+													typeof(global::Windows.Storage.IStorageFileStatics).TypeHandle
+												), 
+								path
+							);
+			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
+			return __pRetVal;
 		}
 
 		public StorageFile(global::System.IntPtr dummy)
@@ -3199,11 +3512,26 @@ namespace Windows.Storage
 
 	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.Storage.IStorageFolder))]
 	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.Storage.IStorageItem))]
-	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(0)]
+	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.Storage.IStorageFolder2))]
+	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(65536)]
 	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
 	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
 	public unsafe sealed class StorageFolder : global::System.__ComObject, global::Windows.Storage.IStorageFolder, global::Windows.Storage.IStorageItem, global::Windows.Storage.Search.IStorageFolderQueryOperations, global::Windows.Storage.IStorageItemProperties, global::Windows.Storage.IStorageItemProperties2, global::Windows.Storage.IStorageItem2, global::Windows.Storage.IStorageFolder2, global::Windows.Storage.IStorageItemPropertiesWithProvider
 	{
+		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+		public global::Windows.Foundation.IAsyncOperation<global::Windows.Storage.StorageFile> CreateFileAsync(
+					string desiredName, 
+					global::Windows.Storage.CreationCollisionOption options)
+		{
+			global::Windows.Foundation.IAsyncOperation<global::Windows.Storage.StorageFile> __retVal = global::Windows.Storage.IStorageFolder__Impl.StubClass.CreateFileAsync(
+								this, 
+								desiredName, 
+								options
+							);
+			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
+			return __retVal;
+		}
+
 		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
 		public global::Windows.Foundation.IAsyncOperation<global::Windows.Storage.StorageFile> GetFileAsync(string name)
 		{
@@ -3227,12 +3555,60 @@ namespace Windows.Storage
 		}
 
 		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+		public global::Windows.Foundation.IAsyncAction DeleteAsync()
+		{
+			global::Windows.Foundation.IAsyncAction __retVal = global::Windows.Storage.IStorageItem__Impl.StubClass.DeleteAsync(this);
+			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
+			return __retVal;
+		}
+
+		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
 		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Path")]
 		public string get_Path()
 		{
 			string __retVal = global::Windows.Storage.IStorageItem__Impl.StubClass.get_Path(this);
 			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
 			return __retVal;
+		}
+
+		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+		public global::Windows.Foundation.IAsyncOperation<global::Windows.Storage.IStorageItem> TryGetItemAsync(string name)
+		{
+			global::Windows.Foundation.IAsyncOperation<global::Windows.Storage.IStorageItem> __retVal = global::Windows.Storage.IStorageFolder2__Impl.StubClass.TryGetItemAsync(
+								this, 
+								name
+							);
+			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
+			return __retVal;
+		}
+
+		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+		public static global::Windows.Foundation.IAsyncOperation<global::Windows.Storage.StorageFolder> GetFolderFromPathAsync(string path)
+		{
+			global::Windows.Foundation.IAsyncOperation<global::Windows.Storage.StorageFolder> retval;
+			retval = __Factory_Windows_Storage__IStorageFolderStatics_GetFolderFromPathAsync(
+								"Windows.Storage.StorageFolder", 
+								path
+							);
+			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
+			return retval;
+		}
+
+		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+		static global::Windows.Foundation.IAsyncOperation<global::Windows.Storage.StorageFolder> __Factory_Windows_Storage__IStorageFolderStatics_GetFolderFromPathAsync(
+					string typeName, 
+					string path)
+		{
+			global::Windows.Foundation.IAsyncOperation<global::Windows.Storage.StorageFolder> __pRetVal;
+			__pRetVal = global::Windows.Storage.IStorageFolderStatics__Impl.StubClass.GetFolderFromPathAsync(
+								global::System.Runtime.InteropServices.McgModuleManager.GetActivationFactory(
+													typeName, 
+													typeof(global::Windows.Storage.IStorageFolderStatics).TypeHandle
+												), 
+								path
+							);
+			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
+			return __pRetVal;
 		}
 
 		public StorageFolder(global::System.IntPtr dummy)
@@ -3245,8 +3621,19 @@ namespace Windows.Storage
 	public unsafe interface IStorageItem
 	{
 		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+		global::Windows.Foundation.IAsyncAction DeleteAsync();
+
+		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
 		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Path")]
 		string get_Path();
+	}
+
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe interface IStorageFileStatics
+	{
+		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+		global::Windows.Foundation.IAsyncOperation<global::Windows.Storage.StorageFile> GetFileFromPathAsync(string path);
 	}
 
 	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
@@ -3285,6 +3672,9 @@ namespace Windows.Storage
 	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
 	public unsafe interface IStorageFilePropertiesWithAvailability
 	{
+		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "IsAvailable")]
+		bool get_IsAvailable();
 	}
 
 	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
@@ -3295,8 +3685,21 @@ namespace Windows.Storage
 
 	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
 	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe interface IStorageFolderStatics
+	{
+		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+		global::Windows.Foundation.IAsyncOperation<global::Windows.Storage.StorageFolder> GetFolderFromPathAsync(string path);
+	}
+
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
 	public unsafe interface IStorageFolder : global::Windows.Storage.IStorageItem
 	{
+		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+		global::Windows.Foundation.IAsyncOperation<global::Windows.Storage.StorageFile> CreateFileAsync(
+					string desiredName, 
+					global::Windows.Storage.CreationCollisionOption options);
+
 		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
 		global::Windows.Foundation.IAsyncOperation<global::Windows.Storage.StorageFile> GetFileAsync(string name);
 
@@ -3308,6 +3711,8 @@ namespace Windows.Storage
 	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
 	public unsafe interface IStorageFolder2
 	{
+		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+		global::Windows.Foundation.IAsyncOperation<global::Windows.Storage.IStorageItem> TryGetItemAsync(string name);
 	}
 
 	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(0)]
@@ -3317,6 +3722,17 @@ namespace Windows.Storage
 	{
 		Read = 0,
 		ReadWrite = 1,
+	}
+
+	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(0)]
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public enum CreationCollisionOption
+	{
+		GenerateUniqueName = 0,
+		ReplaceExisting = 1,
+		FailIfExists = 2,
+		OpenIfExists = 3,
 	}
 }
 
@@ -9765,7 +10181,6 @@ namespace Windows.UI.Xaml.Navigation
 				global::Windows.UI.Xaml.Navigation.NavigationEventArgs e);
 }
 
-
 [global::System.Runtime.InteropServices.StructLayout(global::System.Runtime.InteropServices.LayoutKind.Sequential, CharSet=global::System.Runtime.InteropServices.CharSet.Unicode)]
 [global::System.Runtime.InteropServices.McgRedirectedType("Interop+mincore+CPINFOEXW,System.Text.Encoding.CodePages, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5" +
 	"f7f11d50a3a")]
@@ -9805,3 +10220,139 @@ public unsafe partial struct Interop_mincore_CPINFOEXW__CodePageName_e__FixedBuf
 	[global::System.Runtime.InteropServices.FieldOffset(0)]
 	public byte FixedElementField;
 }
+
+// Unmanaged Function Pointer - Calling Convention StdCall
+[global::System.Runtime.InteropServices.McgRedirectedType("Interop+NativeIoCompletionCallback,System.Threading.Overlapped, Version=4.0.2.0, Culture=neutral, PublicKeyToken" +
+	"=b03f5f7f11d50a3a")]
+public unsafe delegate void Interop_NativeIoCompletionCallback__System_Threading_Overlapped(
+			global::System.IntPtr instance, 
+			global::System.IntPtr context, 
+			global::System.IntPtr overlapped, 
+			uint ioResult, 
+			global::System.UIntPtr numberOfBytesTransferred, 
+			global::System.IntPtr io);
+
+[global::System.Runtime.InteropServices.McgRedirectedType("Interop+mincore+FILE_INFO_BY_HANDLE_CLASS,System.IO.FileSystem, Version=4.0.2.0, Culture=neutral, PublicKeyToken" +
+	"=b03f5f7f11d50a3a")]
+public enum Interop_mincore_FILE_INFO_BY_HANDLE_CLASS__System_IO_FileSystem : uint
+{
+	FileBasicInfo = 0x0u,
+	FileStandardInfo = 0x1u,
+	FileNameInfo = 0x2u,
+	FileRenameInfo = 0x3u,
+	FileDispositionInfo = 0x4u,
+	FileAllocationInfo = 0x5u,
+	FileEndOfFileInfo = 0x6u,
+	FileStreamInfo = 0x7u,
+	FileCompressionInfo = 0x8u,
+	FileAttributeTagInfo = 0x9u,
+	FileIdBothDirectoryInfo = 0xAu,
+	FileIdBothDirectoryRestartInfo = 0xBu,
+	FileIoPriorityHintInfo = 0xCu,
+	FileRemoteProtocolInfo = 0xDu,
+	FileFullDirectoryInfo = 0xEu,
+	FileFullDirectoryRestartInfo = 0xFu,
+	FileStorageInfo = 0x10u,
+	FileAlignmentInfo = 0x11u,
+	FileIdInfo = 0x12u,
+	FileIdExtdDirectoryInfo = 0x13u,
+	FileIdExtdDirectoryRestartInfo = 0x14u,
+	MaximumFileInfoByHandleClass = 0x15u,
+}
+
+[global::System.Runtime.InteropServices.McgRedirectedType("Interop+mincore+FILE_STANDARD_INFO,System.IO.FileSystem, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b03f5f" +
+	"7f11d50a3a")]
+public unsafe partial struct Interop_mincore_FILE_STANDARD_INFO__System_IO_FileSystem
+{
+	public long AllocationSize;
+	public long EndOfFile;
+	public uint NumberOfLinks;
+	public global::Interop_BOOL__System_IO_FileSystem DeletePending;
+	public global::Interop_BOOL__System_IO_FileSystem Directory;
+}
+
+[global::System.Runtime.InteropServices.McgRedirectedType("Interop+BOOL,System.IO.FileSystem, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
+public enum Interop_BOOL__System_IO_FileSystem
+{
+	FALSE = 0,
+	TRUE = 1,
+}
+
+[global::System.Runtime.InteropServices.McgRedirectedType("Interop+mincore+CREATEFILE2_EXTENDED_PARAMETERS,System.IO.FileSystem, Version=4.0.2.0, Culture=neutral, PublicKe" +
+	"yToken=b03f5f7f11d50a3a")]
+public unsafe partial struct Interop_mincore_CREATEFILE2_EXTENDED_PARAMETERS__System_IO_FileSystem
+{
+	public uint dwSize;
+	public uint dwFileAttributes;
+	public uint dwFileFlags;
+	public uint dwSecurityQosFlags;
+	public global::System.IntPtr lpSecurityAttributes;
+	public global::System.IntPtr hTemplateFile;
+}
+
+[global::System.Runtime.InteropServices.McgRedirectedType("Interop+mincore+GET_FILEEX_INFO_LEVELS,System.IO.FileSystem, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b0" +
+	"3f5f7f11d50a3a")]
+public enum Interop_mincore_GET_FILEEX_INFO_LEVELS__System_IO_FileSystem : uint
+{
+	GetFileExInfoStandard = 0x0u,
+	GetFileExMaxInfoLevel = 0x1u,
+}
+
+[global::System.Runtime.InteropServices.McgRedirectedType("Interop+mincore+WIN32_FILE_ATTRIBUTE_DATA,System.IO.FileSystem, Version=4.0.2.0, Culture=neutral, PublicKeyToken" +
+	"=b03f5f7f11d50a3a")]
+public unsafe partial struct Interop_mincore_WIN32_FILE_ATTRIBUTE_DATA__System_IO_FileSystem
+{
+	public int fileAttributes;
+	public uint ftCreationTimeLow;
+	public uint ftCreationTimeHigh;
+	public uint ftLastAccessTimeLow;
+	public uint ftLastAccessTimeHigh;
+	public uint ftLastWriteTimeLow;
+	public uint ftLastWriteTimeHigh;
+	public uint fileSizeHigh;
+	public uint fileSizeLow;
+}
+
+[global::System.Runtime.InteropServices.McgRedirectedType("Interop+mincore+FINDEX_INFO_LEVELS,System.IO.FileSystem, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b03f5f" +
+	"7f11d50a3a")]
+public enum Interop_mincore_FINDEX_INFO_LEVELS__System_IO_FileSystem : uint
+{
+	FindExInfoStandard = 0x0u,
+	FindExInfoBasic = 0x1u,
+	FindExInfoMaxInfoLevel = 0x2u,
+}
+
+[global::System.Runtime.InteropServices.McgRedirectedType("Interop+mincore+WIN32_FIND_DATA,System.IO.FileSystem, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b03f5f7f1" +
+	"1d50a3a")]
+public unsafe partial struct Interop_mincore_WIN32_FIND_DATA__System_IO_FileSystem
+{
+	public uint dwFileAttributes;
+	public global::Interop_mincore_FILE_TIME__System_IO_FileSystem ftCreationTime;
+	public global::Interop_mincore_FILE_TIME__System_IO_FileSystem ftLastAccessTime;
+	public global::Interop_mincore_FILE_TIME__System_IO_FileSystem ftLastWriteTime;
+	public uint nFileSizeHigh;
+	public uint nFileSizeLow;
+	public uint dwReserved0;
+	public uint dwReserved1;
+	public string cFileName;
+	public string cAlternateFileName;
+}
+
+[global::System.Runtime.InteropServices.McgRedirectedType("Interop+mincore+FILE_TIME,System.IO.FileSystem, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3" +
+	"a")]
+public unsafe partial struct Interop_mincore_FILE_TIME__System_IO_FileSystem
+{
+	public uint dwLowDateTime;
+	public uint dwHighDateTime;
+}
+
+[global::System.Runtime.InteropServices.McgRedirectedType("Interop+mincore+FINDEX_SEARCH_OPS,System.IO.FileSystem, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b03f5f7" +
+	"f11d50a3a")]
+public enum Interop_mincore_FINDEX_SEARCH_OPS__System_IO_FileSystem : uint
+{
+	FindExSearchNameMatch = 0x0u,
+	FindExSearchLimitToDirectories = 0x1u,
+	FindExSearchLimitToDevices = 0x2u,
+	FindExSearchMaxSearchOp = 0x3u,
+}
+
