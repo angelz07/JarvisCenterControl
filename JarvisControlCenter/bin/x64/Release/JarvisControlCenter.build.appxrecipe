@@ -22,6 +22,15 @@
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
+    <AppxPackagedFile Include="C:\JarvisControlCenter\JarvisControlCenter\bin\x64\Release\ilc\Assets\backgroudJarvis.jpg">
+      <PackagePath>Assets\backgroudJarvis.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\JarvisControlCenter\JarvisControlCenter\bin\x64\Release\ilc\Assets\backgroudJarvis.png">
+      <PackagePath>Assets\backgroudJarvis.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\JarvisControlCenter\JarvisControlCenter\bin\x64\Release\ilc\Assets\backgroundJarvisVertical.png">
+      <PackagePath>Assets\backgroundJarvisVertical.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\JarvisControlCenter\JarvisControlCenter\bin\x64\Release\ilc\Assets\BadgeLogo.scale-100.jpg">
       <PackagePath>Assets\BadgeLogo.scale-100.jpg</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>

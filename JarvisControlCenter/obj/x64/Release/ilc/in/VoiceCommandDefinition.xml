@@ -5,11 +5,11 @@
     <AppName> Jarvis </AppName>
     <Example> Jarvis Allume lustre de la salle à mangé </Example>
 
-    <Command Name="appelFibaro">
+    <Command Name="appelFhem">
       <Example> Jarvis Allume lustre de la salle à mangé </Example>
-      <ListenFor RequireAppName="BeforeOrAfterPhrase"> {action} [le][la][les] {device} </ListenFor>
-      <ListenFor RequireAppName="ExplicitlySpecified"> {action}  {builtin:AppName} [le][la][les] {device} </ListenFor>
-      <Feedback> Etat {device} {action}</Feedback>
+      <ListenFor RequireAppName="BeforeOrAfterPhrase"> {actionDomo} [le][la][les] {deviceFhem} </ListenFor>
+      <ListenFor RequireAppName="ExplicitlySpecified"> {actionDomo}  {builtin:AppName} [le][la][les] {deviceFhem} </ListenFor>
+      <Feedback> Etat {deviceFhem} {actionDomo}</Feedback>
       <Navigate/>
     </Command>
 
@@ -28,7 +28,7 @@
     </Command>
 
 
-    <PhraseList Label="action">
+    <PhraseList Label="actionDomo">
       <Item>allume</Item>
       <Item>Allume</Item>
       <Item>éteint</Item>
@@ -46,7 +46,7 @@
     </PhraseList>
 
 
-    <PhraseList Label="device">
+    <PhraseList Label="deviceFhem">
       <Item>le lustre de la salle à mangé</Item>
       <Item>la lumière de la salle à mangé</Item>
       <Item>la lumière de la cave</Item>

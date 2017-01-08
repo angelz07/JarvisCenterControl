@@ -1,0 +1,1 @@
+﻿{'logs':[{'type':'debug', 'text':'ceci est un test de debug'},{'type':'error', 'text':'ceci est un test d' erreur'},{'type':'voice', 'text':'ceci est un test de voice'},{'type':'requete', 'text':'ceci est un test de requete'},]}

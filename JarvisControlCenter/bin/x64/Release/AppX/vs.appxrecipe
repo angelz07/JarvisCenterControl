@@ -16,7 +16,7 @@
     <PackageRegistrationPath>
     </PackageRegistrationPath>
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
-    <RegisteredManifestChecksum>8AE80CD6779FC9871A7A3A98C950F8302DE4106F8261118040803CD900F1B844</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>84DFBFC68B805378E4BF99B82B1762A50BB2CFB45C29483023369C177D7C1704</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>2b859d5c-a6ec-424e-a07e-b96599645cca_1.0.0.0_x64__1rdszq47x8wqg</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>2b859d5c-a6ec-424e-a07e-b96599645cca_1rdszq47x8wqg!App</RegisteredUserModeAppID>
     <RegisteredPackageID>2b859d5c-a6ec-424e-a07e-b96599645cca</RegisteredPackageID>
@@ -28,10 +28,22 @@
     <AppXManifest Include="C:\JarvisControlCenter\JarvisControlCenter\bin\x64\Release\ilc\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-01-07T14:34:14.094</Modified>
+      <Modified>2017-01-08T19:08:11.502</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
+    <AppxPackagedFile Include="C:\JarvisControlCenter\JarvisControlCenter\bin\x64\Release\ilc\Assets\backgroudJarvis.jpg">
+      <PackagePath>Assets\backgroudJarvis.jpg</PackagePath>
+      <Modified>2017-01-08T15:47:13.430</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\JarvisControlCenter\JarvisControlCenter\bin\x64\Release\ilc\Assets\backgroudJarvis.png">
+      <PackagePath>Assets\backgroudJarvis.png</PackagePath>
+      <Modified>2017-01-08T17:38:20.795</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\JarvisControlCenter\JarvisControlCenter\bin\x64\Release\ilc\Assets\backgroundJarvisVertical.png">
+      <PackagePath>Assets\backgroundJarvisVertical.png</PackagePath>
+      <Modified>2017-01-08T15:48:06.781</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\JarvisControlCenter\JarvisControlCenter\bin\x64\Release\ilc\Assets\BadgeLogo.scale-100.jpg">
       <PackagePath>Assets\BadgeLogo.scale-100.jpg</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
@@ -106,24 +118,24 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\JarvisControlCenter\JarvisControlCenter\bin\x64\Release\ilc\JarvisControlCenter.dll">
       <PackagePath>JarvisControlCenter.dll</PackagePath>
-      <Modified>2017-01-07T14:34:13.618</Modified>
+      <Modified>2017-01-08T19:08:10.853</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\JarvisControlCenter\JarvisControlCenter\bin\x64\Release\ilc\JarvisControlCenter.exe">
       <PackagePath>JarvisControlCenter.exe</PackagePath>
-      <Modified>2017-01-07T14:34:14.059</Modified>
+      <Modified>2017-01-08T19:08:11.464</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\JarvisControlCenter\JarvisControlCenter\bin\x64\Release\ilc\JarvisControlCenter.pdb">
       <PackagePath>JarvisControlCenter.pdb</PackagePath>
-      <Modified>2017-01-07T14:34:14.055</Modified>
+      <Modified>2017-01-08T19:08:11.456</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\JarvisControlCenter\JarvisControlCenter\bin\x64\Release\ilc\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-01-07T02:05:28.298</Modified>
+      <Modified>2017-01-08T17:50:10.502</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\JarvisControlCenter\JarvisControlCenter\bin\x64\Release\ilc\VoiceCommandDefinition.xml">
       <PackagePath>VoiceCommandDefinition.xml</PackagePath>
-      <Modified>2017-01-06T20:58:34.341</Modified>
+      <Modified>2017-01-08T19:11:13.542</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

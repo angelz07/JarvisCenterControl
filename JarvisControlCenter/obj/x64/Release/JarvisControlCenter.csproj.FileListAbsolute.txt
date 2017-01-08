@@ -407,3 +407,17 @@ C:\JarvisControlCenter\JarvisControlCenter\obj\x64\Release\ilc\intermediate\rhbi
 C:\JarvisControlCenter\JarvisControlCenter\obj\x64\Release\ilc\intermediate\sgargs.rsp
 C:\JarvisControlCenter\JarvisControlCenter\obj\x64\Release\ilc\intermediate\TransformedSRWR\System.Runtime.WindowsRuntime.dll
 C:\JarvisControlCenter\JarvisControlCenter\obj\x64\Release\ilc\intermediate\TransformedSRWR\System.Runtime.WindowsRuntime.dll.ILTransformTask.repro
+C:\JarvisControlCenter\JarvisControlCenter\obj\x64\Release\ilc\intermediate\ILTransformed\Microsoft.Win32.Primitives.ildll
+C:\JarvisControlCenter\JarvisControlCenter\obj\x64\Release\ilc\intermediate\ILTransformed\System.Diagnostics.DiagnosticSource.ildll
+C:\JarvisControlCenter\JarvisControlCenter\obj\x64\Release\ilc\intermediate\ILTransformed\System.Net.Http.ildll
+C:\JarvisControlCenter\JarvisControlCenter\obj\x64\Release\ilc\intermediate\ILTransformed\System.Net.Primitives.ildll
+C:\JarvisControlCenter\JarvisControlCenter\obj\x64\Release\ilc\intermediate\ILTransformed\System.Net.Requests.ildll
+C:\JarvisControlCenter\JarvisControlCenter\obj\x64\Release\ilc\intermediate\ILTransformed\System.Net.WebHeaderCollection.ildll
+C:\JarvisControlCenter\JarvisControlCenter\bin\x64\Release\logs.json
+C:\JarvisControlCenter\JarvisControlCenter\bin\x64\Release\infosFHEM.json
+C:\JarvisControlCenter\JarvisControlCenter\bin\x64\Release\ilc\Assets\backgroudJarvis.jpg
+C:\JarvisControlCenter\JarvisControlCenter\bin\x64\Release\ilc\Assets\backgroundJarvisVertical.png
+C:\JarvisControlCenter\JarvisControlCenter\obj\x64\Release\ilc\in\Assets\backgroudJarvis.jpg
+C:\JarvisControlCenter\JarvisControlCenter\obj\x64\Release\ilc\in\Assets\backgroundJarvisVertical.png
+C:\JarvisControlCenter\JarvisControlCenter\bin\x64\Release\ilc\Assets\backgroudJarvis.png
+C:\JarvisControlCenter\JarvisControlCenter\obj\x64\Release\ilc\in\Assets\backgroudJarvis.png

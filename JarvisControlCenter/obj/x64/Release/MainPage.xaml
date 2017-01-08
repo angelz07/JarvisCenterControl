@@ -7,7 +7,32 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush Stretch="Fill" ImageSource="Assets/backgroudJarvis.png"/>
+        </Grid.Background>
+
+
+
+        <Button x:ConnectionId='1' x:Name="refreshConsoleLog" Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top"                                 Opacity="0" Margin="285,665,0,-57"/>
+
+
+
+        <Grid x:ConnectionId='2' x:Name="grille_log" Height="200" VerticalAlignment="Bottom" ScrollViewer.VerticalScrollBarVisibility="Visible" Margin="100,0,10,10">
+            <ScrollViewer x:ConnectionId='3' x:Name="scrollBarLogs" VerticalScrollMode="Enabled">
+                <TextBlock x:ConnectionId='4' 
+                        x:Name="consoleLogInfosTxtBox" 
+                        TextWrapping="WrapWholeWords" 
+                        Text="TextBlock" 
+                        VerticalAlignment="Bottom"
+                        ScrollViewer.HorizontalScrollBarVisibility="Visible"
+                        ScrollViewer.VerticalScrollBarVisibility="Visible" 
+                        IsTextSelectionEnabled="True"
+                        />
+            </ScrollViewer>
+
+        </Grid>
+
 
     </Grid>
 </Page>

@@ -1,0 +1,7 @@
+﻿{
+	"devices":[
+		{"name":"le lustre de la salle à mangé", "id":"lustre_salle_a_mangee", "type":"switch", "timer" : "false"},
+		{"name":"la lumière de la salle à mangé", "id":"spot_salle_a_mangee", "type":"dimmer", "timer" : "false"},
+		{"name":"la lumière de la cave", "id":"lumiere_cave_plafond", "type":"dimmer", "timer" : "true"},
+	]
+}

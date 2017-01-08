@@ -132,15 +132,17 @@ namespace JarvisControlCenter.JarvisControlCenter_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[3];
+            _typeNameTable = new string[4];
             _typeNameTable[0] = "JarvisControlCenter.MainPage";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
+            _typeNameTable[3] = "String";
 
-            _typeTable = new global::System.Type[3];
+            _typeTable = new global::System.Type[4];
             _typeTable[0] = typeof(global::JarvisControlCenter.MainPage);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
+            _typeTable[3] = typeof(global::System.String);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -190,6 +192,7 @@ namespace JarvisControlCenter.JarvisControlCenter_XamlTypeInfo
             case 0:   //  JarvisControlCenter.MainPage
                 userType = new global::JarvisControlCenter.JarvisControlCenter_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
                 userType.Activator = Activate_0_MainPage;
+                userType.AddMemberName("consoleLogInfosTxtBoxText");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -201,16 +204,40 @@ namespace JarvisControlCenter.JarvisControlCenter_XamlTypeInfo
             case 2:   //  Windows.UI.Xaml.Controls.UserControl
                 xamlType = new global::JarvisControlCenter.JarvisControlCenter_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
+
+            case 3:   //  String
+                xamlType = new global::JarvisControlCenter.JarvisControlCenter_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
             }
             return xamlType;
         }
 
 
+        private object get_0_MainPage_consoleLogInfosTxtBoxText(object instance)
+        {
+            var that = (global::JarvisControlCenter.MainPage)instance;
+            return that.consoleLogInfosTxtBoxText;
+        }
+        private void set_0_MainPage_consoleLogInfosTxtBoxText(object instance, object Value)
+        {
+            var that = (global::JarvisControlCenter.MainPage)instance;
+            that.consoleLogInfosTxtBoxText = (global::System.String)Value;
+        }
 
         private global::Windows.UI.Xaml.Markup.IXamlMember CreateXamlMember(string longMemberName)
         {
             global::JarvisControlCenter.JarvisControlCenter_XamlTypeInfo.XamlMember xamlMember = null;
-            // No Local Properties
+            global::JarvisControlCenter.JarvisControlCenter_XamlTypeInfo.XamlUserType userType;
+
+            switch (longMemberName)
+            {
+            case "JarvisControlCenter.MainPage.consoleLogInfosTxtBoxText":
+                userType = (global::JarvisControlCenter.JarvisControlCenter_XamlTypeInfo.XamlUserType)GetXamlTypeByName("JarvisControlCenter.MainPage");
+                xamlMember = new global::JarvisControlCenter.JarvisControlCenter_XamlTypeInfo.XamlMember(this, "consoleLogInfosTxtBoxText", "String");
+                xamlMember.Getter = get_0_MainPage_consoleLogInfosTxtBoxText;
+                xamlMember.Setter = set_0_MainPage_consoleLogInfosTxtBoxText;
+                break;
+            }
             return xamlMember;
         }
     }

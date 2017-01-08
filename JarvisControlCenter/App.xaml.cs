@@ -23,19 +23,22 @@ using System.Diagnostics;
 using Windows.UI.Popups;
 
 using System.Threading;
-using System.Diagnostics;
+//using System.Diagnostics;
 
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 
 using System.Net;
+using System.Net.Sockets;
 using System.Text;
 using System.Collections.Specialized;
 
 
+
 namespace JarvisControlCenter
 {
-   
+
+    
 
     struct objJson
     {
@@ -52,8 +55,9 @@ namespace JarvisControlCenter
         private static string loginFhem = "cuesmes";
         private static string passFhem = "cuesmes";
 
+        
 
-       
+        public string thisVar { get; internal set; }
 
 
         /// <summary>
@@ -73,10 +77,11 @@ namespace JarvisControlCenter
         /// <param name="e">Détails concernant la requête et le processus de lancement.</param>
         protected async override void OnLaunched(LaunchActivatedEventArgs e)
         {
+            
 
-            string[] infos = decryptJsonDevices("le lustre de la salle à mangé");
+               // string[] infos = decryptJsonDevices("le lustre de la salle à mangé");
 
-            string[] sendCmdFhemResult = sendCmdFhem(infos, "allume");
+               // string[] sendCmdFhemResult = sendCmdFhem(infos, "éteint");
 
             Frame rootFrame = Window.Current.Content as Frame;
 
@@ -114,20 +119,22 @@ namespace JarvisControlCenter
                     StorageFile vcd = await Package.Current.InstalledLocation.GetFileAsync("VoiceCommandDefinition.xml");
                     await VoiceCommandDefinitionManager.InstallCommandDefinitionsFromStorageFileAsync(vcd);
                 } catch(Exception ex) {
-                    Debug.Write("Impossible d'enregistrer les commande vocals : " + ex.Message);
+                    ConsoleLogInfos consoleLogInfos = new ConsoleLogInfos();
+                    consoleLogInfos.addLineToLogs("error", ex.Message);
                 }
             }
         }
 
-        protected async override void OnActivated(IActivatedEventArgs args)
+        protected override void OnActivated(IActivatedEventArgs args)
         {
             base.OnActivated(args);
 
-            if (args.Kind == ActivationKind.VoiceCommand) {
+            if (args.Kind == ActivationKind.VoiceCommand)
+            {
                 var commandArgs = args as VoiceCommandActivatedEventArgs;
                 Windows.Media.SpeechRecognition.SpeechRecognitionResult speechRecognitionResult = commandArgs.Result;
 
-               
+
 
                 // Get the name of the voice command and the text spoken. 
                 // See VoiceCommands.xml for supported voice commands.
@@ -138,30 +145,27 @@ namespace JarvisControlCenter
                 // Apps should respect text mode by providing silent (text) feedback.
                 string commandMode = this.SemanticInterpretation("commandMode", speechRecognitionResult);
 
-                
-                MessageDialog dialog = new MessageDialog("");
-
                 switch (voiceCommandName)
                 {
-                    case "appelFibaro":
+                    case "appelFhem":
                         // Access the value of {destination} in the voice command.
-                        string action = this.SemanticInterpretation("action", speechRecognitionResult);
-                        string device = this.SemanticInterpretation("device", speechRecognitionResult);
-
-                        dialog.Content = "voiceCommandName : " + voiceCommandName + " -- action : " + action + " -- device : " + device + " -- textSpoken : " + textSpoken ;
+                        string action = this.SemanticInterpretation("actionDomo", speechRecognitionResult);
+                        string device = this.SemanticInterpretation("deviceFhem", speechRecognitionResult);
 
                         string[] infos = decryptJsonDevices(device);
 
                         string[] sendCmdFhemResult = sendCmdFhem(infos, action);
 
+
                         break;
                     default:
                         // If we can't determine what page to launch, go to the default entry point.
-                        Debug.WriteLine("Impossible de trouver la commande");
+                        ConsoleLogInfos consoleLogInfos = new ConsoleLogInfos();
+                        consoleLogInfos.addLineToLogs("error", "Impossible de trouver la commande");
                         break;
                 }
 
-                await dialog.ShowAsync();
+                //await dialog.ShowAsync();
             }
         }
 
@@ -197,10 +201,10 @@ namespace JarvisControlCenter
                 return retour;
 
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-
-                debug_popup("erreur dans le parsing json device");
+                ConsoleLogInfos consoleLogInfos = new ConsoleLogInfos();
+                consoleLogInfos.addLineToLogs("error", ex.Message);
                 return retour;
                 throw;
 
@@ -239,38 +243,66 @@ namespace JarvisControlCenter
             http://192.168.1.25:8083/fhem?cmd.lustre_salle_a_mangee=set%20lustre_salle_a_mangee%20off&XHR=1
 
              */
-            UriBuilder uriB = new UriBuilder();
-            uriB.Host = ipFhem;
-            uriB.Port = int.Parse(portFhem);
-            uriB.Path = "fhem";
-            uriB.Query = "cmd." + id + "=set%20" + id + "%20" + actionDecrypt + "&XHR=1";
+           
 
             string url = "http://" + ipFhem + ":" + portFhem + "/fhem?cmd." + id + "=set%20" + id + "%20" + actionDecrypt + "&XHR=1";
+
             try
             {
-                debug_popup(uriB.ToString());
-               
+
+                UriBuilder uriB = new UriBuilder();
+                uriB.Host = ipFhem;
+                uriB.Port = int.Parse(portFhem);
+                uriB.Path = "fhem";
+                uriB.Query = "cmd." + id + "=set%20" + id + "%20" + actionDecrypt + "&XHR=1";
+
+                string urlFhem = uriB.ToString();
+                
+                ConsoleLogInfos consoleLogInfos = new ConsoleLogInfos();
+                consoleLogInfos.addLineToLogs("requete", urlFhem);
+
+                HttpWebRequest request = (HttpWebRequest)HttpWebRequest.Create(new System.Uri(urlFhem));
+                request.Credentials = new NetworkCredential(loginFhem, passFhem);
+                request.BeginGetResponse(new AsyncCallback(ReadWebRequestCallback), request);
+
+
+
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                debug_popup("erreur http request commande fhem");
+                ConsoleLogInfos consoleLogInfos = new ConsoleLogInfos();
+                consoleLogInfos.addLineToLogs("error", ex.Message);
                 throw;
             }
             
 
-           
-            
+
+
 
             return retour;
         }
 
-
-        private static async void debug_popup(string texte)
+        private static void ReadWebRequestCallback(IAsyncResult callbackResult)
         {
-            MessageDialog dialog2 = new MessageDialog("");
-            dialog2.Content = texte;
-            dialog2.ShowAsync();
+            try
+            {
+                HttpWebRequest myRequest = (HttpWebRequest)callbackResult.AsyncState;
 
+                using (HttpWebResponse myResponse = (HttpWebResponse)myRequest.EndGetResponse(callbackResult))
+                {
+                    using (StreamReader httpwebStreamReader = new StreamReader(myResponse.GetResponseStream()))
+                    {
+                        string results = httpwebStreamReader.ReadToEnd();
+                        
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                ConsoleLogInfos consoleLogInfos = new ConsoleLogInfos();
+                consoleLogInfos.addLineToLogs("error", ex.Message);
+                throw;
+            }
         }
 
         private string SemanticInterpretation(string interpretationKey, SpeechRecognitionResult speechRecognitionResult)

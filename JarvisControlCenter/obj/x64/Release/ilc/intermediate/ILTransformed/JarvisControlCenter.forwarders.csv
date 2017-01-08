@@ -729,6 +729,8 @@
 "System.Globalization.Calendars, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a","System.Globalization.UmAlQuraCalendar","System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
 "System.IO, Version=4.0.10.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a","System.IO.FileNotFoundException","System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
 "System.IO, Version=4.0.10.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a","System.IO.IOException","System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
+"System.Net.Requests, Version=4.0.11.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a","System.Net.HttpRequestHeader","System.Net.WebHeaderCollection, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
+"System.Net.Requests, Version=4.0.11.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a","System.Net.WebHeaderCollection","System.Net.WebHeaderCollection, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
 "System.Private.CompilerServices.ICastable, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a","System.Runtime.CompilerServices.ICastable","System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
 "System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a","System.Action`10","System.Runtime.Implementation, Version=4.0.20.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
 "System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a","System.Action`11","System.Runtime.Implementation, Version=4.0.20.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
