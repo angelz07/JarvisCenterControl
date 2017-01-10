@@ -1,21 +1,22 @@
 ﻿using System;
-using System.Collections.Generic;
+using Windows.Media.SpeechSynthesis;
+using Windows.UI;
+using Windows.UI.Xaml;
+using Windows.UI.Xaml.Controls;
+using Windows.UI.Xaml.Media;
+//using System.Windows.Forms;
+/*using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
-using Windows.UI;
 using Windows.UI.Popups;
-using Windows.UI.Xaml;
-using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
 using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
-using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
-
-// Pour plus d'informations sur le modèle d'élément Page vierge, consultez la page https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
+*/
 
 namespace JarvisControlCenter
 {
@@ -27,7 +28,9 @@ namespace JarvisControlCenter
     /// </summary>
     public sealed partial class MainPage : Page
     {
-        ConsoleLogInfos consoleLogInfos = new ConsoleLogInfos();
+        private static ConsoleLogInfos consoleLogInfos = new ConsoleLogInfos();
+        private static VariableGlobals variableGlobals = new VariableGlobals();
+     
         public static MainPage Current;
 
         public string consoleLogInfosTxtBoxText
@@ -42,13 +45,22 @@ namespace JarvisControlCenter
         {
             this.InitializeComponent();
 
-           
+            /*
+            NotifyIcon icon = new NotifyIcon(); // Declaration
+            icon.BalloonTipText = "Hello, NotifyIcon!"; // Text of BalloonTip
+            icon.Text = "Hello, NotifyIcon!"; // ToolTip of NotifyIcon
+            icon.Icon = new System.Drawing.Icon("NotifyIcon.ico"); // Shown Icon
+            icon.Visible = true;
+            icon.ShowBalloonTip(1000); // Shows BalloonTip
+                                       /* NotifyIcon icon = new NotifyIcon();
+                                        icon.Icon = System.Drawing.SystemIcons.Application;
+                                        icon.Click += delegate { MessageBox.Show("Bye!"); icon.Visible = false; Application.Exit(); };
+                                        icon.Visible = true;*/
 
-            Current = this;
-
-
+            
+                Current = this;
+            variableGlobals.getInfosAppilcation();
             updateConsoleLogInfos();
-            // consoleLogInfos.showConsoleLogInfos();
             formatConsoleLogInfosTxtBox();
         }
         public static implicit operator string(MainPage v)
@@ -84,6 +96,37 @@ namespace JarvisControlCenter
         }
 
         
+        public static void jarvisTalk(SpeechSynthesisStream ttsStream)
+        {
+            //consoleLogInfos.addLineToLogs("debug", "test tts MainPage");
+            jarvisTalkToYou(ttsStream);
+        }
+
+        private static void jarvisTalkToYou(SpeechSynthesisStream ttsStream)
+        {
+            try
+            {
+                MediaElement tts = new MediaElement();
+                tts.SetSource(ttsStream, "");
+                // Current.Visibility = Visibility.Collapsed;
+                // (AppBar as AppBarButton).Visibility = Visibility.Collapsed;
+                 = Visibility.Collapsed;
+                //Current.Visibility = Visibility.Collapsed;
+            }
+            catch (Exception ex)
+            {
+                consoleLogInfos.addLineToLogs("error:", "jarvisTalkToYou: " + ex.Message);
+                throw;
+            }
+           
+
+            
+        }
+
+        private void MainPage1_SizeChanged(object sender, SizeChangedEventArgs e)
+        {
+            
+        }
     }
 
    

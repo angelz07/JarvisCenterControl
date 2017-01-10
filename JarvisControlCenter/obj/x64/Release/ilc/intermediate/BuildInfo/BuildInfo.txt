@@ -50,6 +50,8 @@ System.Linq.Parallel.dll                               : 1.0.24212.01
 System.Linq.Queryable.dll                              : 1.0.24212.01
 System.Net.dll                                         : 4.6.24301.0
 System.Net.Http.dll                                    : 1.0.24212.01
+System.Net.Http.Extensions.dll                         : 2.2.29.0
+System.Net.Http.Primitives.dll                         : 4.2.29.0
 System.Net.Http.Rtc.dll                                : 1.0.24212.01
 System.Net.NameResolution.dll                          : 1.0.24212.01
 System.Net.NetworkInformation.dll                      : 1.0.24212.01

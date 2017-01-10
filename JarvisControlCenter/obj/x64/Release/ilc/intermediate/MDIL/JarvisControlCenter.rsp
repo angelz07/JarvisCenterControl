@@ -29,6 +29,7 @@
 /in "C:\JarvisControlCenter\JarvisControlCenter\obj\x64\Release\ilc\intermediate\ILTransformed\System.IO.FileSystem.Primitives.ildll"
 /in "C:\JarvisControlCenter\JarvisControlCenter\obj\x64\Release\ilc\intermediate\ILTransformed\System.IO.IsolatedStorage.ildll"
 /in "C:\JarvisControlCenter\JarvisControlCenter\obj\x64\Release\ilc\intermediate\ILTransformed\System.IO.UnmanagedMemoryStream.ildll"
+/in "C:\JarvisControlCenter\JarvisControlCenter\obj\x64\Release\ilc\intermediate\ILTransformed\System.Net.Http.Extensions.ildll"
 /in "C:\JarvisControlCenter\JarvisControlCenter\obj\x64\Release\ilc\intermediate\ILTransformed\System.Net.Http.ildll"
 /in "C:\JarvisControlCenter\JarvisControlCenter\obj\x64\Release\ilc\intermediate\ILTransformed\System.Net.Primitives.ildll"
 /in "C:\JarvisControlCenter\JarvisControlCenter\obj\x64\Release\ilc\intermediate\ILTransformed\System.Net.Requests.ildll"

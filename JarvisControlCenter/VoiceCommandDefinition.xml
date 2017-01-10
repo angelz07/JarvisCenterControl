@@ -44,12 +44,20 @@
       <Item>règle sur 50%</Item>
       <Item>Règle sur 100%</Item>
     </PhraseList>
-
+    
 
     <PhraseList Label="deviceFhem">
-      <Item>le lustre de la salle à mangé</Item>
+      <Item>la lumière de la cuisine</Item>
       <Item>la lumière de la salle à mangé</Item>
+      <Item>la lumière de la buanderie</Item>
+      <Item>la lumière du hall d'entrée</Item>
+      <Item>le lustre de la cuisine</Item>
+      <Item>la lumière de la petite buanderie</Item>
+      <Item>le lustre de la salle à mangé</Item>
       <Item>la lumière de la cave</Item>
+      <Item>la lumière de la chambre</Item>
+      <Item>la lumière de la salle de bain</Item>
+      <Item>la lumière du vide technique</Item>
     </PhraseList>
 
   </CommandSet>

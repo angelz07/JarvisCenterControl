@@ -28,10 +28,14 @@
     <AppXManifest Include="C:\JarvisControlCenter\JarvisControlCenter\bin\x64\Release\ilc\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-01-08T19:08:11.502</Modified>
+      <Modified>2017-01-10T13:59:02.406</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
+    <AppxPackagedFile Include="C:\JarvisControlCenter\JarvisControlCenter\bin\x64\Release\ilc\3erParty\dotNetFx45_Full_setup.exe">
+      <PackagePath>3erParty\dotNetFx45_Full_setup.exe</PackagePath>
+      <Modified>2017-01-09T12:56:07.037</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\JarvisControlCenter\JarvisControlCenter\bin\x64\Release\ilc\Assets\backgroudJarvis.jpg">
       <PackagePath>Assets\backgroudJarvis.jpg</PackagePath>
       <Modified>2017-01-08T15:47:13.430</Modified>
@@ -118,24 +122,24 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\JarvisControlCenter\JarvisControlCenter\bin\x64\Release\ilc\JarvisControlCenter.dll">
       <PackagePath>JarvisControlCenter.dll</PackagePath>
-      <Modified>2017-01-08T19:08:10.853</Modified>
+      <Modified>2017-01-10T13:59:01.931</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\JarvisControlCenter\JarvisControlCenter\bin\x64\Release\ilc\JarvisControlCenter.exe">
       <PackagePath>JarvisControlCenter.exe</PackagePath>
-      <Modified>2017-01-08T19:08:11.464</Modified>
+      <Modified>2017-01-10T13:59:02.383</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\JarvisControlCenter\JarvisControlCenter\bin\x64\Release\ilc\JarvisControlCenter.pdb">
       <PackagePath>JarvisControlCenter.pdb</PackagePath>
-      <Modified>2017-01-08T19:08:11.456</Modified>
+      <Modified>2017-01-10T13:59:02.380</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\JarvisControlCenter\JarvisControlCenter\bin\x64\Release\ilc\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-01-08T17:50:10.502</Modified>
+      <Modified>2017-01-10T13:17:13.624</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\JarvisControlCenter\JarvisControlCenter\bin\x64\Release\ilc\VoiceCommandDefinition.xml">
       <PackagePath>VoiceCommandDefinition.xml</PackagePath>
-      <Modified>2017-01-08T19:11:13.542</Modified>
+      <Modified>2017-01-09T11:19:06.286</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

@@ -22,6 +22,9 @@
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
+    <AppxPackagedFile Include="C:\JarvisControlCenter\JarvisControlCenter\bin\x64\Release\ilc\3erParty\dotNetFx45_Full_setup.exe">
+      <PackagePath>3erParty\dotNetFx45_Full_setup.exe</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\JarvisControlCenter\JarvisControlCenter\bin\x64\Release\ilc\Assets\backgroudJarvis.jpg">
       <PackagePath>Assets\backgroudJarvis.jpg</PackagePath>
     </AppxPackagedFile>
