@@ -8,7 +8,6 @@ C:\JarvisControlCenter\JarvisControlCenter\obj\x64\Release\MainPage.xaml
 C:\JarvisControlCenter\JarvisControlCenter\obj\x64\Release\App.xbf
 C:\JarvisControlCenter\JarvisControlCenter\obj\x64\Release\MainPage.xbf
 C:\JarvisControlCenter\JarvisControlCenter\obj\x64\Release\XamlSaveStateFile.xml
-C:\JarvisControlCenter\JarvisControlCenter\obj\x64\Release\JarvisControlCenter.csprojResolveAssemblyReference.cache
 C:\JarvisControlCenter\JarvisControlCenter\bin\x64\Release\3erParty\dotNetFx45_Full_setup.exe
 C:\JarvisControlCenter\JarvisControlCenter\bin\x64\Release\3erParty\MicrosoftSpeechPlatformSDK 32bit.msi
 C:\JarvisControlCenter\JarvisControlCenter\bin\x64\Release\3erParty\MicrosoftSpeechPlatformSDK.msi
@@ -16,10 +15,8 @@ C:\JarvisControlCenter\JarvisControlCenter\bin\x64\Release\3erParty\MSSpeech_TTS
 C:\JarvisControlCenter\JarvisControlCenter\bin\x64\Release\3erParty\SpeechPlatformRuntime32bit.msi
 C:\JarvisControlCenter\JarvisControlCenter\bin\x64\Release\3erParty\SpeechPlatformRuntime.msi
 C:\JarvisControlCenter\JarvisControlCenter\bin\x64\Release\Assets\StoreLogo.png
-C:\JarvisControlCenter\JarvisControlCenter\bin\x64\Release\logs.json
-C:\JarvisControlCenter\JarvisControlCenter\bin\x64\Release\infosFHEM.json
-C:\JarvisControlCenter\JarvisControlCenter\bin\x64\Release\devices.json
 C:\JarvisControlCenter\JarvisControlCenter\bin\x64\Release\App.xbf
+C:\JarvisControlCenter\JarvisControlCenter\bin\x64\Release\ConfigApplication.xbf
 C:\JarvisControlCenter\JarvisControlCenter\bin\x64\Release\MainPage.xbf
 C:\JarvisControlCenter\JarvisControlCenter\bin\x64\Release\JarvisControlCenter.xr.xml
 C:\JarvisControlCenter\JarvisControlCenter\bin\x64\Release\JarvisControlCenter.exe
@@ -177,6 +174,11 @@ C:\JarvisControlCenter\JarvisControlCenter\bin\x64\Release\System.Xml.ReaderWrit
 C:\JarvisControlCenter\JarvisControlCenter\bin\x64\Release\System.Xml.XDocument.dll
 C:\JarvisControlCenter\JarvisControlCenter\bin\x64\Release\System.Xml.XmlDocument.dll
 C:\JarvisControlCenter\JarvisControlCenter\bin\x64\Release\System.Xml.XmlSerializer.dll
+C:\JarvisControlCenter\JarvisControlCenter\obj\x64\Release\JarvisControlCenter.csprojResolveAssemblyReference.cache
+C:\JarvisControlCenter\JarvisControlCenter\obj\x64\Release\ConfigApplication.g.i.cs
+C:\JarvisControlCenter\JarvisControlCenter\obj\x64\Release\ConfigApplication.g.cs
+C:\JarvisControlCenter\JarvisControlCenter\obj\x64\Release\ConfigApplication.xaml
+C:\JarvisControlCenter\JarvisControlCenter\obj\x64\Release\ConfigApplication.xbf
 C:\JarvisControlCenter\JarvisControlCenter\obj\x64\Release\JarvisControlCenter.exe
 C:\JarvisControlCenter\JarvisControlCenter\obj\x64\Release\JarvisControlCenter.pdb
 C:\JarvisControlCenter\JarvisControlCenter\obj\x64\Release\ResourceHandlingTask.state
@@ -435,4 +437,6 @@ C:\JarvisControlCenter\JarvisControlCenter\obj\x64\Release\ilc\intermediate\rhbi
 C:\JarvisControlCenter\JarvisControlCenter\obj\x64\Release\ilc\intermediate\sgargs.rsp
 C:\JarvisControlCenter\JarvisControlCenter\obj\x64\Release\ilc\intermediate\TransformedSRWR\System.Runtime.WindowsRuntime.dll
 C:\JarvisControlCenter\JarvisControlCenter\obj\x64\Release\ilc\intermediate\TransformedSRWR\System.Runtime.WindowsRuntime.dll.ILTransformTask.repro
-C:\JarvisControlCenter\JarvisControlCenter\bin\x64\Release\infosApplication.json
+C:\JarvisControlCenter\JarvisControlCenter\bin\x64\Release\json\devices.json
+C:\JarvisControlCenter\JarvisControlCenter\bin\x64\Release\json\infosApplication.json
+C:\JarvisControlCenter\JarvisControlCenter\bin\x64\Release\json\logs.json

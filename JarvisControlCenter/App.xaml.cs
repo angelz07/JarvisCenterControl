@@ -92,6 +92,7 @@ namespace JarvisControlCenter
 
                 // Placez le frame dans la fenêtre active
                 Window.Current.Content = rootFrame;
+
             }
 
             if (e.PrelaunchActivated == false)
@@ -116,7 +117,7 @@ namespace JarvisControlCenter
             }
         }
 
-        protected override void OnActivated(IActivatedEventArgs args)
+        protected override async void OnActivated(IActivatedEventArgs args)
         {
             base.OnActivated(args);
 
@@ -125,7 +126,6 @@ namespace JarvisControlCenter
                 var commandArgs = args as VoiceCommandActivatedEventArgs;
                 SpeechRecognitionResult speechRecognitionResult = commandArgs.Result;
 
-                
 
                 // Get the name of the voice command and the text spoken. 
                 // See VoiceCommands.xml for supported voice commands.
@@ -143,13 +143,13 @@ namespace JarvisControlCenter
                         string action = this.SemanticInterpretation("actionDomo", speechRecognitionResult);
                         string device = this.SemanticInterpretation("deviceFhem", speechRecognitionResult);
 
-                        string[] infos = fhemClass.decryptJsonDevicesFhem(device);
+                        string[] infos = await fhemClass.decryptJsonDevicesFhem(device);
                         string[] sendCmdFhemResult = fhemClass.sendCmdFhem(infos, action);
 
                         break;
                     default:
                         // If we can't determine what page to launch, go to the default entry point.
-                      //  ConsoleLogInfos consoleLogInfos = new ConsoleLogInfos();
+                        //  ConsoleLogInfos consoleLogInfos = new ConsoleLogInfos();
                         consoleLogInfos.addLineToLogs("error", "Impossible de trouver la commande");
                         break;
                 }

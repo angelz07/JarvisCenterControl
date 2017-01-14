@@ -6,22 +6,38 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"                                    >
-
+    
+    
     <Grid>
+        
         <Grid.Background>
             <ImageBrush Stretch="Fill" ImageSource="Assets/backgroudJarvis.png"/>
-           
+
         </Grid.Background>
 
+        <SplitView x:ConnectionId='2' x:Name="MySplitView" DisplayMode="CompactOverlay"  IsPaneOpen="False" 
+               CompactPaneLength="50" OpenPaneLength="200" Height="100" HorizontalAlignment="Left" VerticalAlignment="Top">
+            <SplitView.Pane>
+                <StackPanel Background="Gray">
+                    <Button x:ConnectionId='7' x:Name="HamburgerButton" FontFamily="Segoe MDL2 Assets" Content="&#xE700;"
+                    Width="50" Height="50" Background="Transparent"                              />
+                    <StackPanel Orientation="Horizontal">
+                        <Button x:ConnectionId='8' x:Name="ConfigBP" FontFamily="Segoe MDL2 Assets" Content="&#xe115;"
+                    Width="50" Height="50" Background="Transparent"                       />
+                        <TextBlock Text="Configuration" FontSize="18" VerticalAlignment="Center" />
+
+                    </StackPanel>
+                    
+                </StackPanel>
+            </SplitView.Pane>
+        </SplitView>
+        <Button x:ConnectionId='3' x:Name="refreshConsoleLog" Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top"                                 Opacity="0" Margin="285,665,0,-57"/>
 
 
-        <Button x:ConnectionId='2' x:Name="refreshConsoleLog" Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top"                                 Opacity="0" Margin="285,665,0,-57"/>
 
-
-
-        <Grid x:ConnectionId='3' x:Name="grille_log" Height="200" VerticalAlignment="Bottom" ScrollViewer.VerticalScrollBarVisibility="Visible" Margin="100,0,10,10">
-            <ScrollViewer x:ConnectionId='5' x:Name="scrollBarLogs" VerticalScrollMode="Enabled">
-                <TextBlock x:ConnectionId='6' 
+                <Grid x:ConnectionId='4' x:Name="grille_log" Height="200" VerticalAlignment="Bottom" ScrollViewer.VerticalScrollBarVisibility="Visible" Margin="100,0,10,10">
+                    <ScrollViewer x:ConnectionId='5' x:Name="scrollBarLogs" VerticalScrollMode="Enabled">
+                        <TextBlock x:ConnectionId='6' 
                         x:Name="consoleLogInfosTxtBox" 
                         TextWrapping="WrapWholeWords" 
                         Text="TextBlock" 
@@ -30,13 +46,22 @@
                         ScrollViewer.VerticalScrollBarVisibility="Visible" 
                         IsTextSelectionEnabled="True"
                         />
-            </ScrollViewer>
+                    </ScrollViewer>
 
-        </Grid>
-        <MediaElement x:ConnectionId='4' x:Name="voixJarvis" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="100" Margin="130,232,0,0" AutoPlay="True" />
+                </Grid>
+           
+        
+
+        
         
 
 
+
+
+
     </Grid>
+
 </Page>
+
+
 

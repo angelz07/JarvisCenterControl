@@ -24,7 +24,7 @@ namespace JarvisControlCenter
             catch (Exception ex)
             {
                 consoleLogInfos.addLineToLogs("error:", "feedback: " + ex.Message);
-                throw;
+                
             }
             
        
@@ -76,7 +76,7 @@ namespace JarvisControlCenter
             catch (Exception ex)
             {
                 consoleLogInfos.addLineToLogs("error: ", " findFirstWord : " + ex.Message);
-                throw;
+                
             }
             
             return retour;

@@ -52,7 +52,7 @@ namespace JarvisControlCenter
             {
                 ConsoleLogInfos consoleLogInfos = new ConsoleLogInfos();
                 consoleLogInfos.addLineToLogs("error", ex.Message);
-                throw;
+                
             }
 
             return retour;
@@ -97,7 +97,7 @@ namespace JarvisControlCenter
                 consoleLogInfos.addLineToLogs("error", ex.Message);
                 string retour = "erreur dans le parsing json device" + ex.Message;
                 return retour;
-                throw;
+                
 
             }
         }

@@ -9,7 +9,7 @@
     <SolutionConfiguration>Release|x64</SolutionConfiguration>
     <PackageArchitecture>x64</PackageArchitecture>
     <PackageIdentityName>2b859d5c-a6ec-424e-a07e-b96599645cca</PackageIdentityName>
-    <PackageIdentityPublisher>CN=bernf</PackageIdentityPublisher>
+    <PackageIdentityPublisher>CN=Telecom4all</PackageIdentityPublisher>
     <IntermediateOutputPath>C:\JarvisControlCenter\JarvisControlCenter\obj\x64\Release\</IntermediateOutputPath>
     <RemoteDeploymentType></RemoteDeploymentType>
     <PackageRegistrationPath></PackageRegistrationPath>

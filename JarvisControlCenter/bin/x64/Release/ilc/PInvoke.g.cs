@@ -1098,37 +1098,6 @@ namespace McgInterop
 	}
 
 	/// <summary>
-	/// P/Invoke class for module 'api-ms-win-core-io-l1-1-0.dll'
-	/// </summary>
-	public unsafe static partial class api_ms_win_core_io_l1_1_0_dll
-	{
-		// Signature, CancelIoEx, [fwd] [return] [Mcg.CodeGen.Win32BoolMarshaller] bool__System.Boolean, [fwd] [in] [Mcg.CodeGen.Win32HandleMarshaller] System_Runtime_InteropServices_SafeHandle____w64 int, [fwd] [in] [Mcg.CodeGen.BlittableValueMarshaller] System_Threading_NativeOverlapped__System_Threading_Overlapped___ptrSystem_Threading__NativeOverlapped__System_Threading_Overlapped *, 
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgPInvokeMarshalStub("System.IO.FileSystem, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", "Interop+mincore", "CancelIoEx")]
-		public static bool CancelIoEx(
-					global::System.Runtime.InteropServices.SafeHandle handle, 
-					global::System.Threading.NativeOverlapped__System_Threading_Overlapped* lpOverlapped)
-		{
-			// Setup
-			bool addRefed = false;
-			int unsafe___value;
-			// Marshalling
-			handle.DangerousAddRef(ref addRefed);
-			// Call to native method
-			unsafe___value = global::McgInterop.api_ms_win_core_io_l1_1_0_dll_PInvokes.CancelIoEx(
-								handle.DangerousGetHandle(), 
-								((global::System.Threading.NativeOverlapped__System_Threading_Overlapped*)lpOverlapped)
-							);
-			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-			global::System.Runtime.InteropServices.McgMarshal.SaveLastWin32Error();
-			if (addRefed)
-				handle.DangerousRelease();
-			// Return
-			return unsafe___value != 0;
-		}
-	}
-
-	/// <summary>
 	/// P/Invoke class for module 'api-ms-win-core-winrt-robuffer-l1-1-0.dll'
 	/// </summary>
 	public unsafe static partial class api_ms_win_core_winrt_robuffer_l1_1_0_dll
@@ -1161,6 +1130,37 @@ namespace McgInterop
 				// Cleanup
 				global::System.Runtime.InteropServices.McgMarshal.ComSafeRelease(new global::System.IntPtr(((void*)unsafe_bufferMarshalerPtr)));
 			}
+		}
+	}
+
+	/// <summary>
+	/// P/Invoke class for module 'api-ms-win-core-io-l1-1-0.dll'
+	/// </summary>
+	public unsafe static partial class api_ms_win_core_io_l1_1_0_dll
+	{
+		// Signature, CancelIoEx, [fwd] [return] [Mcg.CodeGen.Win32BoolMarshaller] bool__System.Boolean, [fwd] [in] [Mcg.CodeGen.Win32HandleMarshaller] System_Runtime_InteropServices_SafeHandle____w64 int, [fwd] [in] [Mcg.CodeGen.BlittableValueMarshaller] System_Threading_NativeOverlapped__System_Threading_Overlapped___ptrSystem_Threading__NativeOverlapped__System_Threading_Overlapped *, 
+		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+		[global::System.Runtime.InteropServices.McgPInvokeMarshalStub("System.IO.FileSystem, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", "Interop+mincore", "CancelIoEx")]
+		public static bool CancelIoEx(
+					global::System.Runtime.InteropServices.SafeHandle handle, 
+					global::System.Threading.NativeOverlapped__System_Threading_Overlapped* lpOverlapped)
+		{
+			// Setup
+			bool addRefed = false;
+			int unsafe___value;
+			// Marshalling
+			handle.DangerousAddRef(ref addRefed);
+			// Call to native method
+			unsafe___value = global::McgInterop.api_ms_win_core_io_l1_1_0_dll_PInvokes.CancelIoEx(
+								handle.DangerousGetHandle(), 
+								((global::System.Threading.NativeOverlapped__System_Threading_Overlapped*)lpOverlapped)
+							);
+			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
+			global::System.Runtime.InteropServices.McgMarshal.SaveLastWin32Error();
+			if (addRefed)
+				handle.DangerousRelease();
+			// Return
+			return unsafe___value != 0;
 		}
 	}
 
@@ -1435,6 +1435,13 @@ namespace McgInterop
 		public extern static int CloseHandle(global::System.IntPtr handle);
 	}
 
+	public unsafe static partial class api_ms_win_core_winrt_robuffer_l1_1_0_dll_PInvokes
+	{
+		[global::McgInterop.McgGeneratedNativeCallCode]
+		[global::System.Runtime.InteropServices.DllImport("api-ms-win-core-winrt-robuffer-l1-1-0.dll", CallingConvention=global::System.Runtime.InteropServices.CallingConvention.StdCall)]
+		public extern static int RoGetBufferMarshaler(global::System.Runtime.InteropServices.IMarshal__System_Runtime_WindowsRuntime__Impl.Vtbl*** bufferMarshalerPtr);
+	}
+
 	public unsafe static partial class api_ms_win_core_io_l1_1_0_dll_PInvokes
 	{
 		[global::McgInterop.McgGeneratedNativeCallCode]
@@ -1442,13 +1449,6 @@ namespace McgInterop
 		public extern static int CancelIoEx(
 					global::System.IntPtr handle, 
 					global::System.Threading.NativeOverlapped__System_Threading_Overlapped* lpOverlapped);
-	}
-
-	public unsafe static partial class api_ms_win_core_winrt_robuffer_l1_1_0_dll_PInvokes
-	{
-		[global::McgInterop.McgGeneratedNativeCallCode]
-		[global::System.Runtime.InteropServices.DllImport("api-ms-win-core-winrt-robuffer-l1-1-0.dll", CallingConvention=global::System.Runtime.InteropServices.CallingConvention.StdCall)]
-		public extern static int RoGetBufferMarshaler(global::System.Runtime.InteropServices.IMarshal__System_Runtime_WindowsRuntime__Impl.Vtbl*** bufferMarshalerPtr);
 	}
 }
 

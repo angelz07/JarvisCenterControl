@@ -1,6 +1,9 @@
 ﻿using System;
+using Windows.ApplicationModel.Core;
 using Windows.Media.SpeechSynthesis;
 using Windows.UI;
+using Windows.UI.Core;
+using Windows.UI.ViewManagement;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Media;
@@ -16,6 +19,9 @@ using Windows.UI.Xaml.Controls.Primitives;
 using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Navigation;
+
+    http://www.geekchamp.com/icon-explorer/action-icons
+
 */
 
 namespace JarvisControlCenter
@@ -30,7 +36,9 @@ namespace JarvisControlCenter
     {
         private static ConsoleLogInfos consoleLogInfos = new ConsoleLogInfos();
         private static VariableGlobals variableGlobals = new VariableGlobals();
-     
+        private static GestionFileConfig gestionFileConfig = new GestionFileConfig();
+        private static ConfigApplication configApplication = new ConfigApplication();
+
         public static MainPage Current;
 
         public string consoleLogInfosTxtBoxText
@@ -43,25 +51,15 @@ namespace JarvisControlCenter
 
         public MainPage()
         {
+           
             this.InitializeComponent();
 
-            /*
-            NotifyIcon icon = new NotifyIcon(); // Declaration
-            icon.BalloonTipText = "Hello, NotifyIcon!"; // Text of BalloonTip
-            icon.Text = "Hello, NotifyIcon!"; // ToolTip of NotifyIcon
-            icon.Icon = new System.Drawing.Icon("NotifyIcon.ico"); // Shown Icon
-            icon.Visible = true;
-            icon.ShowBalloonTip(1000); // Shows BalloonTip
-                                       /* NotifyIcon icon = new NotifyIcon();
-                                        icon.Icon = System.Drawing.SystemIcons.Application;
-                                        icon.Click += delegate { MessageBox.Show("Bye!"); icon.Visible = false; Application.Exit(); };
-                                        icon.Visible = true;*/
-
-            
-                Current = this;
-            variableGlobals.getInfosAppilcation();
+            Current = this;
+            initialisationVariable();
+            //variableGlobals.getInfosAppilcation();
             updateConsoleLogInfos();
             formatConsoleLogInfosTxtBox();
+
         }
         public static implicit operator string(MainPage v)
         {
@@ -110,13 +108,13 @@ namespace JarvisControlCenter
                 tts.SetSource(ttsStream, "");
                 // Current.Visibility = Visibility.Collapsed;
                 // (AppBar as AppBarButton).Visibility = Visibility.Collapsed;
-                 = Visibility.Collapsed;
+                // = Visibility.Collapsed;
                 //Current.Visibility = Visibility.Collapsed;
             }
             catch (Exception ex)
             {
                 consoleLogInfos.addLineToLogs("error:", "jarvisTalkToYou: " + ex.Message);
-                throw;
+                
             }
            
 
@@ -126,6 +124,79 @@ namespace JarvisControlCenter
         private void MainPage1_SizeChanged(object sender, SizeChangedEventArgs e)
         {
             
+        }
+
+        
+
+       
+        private void HamburgerButton_Click(object sender, RoutedEventArgs e)
+        {
+            MySplitView.IsPaneOpen = !MySplitView.IsPaneOpen;
+            getInfosAppilcation();
+        }
+
+        private void Quitter_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private async void ConfigBP_Click(object sender, RoutedEventArgs e)
+        {
+            //variableGlobals.getInfosAppilcation();
+            CoreApplicationView newView = CoreApplication.CreateNewView();
+            int newViewId = 0;
+            await newView.Dispatcher.RunAsync(CoreDispatcherPriority.Normal, () =>
+            {
+            Frame frame = new Frame();
+            frame.Navigate(typeof(ConfigApplication), null);
+            Window.Current.Content = frame;
+            // You have to activate the window in order to show it later.
+            Window.Current.Activate();
+            
+
+                newViewId = ApplicationView.GetForCurrentView().Id;
+            });
+            bool viewShown = await ApplicationViewSwitcher.TryShowAsStandaloneAsync(newViewId);
+        }
+
+        private void HomeBP_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private async void initialisationVariable()
+        {
+            string result = await gestionFileConfig.initializeFileJson();
+            if (result == "true")
+            {
+                consoleLogInfos.addLineToLogs("debug:", "initialisationVariable: " + result);
+                variableGlobals.getInfosAppilcation();
+              //  consoleLogInfos.addLineToLogs("debug:", "result_isConfigFilePresent: " + variableGlobals.configFileIsPresent);
+                
+            }
+
+            getInfosAppilcation();
+
+            /*
+            if (result == "true") {
+                await variableGlobals.getInfosAppilcation();
+            }
+            consoleLogInfos.addLineToLogs("debug:", "initialisationVariable: " + result);*/
+        }
+
+
+        public async void getInfosAppilcation()
+        {
+            string ipFhem = await variableGlobals.infosAppilcation("ipFhem");
+            string portFhem = await variableGlobals.infosAppilcation("portFhem");
+            string loginFhem = await variableGlobals.infosAppilcation("loginFhem");
+            string passFhem = await variableGlobals.infosAppilcation("passFhem");
+
+            consoleLogInfos.addLineToLogs("debug:", "ipFhem: " + ipFhem);
+            consoleLogInfos.addLineToLogs("debug:", "portFhem: " + portFhem);
+            consoleLogInfos.addLineToLogs("debug:", "loginFhem: " + loginFhem);
+            consoleLogInfos.addLineToLogs("debug:", "passFhem: " + passFhem);
+
         }
     }
 
