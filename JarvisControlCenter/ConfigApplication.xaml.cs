@@ -89,7 +89,7 @@ namespace JarvisControlCenter
             string newLoginFhem = txtBoxLoginFhem.Text;
             string newIpPassFhem = txtBoxPassFhem.Text;
 
-            string result = variableGlobals.recordNewInfosApp(newIpFhem, newPortFhem, newLoginFhem, newIpPassFhem);
+            string result = await variableGlobals.recordNewInfosApp(newIpFhem, newPortFhem, newLoginFhem, newIpPassFhem);
             string message = "";
             if (result == "true")
             {
@@ -107,6 +107,15 @@ namespace JarvisControlCenter
         private void refrechInfosBP_Copy_Click(object sender, RoutedEventArgs e)
         {
             updateInfosAppTextbox(); 
+        }
+
+        private async void recordLogs_Click(object sender, RoutedEventArgs e)
+        {
+            string retour = await consoleLogInfos.copyLogsFile();
+            if (retour == "true") {
+                var Msg = new MessageDialog("Fichier log Enregistré.");
+                await Msg.ShowAsync();
+            }
         }
     }
 }

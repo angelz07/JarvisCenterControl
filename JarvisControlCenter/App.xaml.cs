@@ -50,7 +50,7 @@ namespace JarvisControlCenter
         
         private static ConsoleLogInfos consoleLogInfos = new ConsoleLogInfos();
         private static FhemClass fhemClass = new FhemClass();
-       
+        public StorageFolder storageFolder = ApplicationData.Current.LocalFolder;
 
         public string thisVar { get; internal set; }
 
@@ -108,7 +108,8 @@ namespace JarvisControlCenter
                 Window.Current.Activate();
 
                 try {
-                    StorageFile vcd = await Package.Current.InstalledLocation.GetFileAsync("VoiceCommandDefinition.xml");
+                    StorageFile vcd = await storageFolder.GetFileAsync("VoiceCommandDefinition.xml");
+                  //  StorageFile vcd = await Package.Current.InstalledLocation.GetFileAsync("VoiceCommandDefinition.xml");
                     await VoiceCommandDefinitionManager.InstallCommandDefinitionsFromStorageFileAsync(vcd);
                 } catch(Exception ex) {
                     //ConsoleLogInfos consoleLogInfos = new ConsoleLogInfos();

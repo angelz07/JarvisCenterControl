@@ -132,7 +132,7 @@ namespace JarvisControlCenter
         private void HamburgerButton_Click(object sender, RoutedEventArgs e)
         {
             MySplitView.IsPaneOpen = !MySplitView.IsPaneOpen;
-            getInfosAppilcation();
+            variableGlobals.getInfosAppilcation();
         }
 
         private void Quitter_Click(object sender, RoutedEventArgs e)
@@ -169,13 +169,14 @@ namespace JarvisControlCenter
             string result = await gestionFileConfig.initializeFileJson();
             if (result == "true")
             {
-                consoleLogInfos.addLineToLogs("debug:", "initialisationVariable: " + result);
+
+                consoleLogInfos.addLineToLogs("debug:", "initialisationVariable: OK" );
                 variableGlobals.getInfosAppilcation();
               //  consoleLogInfos.addLineToLogs("debug:", "result_isConfigFilePresent: " + variableGlobals.configFileIsPresent);
                 
             }
 
-            getInfosAppilcation();
+            variableGlobals.getInfosAppilcation();
 
             /*
             if (result == "true") {
@@ -184,20 +185,7 @@ namespace JarvisControlCenter
             consoleLogInfos.addLineToLogs("debug:", "initialisationVariable: " + result);*/
         }
 
-
-        public async void getInfosAppilcation()
-        {
-            string ipFhem = await variableGlobals.infosAppilcation("ipFhem");
-            string portFhem = await variableGlobals.infosAppilcation("portFhem");
-            string loginFhem = await variableGlobals.infosAppilcation("loginFhem");
-            string passFhem = await variableGlobals.infosAppilcation("passFhem");
-
-            consoleLogInfos.addLineToLogs("debug:", "ipFhem: " + ipFhem);
-            consoleLogInfos.addLineToLogs("debug:", "portFhem: " + portFhem);
-            consoleLogInfos.addLineToLogs("debug:", "loginFhem: " + loginFhem);
-            consoleLogInfos.addLineToLogs("debug:", "passFhem: " + passFhem);
-
-        }
+       
     }
 
    

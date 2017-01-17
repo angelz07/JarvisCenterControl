@@ -34,8 +34,7 @@
         <Button x:Name="refreshConsoleLog" Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" Click="refreshConsoleLog_Click" Opacity="0" Margin="285,665,0,-57"/>
 
 
-
-                <Grid x:Name="grille_log" Height="200" VerticalAlignment="Bottom" ScrollViewer.VerticalScrollBarVisibility="Visible" Margin="100,0,10,10">
+        <Grid x:Name="grille_log" Height="200" VerticalAlignment="Bottom" ScrollViewer.VerticalScrollBarVisibility="Visible" Margin="100,0,10,10">
                     <ScrollViewer x:Name="scrollBarLogs" VerticalScrollMode="Enabled">
                         <TextBlock 
                         x:Name="consoleLogInfosTxtBox" 
@@ -49,11 +48,11 @@
                     </ScrollViewer>
 
                 </Grid>
-           
         
 
-        
-        
+
+
+
 
 
 

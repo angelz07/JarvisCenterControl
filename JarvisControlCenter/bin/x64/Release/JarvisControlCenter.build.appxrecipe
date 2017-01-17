@@ -90,6 +90,9 @@
     <AppxPackagedFile Include="C:\JarvisControlCenter\JarvisControlCenter\bin\x64\Release\ilc\clrcompression.dll">
       <PackagePath>clrcompression.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\JarvisControlCenter\JarvisControlCenter\bin\x64\Release\ilc\files\VoiceCommandDefinition.xml">
+      <PackagePath>files\VoiceCommandDefinition.xml</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\JarvisControlCenter\JarvisControlCenter\bin\x64\Release\ilc\JarvisControlCenter.dll">
       <PackagePath>JarvisControlCenter.dll</PackagePath>
     </AppxPackagedFile>

@@ -45,8 +45,9 @@
             <TextBox x:Name="txtBoxPassFhem" HorizontalAlignment="Left" Margin="100,234,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" FontSize="10" Height="10" Width="300"/>
             <TextBlock HorizontalAlignment="Left" Margin="31,239,0,0" TextWrapping="Wrap" Text="Pass Fhem" VerticalAlignment="Top" Foreground="#FF186108" FontSize="14" />
 
-            <Button x:Name="sauvegardeInfosBP" Content="Sauvegarde" HorizontalAlignment="Center" Margin="0,0,0,20" VerticalAlignment="Bottom" Width="100" Foreground="#FF0C35EE" Background="#33C50000" BorderBrush="#FFF4FF10" Click="sauvegardeInfosBP_Click"/>
-            <Button x:Name="refrechInfosBP_Copy" Content="Rafraichir" HorizontalAlignment="Center" Margin="97,0,315,-176" VerticalAlignment="Bottom" Width="38"  Click="refrechInfosBP_Copy_Click"/>
+            <Button x:Name="sauvegardeInfosBP" Content="Sauvegarde" HorizontalAlignment="Center" Margin="175,0,175,8" VerticalAlignment="Bottom" Width="100" Foreground="#FF0C35EE" Background="#33C50000" BorderBrush="#FFF4FF10" Click="sauvegardeInfosBP_Click"/>
+            <Button x:Name="refrechInfosBP_Copy" Content="Rafraichir" HorizontalAlignment="Center" Margin="175,0,175,45" VerticalAlignment="Bottom" Width="100"  Click="refrechInfosBP_Copy_Click"/>
+            <Button x:Name="recordLogs" Content="Enregistrement des Logs" HorizontalAlignment="Left" Margin="133,280,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.015,0.406" Click="recordLogs_Click" Background="#330CC783" Foreground="#FF165CD4" BorderBrush="#FFE9FF0E"/>
 
         </Grid>
 

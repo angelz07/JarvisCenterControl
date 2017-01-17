@@ -2284,6 +2284,11 @@ namespace McgInterop
 			return default(global::System.IntPtr);
 		}
 
+		public static global::System.IntPtr Windows_Storage__IStorageFolder()
+		{
+			return default(global::System.IntPtr);
+		}
+
 		public static global::System.IntPtr Windows_Storage__IStorageItemProperties()
 		{
 			return default(global::System.IntPtr);
@@ -2490,11 +2495,6 @@ namespace McgInterop
 		}
 
 		public static global::System.IntPtr Windows_Foundation__IAsyncOperation_A_Windows_Storage_StorageFolder_V_()
-		{
-			return default(global::System.IntPtr);
-		}
-
-		public static global::System.IntPtr Windows_Storage__IStorageFolder()
 		{
 			return default(global::System.IntPtr);
 		}
@@ -3345,31 +3345,31 @@ namespace McgInterop
 		//
 	// Interop Stub Data
 		//
-	//     + Total Stubs = 500
-	//     + Total Forward Stubs = 325
+	//     + Total Stubs = 501
+	//     + Total Forward Stubs = 326
 	//     + Total Reverse Stubs = 175 (124 shared stubs, 52 unshared stubs, 105 shared hits)
-	//     + Unshared Forward Stubs = 2429
-	//     + Shared Forward Stubs = 703
+	//     + Unshared Forward Stubs = 2439
+	//     + Shared Forward Stubs = 705
 	//     + Shared Target Forward Stubs = 59
-	//     + Shared Target Forward Stubs Cache Hit = 644
+	//     + Shared Target Forward Stubs Cache Hit = 646
 	// 
 	// Type/Method Data
 		//
 	//     + WinRT interfaces : 344
 	//     + WinRT classes : 147
 	//     + WinRT delegates : 38
-	//     + WinRT class methods : 545
+	//     + WinRT class methods : 548
 	//     + dispatch classes : 298
-	//     + dispatch methods : 819
+	//     + dispatch methods : 822
 	//     + stub classes : 258
-	//     + stub methods : 941
+	//     + stub methods : 944
 	//     + vtables : 577
-	//     + vtable methods : 1199
+	//     + vtable methods : 1202
 	// 
 	// Reducer Data
 		//
 	//     + discarded v-tables : 545
-	//     + discarded v-table methods : 1157
+	//     + discarded v-table methods : 1160
 	//     + discarded class methods : 0
 	//     + discarded dispatch class methods : 90
 	//     + discarded stub class methods : 9
@@ -3406,10 +3406,10 @@ namespace McgInterop
 			SetThunk(352, global::McgInterop.Intrinsics.AddrOf<global::McgInterop.AddrOfIntrinsics.AddrOfTarget213<System.Collections.Generic.IEnumerable<System.Collections.Generic.IEnumerable<System.Object>>>>(global::McgInterop.Toolbox.IEnumerableThunk<System.Collections.Generic.IEnumerable<System.Collections.Generic.IEnumerable<System.Object>>>));
 			SetThunk(353, global::McgInterop.Intrinsics.AddrOf<global::McgInterop.AddrOfIntrinsics.AddrOfTarget215<System.Collections.Generic.IEnumerable<System.Collections.Generic.IEnumerable<System.Object>>>>(global::McgInterop.Toolbox.IIteratorThunk<System.Collections.Generic.IEnumerable<System.Collections.Generic.IEnumerable<System.Object>>>));
 			SetThunk(374, global::McgInterop.Intrinsics.AddrOf<global::McgInterop.AddrOfIntrinsics.AddrOfTarget212<Windows.Storage.Streams.IRandomAccessStream>>(global::McgInterop.Toolbox.AsyncOperationCompletedHandlerThunk<Windows.Storage.Streams.IRandomAccessStream>));
-			SetThunk(381, global::McgInterop.Intrinsics.AddrOf<global::McgInterop.AddrOfIntrinsics.AddrOfTarget212<Windows.Storage.StorageFile>>(global::McgInterop.Toolbox.AsyncOperationCompletedHandlerThunk<Windows.Storage.StorageFile>));
-			SetThunk(383, global::McgInterop.Intrinsics.AddrOf<global::McgInterop.AddrOfIntrinsics.AddrOfTarget212<string>>(global::McgInterop.Toolbox.AsyncOperationCompletedHandlerThunk<string>));
-			SetThunk(389, global::McgInterop.Intrinsics.AddrOf<global::McgInterop.AddrOfIntrinsics.AddrOfTarget212<Windows.UI.Popups.IUICommand>>(global::McgInterop.Toolbox.AsyncOperationCompletedHandlerThunk<Windows.UI.Popups.IUICommand>));
-			SetThunk(420, global::McgInterop.Intrinsics.AddrOf<global::McgInterop.AddrOfIntrinsics.AddrOfTarget212<Windows.Storage.StorageFolder>>(global::McgInterop.Toolbox.AsyncOperationCompletedHandlerThunk<Windows.Storage.StorageFolder>));
+			SetThunk(382, global::McgInterop.Intrinsics.AddrOf<global::McgInterop.AddrOfIntrinsics.AddrOfTarget212<Windows.Storage.StorageFile>>(global::McgInterop.Toolbox.AsyncOperationCompletedHandlerThunk<Windows.Storage.StorageFile>));
+			SetThunk(384, global::McgInterop.Intrinsics.AddrOf<global::McgInterop.AddrOfIntrinsics.AddrOfTarget212<string>>(global::McgInterop.Toolbox.AsyncOperationCompletedHandlerThunk<string>));
+			SetThunk(390, global::McgInterop.Intrinsics.AddrOf<global::McgInterop.AddrOfIntrinsics.AddrOfTarget212<Windows.UI.Popups.IUICommand>>(global::McgInterop.Toolbox.AsyncOperationCompletedHandlerThunk<Windows.UI.Popups.IUICommand>));
+			SetThunk(421, global::McgInterop.Intrinsics.AddrOf<global::McgInterop.AddrOfIntrinsics.AddrOfTarget212<Windows.Storage.StorageFolder>>(global::McgInterop.Toolbox.AsyncOperationCompletedHandlerThunk<Windows.Storage.StorageFolder>));
 			SetThunk(536, global::McgInterop.Intrinsics.AddrOf<global::McgInterop.AddrOfIntrinsics.AddrOfTarget213<System.Collections.Generic.KeyValuePair<string,System.Collections.Generic.IEnumerable<string>>>>(global::McgInterop.Toolbox.IEnumerableThunk<System.Collections.Generic.KeyValuePair<string,System.Collections.Generic.IEnumerable<string>>>));
 			SetThunk(558, global::McgInterop.Intrinsics.AddrOf<global::McgInterop.AddrOfIntrinsics.AddrOfTarget212<System.Collections.Generic.IReadOnlyList<Windows.Security.Cryptography.Certificates.Certificate>>>(global::McgInterop.Toolbox.AsyncOperationCompletedHandlerThunk<System.Collections.Generic.IReadOnlyList<Windows.Security.Cryptography.Certificates.Certificate>>));
 			SetStringPool(s_dictionary, s_strings, s_dictionaryIndex);
@@ -3756,40 +3756,40 @@ namespace McgInterop
 				25, 130, 0, 163, 0, 184, 0, 223, 0, 247, 0, 24, 1, 39, 1, 48, 1, 93, 1, 123, 1, 147, 1, 180, 1, 201, 1, 219, 1, 252, 1, 23, 2, 47, 2, 65, 2, 95, 2, 116, 2, 146, 2, 182, 2, 212, 2, 4, 3, 22, 
 				3, 40, 3, 58, 3, 82, 3, 103, 3, 136, 3, 166, 3, 196, 3, 229, 3, 6, 4, 24, 4, 48, 4, 84, 4, 117, 4, 144, 4, 159, 4, 183, 4, 210, 4, 243, 4, 20, 5, 47, 5, 59, 5, 104, 5, 134, 5, 161, 5, 200, 
 				5, 236, 5, 10, 6, 28, 6, 40, 6, 64, 6, 97, 6, 115, 6, 136, 6, 148, 6, 169, 6, 217, 6, 3, 7, 27, 7, 48, 7, 71, 7, 0, 161, 34, 20, 237, 42, 31, 89, 31, 54, 237, 34, 85, 209, 27, 114, 69, 40, 143, 
-				73, 36, 147, 221, 32, 181, 189, 26, 206, 181, 31, 228, 57, 32, 7, 189, 33, 21, 177, 27, 23, 133, 36, 26, 65, 29, 30, 93, 28, 100, 113, 27, 201, 213, 29, 14, 205, 26, 25, 201, 26, 67, 49, 33, 103, 157, 39, 123, 89, 35, 
-				129, 13, 34, 134, 105, 40, 137, 93, 28, 174, 145, 40, 196, 113, 27, 212, 213, 26, 238, 141, 35, 243, 169, 28, 1, 221, 32, 13, 97, 35, 83, 221, 35, 143, 201, 26, 169, 125, 38, 178, 137, 36, 205, 149, 36, 237, 193, 29, 6, 117, 
-				32, 82, 97, 39, 126, 221, 36, 133, 233, 32, 158, 237, 40, 173, 105, 32, 174, 189, 40, 188, 161, 35, 193, 181, 28, 202, 25, 36, 212, 69, 28, 15, 33, 30, 130, 229, 24, 153, 41, 33, 171, 101, 37, 173, 65, 40, 172, 109, 37, 194, 
-				145, 34, 230, 13, 28, 6, 77, 25, 8, 121, 24, 9, 217, 30, 55, 221, 34, 61, 41, 25, 62, 237, 35, 70, 105, 38, 135, 45, 31, 157, 209, 39, 166, 237, 38, 166, 17, 32, 167, 237, 35, 208, 241, 31, 244, 229, 29, 246, 185, 27, 
-				34, 129, 24, 50, 193, 38, 97, 77, 38, 126, 65, 25, 158, 253, 35, 174, 25, 36, 177, 157, 35, 190, 169, 27, 201, 221, 26, 222, 225, 25, 27, 213, 34, 79, 217, 36, 89, 173, 32, 104, 17, 30, 109, 13, 24, 144, 173, 23, 192, 205, 
+				73, 36, 147, 221, 32, 181, 189, 26, 206, 181, 31, 228, 57, 32, 7, 189, 33, 21, 177, 27, 23, 141, 36, 26, 65, 29, 30, 93, 28, 100, 113, 27, 201, 213, 29, 14, 205, 26, 25, 201, 26, 67, 49, 33, 103, 157, 39, 123, 89, 35, 
+				129, 13, 34, 134, 105, 40, 137, 93, 28, 174, 145, 40, 196, 113, 27, 212, 213, 26, 238, 149, 35, 243, 169, 28, 1, 221, 32, 13, 105, 35, 83, 229, 35, 143, 201, 26, 169, 125, 38, 178, 25, 35, 205, 149, 36, 237, 193, 29, 6, 117, 
+				32, 82, 97, 39, 126, 221, 36, 133, 233, 32, 158, 237, 40, 173, 105, 32, 174, 189, 40, 188, 169, 35, 193, 181, 28, 202, 25, 36, 212, 69, 28, 15, 33, 30, 130, 229, 24, 153, 41, 33, 171, 101, 37, 173, 65, 40, 172, 109, 37, 194, 
+				153, 34, 230, 13, 28, 6, 77, 25, 8, 121, 24, 9, 217, 30, 55, 229, 34, 61, 41, 25, 62, 237, 35, 70, 105, 38, 135, 45, 31, 157, 209, 39, 166, 29, 32, 166, 225, 38, 167, 237, 35, 208, 241, 31, 244, 229, 29, 246, 185, 27, 
+				34, 129, 24, 50, 193, 38, 97, 77, 38, 126, 65, 25, 158, 253, 35, 174, 25, 36, 177, 157, 35, 190, 169, 27, 201, 221, 26, 222, 225, 25, 27, 213, 34, 79, 217, 36, 89, 173, 32, 104, 17, 30, 109, 13, 24, 144, 173, 23, 192, 213, 
 				32, 229, 53, 23, 66, 53, 31, 103, 113, 23, 169, 65, 24, 172, 17, 37, 174, 33, 23, 191, 249, 33, 200, 13, 32, 202, 161, 24, 212, 33, 23, 234, 145, 27, 237, 37, 24, 37, 33, 23, 73, 189, 37, 93, 201, 22, 117, 37, 36, 123, 
 				57, 25, 197, 165, 36, 214, 209, 22, 39, 165, 33, 57, 81, 34, 78, 221, 30, 184, 49, 36, 206, 237, 24, 231, 25, 22, 40, 137, 23, 55, 97, 30, 60, 37, 26, 66, 141, 21, 87, 117, 35, 103, 1, 28, 121, 69, 36, 168, 169, 33, 
-				177, 93, 21, 230, 161, 29, 235, 229, 31, 18, 65, 36, 52, 213, 29, 73, 145, 29, 109, 157, 34, 118, 241, 33, 142, 149, 21, 144, 145, 22, 178, 141, 24, 211, 57, 26, 20, 133, 23, 25, 97, 35, 46, 201, 20, 89, 209, 29, 90, 57, 
-				22, 117, 89, 33, 132, 125, 36, 145, 9, 36, 96, 69, 35, 116, 9, 33, 126, 125, 33, 152, 249, 24, 245, 221, 27, 251, 181, 21, 30, 13, 28, 62, 81, 21, 92, 29, 28, 115, 137, 32, 118, 197, 20, 143, 225, 22, 163, 213, 30, 173, 
+				177, 93, 21, 230, 161, 29, 235, 237, 31, 18, 65, 36, 52, 213, 29, 73, 145, 29, 109, 157, 34, 118, 241, 33, 142, 149, 21, 144, 145, 22, 178, 141, 24, 211, 57, 26, 20, 133, 23, 25, 97, 35, 46, 201, 20, 89, 209, 29, 90, 57, 
+				22, 117, 89, 33, 132, 125, 36, 145, 9, 36, 96, 69, 35, 116, 9, 33, 126, 125, 33, 152, 249, 24, 245, 221, 27, 251, 181, 21, 30, 13, 28, 62, 81, 21, 92, 29, 28, 115, 137, 32, 118, 197, 20, 143, 225, 22, 163, 221, 30, 173, 
 				209, 21, 200, 109, 22, 235, 153, 25, 4, 69, 34, 99, 169, 26, 122, 29, 21, 129, 145, 19, 204, 37, 26, 218, 105, 28, 224, 189, 21, 3, 129, 24, 18, 125, 21, 30, 65, 34, 36, 165, 33, 55, 129, 28, 66, 61, 22, 83, 73, 26, 
-				169, 61, 19, 202, 161, 20, 227, 205, 20, 2, 145, 21, 25, 1, 20, 38, 9, 22, 112, 37, 25, 141, 41, 29, 173, 5, 31, 178, 225, 33, 209, 149, 29, 210, 105, 23, 214, 117, 21, 221, 213, 19, 222, 109, 27, 3, 225, 32, 23, 173, 
-				30, 29, 129, 20, 110, 109, 28, 129, 121, 31, 145, 61, 21, 174, 121, 23, 220, 77, 19, 229, 209, 29, 242, 205, 29, 17, 141, 19, 19, 165, 20, 30, 1, 20, 34, 197, 32, 45, 33, 19, 63, 85, 24, 66, 177, 17, 86, 85, 23, 104, 
-				241, 22, 124, 181, 30, 140, 61, 18, 154, 149, 21, 188, 1, 28, 199, 213, 30, 211, 141, 18, 223, 189, 18, 7, 33, 26, 25, 149, 25, 31, 57, 19, 123, 45, 30, 155, 65, 21, 210, 81, 18, 41, 105, 26, 77, 61, 20, 108, 89, 25, 
-				133, 69, 32, 214, 241, 19, 239, 205, 31, 21, 225, 16, 29, 133, 29, 60, 73, 28, 78, 21, 22, 96, 117, 17, 105, 69, 28, 50, 129, 27, 102, 37, 28, 115, 25, 32, 130, 101, 28, 163, 25, 18, 200, 17, 17, 223, 113, 20, 223, 53, 
-				17, 18, 169, 29, 68, 157, 24, 88, 49, 19, 130, 229, 25, 145, 57, 26, 185, 69, 22, 255, 25, 16, 11, 117, 16, 33, 57, 24, 45, 13, 21, 70, 57, 24, 73, 253, 24, 75, 81, 21, 126, 29, 21, 142, 93, 16, 161, 61, 26, 169, 
-				1, 25, 178, 77, 18, 3, 53, 15, 21, 229, 25, 36, 141, 15, 65, 141, 24, 81, 169, 24, 111, 21, 15, 162, 57, 29, 195, 253, 25, 209, 105, 20, 250, 109, 22, 20, 129, 25, 22, 205, 22, 26, 249, 26, 127, 117, 17, 141, 145, 19, 
-				147, 45, 19, 163, 201, 28, 163, 229, 14, 166, 133, 14, 204, 53, 19, 20, 209, 21, 27, 197, 15, 41, 201, 25, 43, 205, 22, 60, 73, 20, 98, 245, 18, 101, 57, 24, 126, 177, 14, 180, 33, 22, 192, 117, 21, 215, 201, 28, 35, 13, 
-				21, 47, 33, 21, 51, 93, 16, 67, 209, 24, 76, 29, 27, 92, 97, 17, 92, 181, 24, 109, 73, 23, 181, 13, 24, 196, 89, 13, 213, 213, 27, 14, 77, 13, 17, 53, 21, 22, 45, 14, 33, 101, 15, 137, 209, 12, 205, 61, 20, 1, 
-				185, 22, 12, 229, 14, 62, 169, 13, 66, 189, 16, 84, 1, 14, 87, 229, 15, 89, 145, 24, 102, 5, 14, 55, 153, 26, 79, 61, 20, 85, 193, 13, 93, 85, 16, 95, 73, 26, 146, 245, 26, 161, 33, 21, 196, 41, 13, 197, 185, 18, 
-				216, 45, 16, 227, 233, 25, 227, 245, 18, 47, 137, 21, 82, 17, 13, 84, 61, 12, 108, 37, 14, 165, 89, 15, 175, 61, 15, 180, 81, 16, 195, 233, 11, 205, 57, 20, 208, 97, 12, 229, 145, 20, 20, 141, 16, 21, 157, 12, 35, 133, 
-				18, 68, 145, 13, 83, 113, 12, 142, 225, 17, 145, 237, 24, 186, 129, 22, 231, 53, 25, 45, 145, 16, 69, 13, 21, 167, 97, 13, 177, 93, 15, 248, 225, 11, 66, 237, 16, 92, 145, 16, 102, 253, 23, 104, 17, 13, 132, 137, 10, 135, 
-				217, 10, 211, 197, 13, 221, 49, 17, 12, 101, 11, 12, 73, 18, 18, 101, 11, 19, 81, 18, 55, 213, 22, 77, 165, 10, 105, 173, 14, 112, 157, 11, 226, 21, 22, 29, 97, 19, 30, 213, 23, 47, 1, 18, 56, 149, 22, 58, 113, 24, 
-				76, 245, 11, 104, 161, 14, 105, 45, 14, 141, 17, 18, 167, 21, 15, 223, 201, 10, 24, 157, 24, 45, 73, 22, 79, 229, 22, 84, 137, 19, 163, 93, 24, 165, 185, 15, 167, 245, 17, 188, 129, 20, 196, 197, 10, 206, 9, 19, 232, 205, 
-				23, 66, 41, 14, 75, 145, 10, 83, 193, 20, 97, 245, 13, 121, 145, 24, 136, 89, 10, 157, 1, 19, 226, 157, 17, 232, 117, 9, 43, 37, 9, 138, 209, 21, 219, 181, 17, 238, 165, 8, 14, 149, 9, 33, 193, 14, 36, 217, 8, 38, 
-				9, 15, 57, 229, 21, 89, 89, 18, 123, 129, 9, 131, 113, 13, 147, 237, 20, 150, 249, 18, 192, 249, 7, 211, 177, 15, 218, 21, 17, 226, 233, 10, 231, 205, 13, 37, 217, 16, 49, 101, 14, 87, 145, 20, 102, 229, 22, 128, 249, 9, 
-				143, 109, 18, 185, 97, 9, 211, 93, 11, 227, 137, 21, 243, 229, 12, 52, 17, 11, 56, 181, 17, 58, 145, 19, 88, 29, 20, 95, 81, 18, 98, 229, 8, 141, 157, 8, 146, 245, 20, 230, 249, 12, 6, 237, 15, 50, 69, 8, 75, 109, 
-				22, 89, 193, 19, 119, 217, 7, 122, 217, 6, 124, 29, 10, 128, 185, 21, 162, 61, 21, 164, 113, 18, 167, 21, 10, 216, 25, 12, 220, 101, 13, 2, 145, 21, 19, 37, 12, 29, 17, 12, 36, 205, 11, 36, 169, 9, 68, 157, 16, 85, 
-				121, 11, 90, 5, 19, 122, 153, 18, 180, 221, 12, 218, 113, 16, 222, 61, 15, 25, 97, 15, 35, 37, 10, 60, 241, 5, 72, 85, 16, 98, 105, 14, 121, 13, 18, 126, 113, 5, 189, 229, 20, 218, 161, 12, 237, 121, 5, 37, 37, 5, 
-				57, 133, 9, 81, 37, 6, 150, 45, 20, 160, 73, 11, 185, 29, 11, 8, 185, 20, 38, 205, 8, 74, 165, 4, 88, 37, 8, 26, 201, 12, 43, 77, 16, 59, 65, 9, 65, 33, 5, 108, 57, 19, 139, 173, 14, 173, 17, 18, 178, 181, 
-				12, 8, 225, 7, 12, 225, 4, 34, 105, 19, 38, 125, 19, 106, 73, 10, 129, 37, 13, 136, 113, 14, 160, 157, 14, 194, 161, 4, 205, 157, 8, 245, 129, 10, 77, 85, 17, 85, 97, 8, 108, 253, 7, 128, 49, 16, 137, 245, 13, 224, 
+				169, 61, 19, 202, 161, 20, 227, 205, 20, 2, 145, 21, 25, 1, 20, 38, 9, 22, 112, 37, 25, 141, 49, 29, 173, 5, 31, 178, 225, 33, 209, 157, 29, 210, 105, 23, 214, 117, 21, 221, 213, 19, 222, 109, 27, 3, 225, 32, 23, 173, 
+				30, 29, 129, 20, 110, 117, 28, 129, 121, 31, 145, 61, 21, 174, 121, 23, 220, 77, 19, 229, 209, 29, 242, 205, 29, 17, 141, 19, 19, 165, 20, 30, 1, 20, 34, 197, 32, 45, 33, 19, 63, 85, 24, 66, 177, 17, 86, 85, 23, 104, 
+				241, 22, 124, 181, 30, 140, 61, 18, 154, 149, 21, 188, 9, 28, 199, 213, 30, 211, 141, 18, 223, 189, 18, 7, 33, 26, 25, 149, 25, 31, 57, 19, 123, 45, 30, 155, 65, 21, 210, 81, 18, 41, 105, 26, 77, 61, 20, 108, 89, 25, 
+				133, 69, 32, 214, 241, 19, 239, 205, 31, 21, 225, 16, 29, 133, 29, 60, 73, 28, 78, 21, 22, 96, 117, 17, 105, 69, 28, 50, 129, 27, 102, 37, 28, 115, 25, 32, 130, 101, 28, 163, 25, 18, 200, 17, 17, 223, 65, 17, 223, 101, 
+				20, 18, 169, 29, 68, 157, 24, 88, 49, 19, 130, 237, 25, 145, 65, 26, 185, 69, 22, 255, 25, 16, 11, 117, 16, 33, 57, 24, 45, 13, 21, 70, 57, 24, 73, 253, 24, 75, 81, 21, 126, 29, 21, 142, 93, 16, 161, 69, 26, 169, 
+				9, 25, 178, 77, 18, 3, 53, 15, 21, 237, 25, 36, 141, 15, 65, 149, 24, 81, 177, 24, 111, 21, 15, 162, 57, 29, 195, 253, 25, 209, 105, 20, 250, 109, 22, 20, 137, 25, 22, 205, 22, 26, 249, 26, 127, 117, 17, 141, 145, 19, 
+				147, 45, 19, 163, 241, 14, 163, 189, 28, 166, 133, 14, 204, 53, 19, 20, 209, 21, 27, 197, 15, 41, 201, 25, 43, 205, 22, 60, 73, 20, 98, 245, 18, 101, 65, 24, 126, 177, 14, 180, 33, 22, 192, 117, 21, 215, 201, 28, 35, 13, 
+				21, 47, 33, 21, 51, 93, 16, 67, 209, 24, 76, 29, 27, 92, 97, 17, 92, 181, 24, 109, 81, 23, 181, 21, 24, 196, 89, 13, 213, 213, 27, 14, 77, 13, 17, 53, 21, 22, 45, 14, 33, 101, 15, 137, 209, 12, 205, 61, 20, 1, 
+				193, 22, 12, 229, 14, 62, 169, 13, 66, 189, 16, 84, 1, 14, 87, 229, 15, 89, 145, 24, 102, 5, 14, 55, 153, 26, 79, 61, 20, 85, 193, 13, 93, 85, 16, 95, 73, 26, 146, 245, 26, 161, 33, 21, 196, 41, 13, 197, 185, 18, 
+				216, 45, 16, 227, 1, 19, 227, 221, 25, 47, 145, 21, 82, 17, 13, 84, 61, 12, 108, 37, 14, 165, 89, 15, 175, 61, 15, 180, 81, 16, 195, 233, 11, 205, 57, 20, 208, 97, 12, 229, 145, 20, 20, 141, 16, 21, 157, 12, 35, 133, 
+				18, 68, 145, 13, 83, 113, 12, 142, 225, 17, 145, 237, 24, 186, 129, 22, 231, 53, 25, 45, 145, 16, 69, 21, 21, 167, 97, 13, 177, 93, 15, 248, 225, 11, 66, 237, 16, 92, 145, 16, 102, 253, 23, 104, 17, 13, 132, 137, 10, 135, 
+				217, 10, 211, 197, 13, 221, 49, 17, 12, 85, 18, 12, 89, 11, 18, 101, 11, 19, 81, 18, 55, 213, 22, 77, 165, 10, 105, 173, 14, 112, 157, 11, 226, 21, 22, 29, 97, 19, 30, 213, 23, 47, 1, 18, 56, 149, 22, 58, 113, 24, 
+				76, 245, 11, 104, 161, 14, 105, 45, 14, 141, 17, 18, 167, 21, 15, 223, 201, 10, 24, 157, 24, 45, 73, 22, 79, 229, 22, 84, 145, 19, 163, 93, 24, 165, 185, 15, 167, 245, 17, 188, 129, 20, 196, 197, 10, 206, 17, 19, 232, 205, 
+				23, 66, 41, 14, 75, 145, 10, 83, 193, 20, 97, 245, 13, 121, 145, 24, 136, 89, 10, 157, 9, 19, 226, 157, 17, 232, 117, 9, 43, 37, 9, 138, 209, 21, 219, 181, 17, 238, 165, 8, 14, 149, 9, 33, 193, 14, 36, 217, 8, 38, 
+				9, 15, 57, 229, 21, 89, 97, 18, 123, 129, 9, 131, 113, 13, 147, 237, 20, 150, 249, 18, 192, 249, 7, 211, 177, 15, 218, 21, 17, 226, 233, 10, 231, 205, 13, 37, 217, 16, 49, 101, 14, 87, 145, 20, 102, 229, 22, 128, 249, 9, 
+				143, 109, 18, 185, 97, 9, 211, 93, 11, 227, 137, 21, 243, 229, 12, 52, 17, 11, 56, 189, 17, 58, 145, 19, 88, 29, 20, 95, 81, 18, 98, 229, 8, 141, 157, 8, 146, 245, 20, 230, 249, 12, 6, 237, 15, 50, 69, 8, 75, 109, 
+				22, 89, 193, 19, 119, 217, 7, 122, 217, 6, 124, 29, 10, 128, 185, 21, 162, 61, 21, 164, 113, 18, 167, 21, 10, 216, 25, 12, 220, 101, 13, 2, 145, 21, 19, 37, 12, 29, 17, 12, 36, 205, 11, 36, 169, 9, 68, 165, 16, 85, 
+				121, 11, 90, 5, 19, 122, 153, 18, 180, 221, 12, 218, 121, 16, 222, 69, 15, 25, 105, 15, 35, 37, 10, 60, 241, 5, 72, 93, 16, 98, 105, 14, 121, 13, 18, 126, 113, 5, 189, 229, 20, 218, 161, 12, 237, 121, 5, 37, 37, 5, 
+				57, 133, 9, 81, 37, 6, 150, 45, 20, 160, 73, 11, 185, 29, 11, 8, 185, 20, 38, 205, 8, 74, 165, 4, 88, 37, 8, 26, 201, 12, 43, 77, 16, 59, 65, 9, 65, 33, 5, 108, 57, 19, 139, 181, 14, 173, 17, 18, 178, 181, 
+				12, 8, 225, 7, 12, 225, 4, 34, 105, 19, 38, 125, 19, 106, 73, 10, 129, 37, 13, 136, 121, 14, 160, 165, 14, 194, 161, 4, 205, 157, 8, 245, 129, 10, 77, 85, 17, 85, 97, 8, 108, 253, 7, 128, 49, 16, 137, 253, 13, 224, 
 				217, 9, 7, 221, 4, 84, 177, 10, 127, 213, 15, 177, 217, 18, 187, 237, 9, 220, 225, 5, 233, 5, 7, 70, 77, 3, 142, 141, 12, 220, 81, 7, 227, 29, 7, 41, 169, 4, 57, 169, 4, 143, 217, 14, 164, 157, 5, 169, 41, 16, 
-				218, 181, 2, 242, 41, 11, 31, 85, 5, 56, 101, 4, 61, 245, 6, 61, 89, 7, 72, 45, 4, 73, 41, 6, 75, 93, 12, 92, 33, 7, 111, 149, 9, 118, 217, 15, 121, 189, 9, 124, 97, 17, 142, 21, 14, 178, 153, 17, 224, 141, 
+				218, 181, 2, 242, 41, 11, 31, 85, 5, 56, 101, 4, 61, 245, 6, 61, 89, 7, 72, 45, 4, 73, 41, 6, 75, 101, 12, 92, 33, 7, 111, 149, 9, 118, 217, 15, 121, 189, 9, 124, 97, 17, 142, 21, 14, 178, 153, 17, 224, 141, 
 				2, 234, 97, 9, 16, 205, 7, 19, 41, 14, 38, 253, 12, 42, 185, 14, 58, 69, 13, 59, 129, 3, 95, 253, 6, 109, 81, 8, 121, 61, 9, 133, 137, 4, 139, 49, 3, 159, 41, 10, 184, 221, 8, 253, 113, 6, 0, 125, 9, 96, 
-				121, 6, 126, 221, 4, 126, 73, 13, 132, 125, 14, 188, 105, 12, 240, 205, 10, 254, 1, 11, 19, 213, 14, 84, 133, 1, 95, 90, 179, 133, 2, 193, 193, 6, 193, 21, 12, 194, 56, 227, 104, 7, 33, 12, 20, 29, 11, 95, 100, 118, 
+				121, 6, 126, 221, 4, 126, 73, 13, 132, 125, 14, 188, 105, 12, 240, 213, 10, 254, 9, 11, 19, 213, 14, 84, 133, 1, 95, 90, 179, 133, 2, 193, 193, 6, 193, 21, 12, 194, 56, 227, 104, 7, 33, 12, 20, 37, 11, 95, 100, 118, 
 				105, 15, 119, 69, 1, 207, 89, 14, 213, 45, 14, 234, 153, 2, 0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32, 34, 36, 38, 40, 42, 44, 46, 48, 50, 52, 54, 56, 58, 60, 62, 64, 66, 68, 70, 
 				72, 74, 76, 78, 80, 82, 84, 86, 88, 90, 92, 94, 96, 98, 100, 102, 104, 106, 108, 110, 112, 114, 116, 118, 120, 122, 124, 126, 128, 130, 132, 134, 136, 138, 140, 142, 144, 146, 148, 150, 152, 154, 156, 158, 160, 162, 164, 166, 168, 170, 
 				172, 174, 176, 178, 180, 182, 184, 186, 188, 190, 192, 194, 196, 198, 200, 202, 204, 206, 208, 210, 212, 214, 216, 218, 220, 222, 224, 226, 228, 230, 232, 234, 236, 238, 240, 242, 244, 246, 248, 250, 252, 254, 1, 2, 5, 2, 9, 2, 13, 2, 
@@ -4187,53 +4187,53 @@ namespace McgInterop
 				10600, // Windows.Storage.Streams.IInputStreamReference
 				10623, // Windows.Foundation.IAsyncOperation`1<Windows.Storage.Streams.IRandomAccessStream>
 				10664, // Windows.Foundation.AsyncOperationCompletedHandler`1<Windows.Storage.Streams.IRandomAccessStream>
-				10720, // Windows.Storage.IStorageItemProperties
-				10744, // Windows.Storage.IStorageItemProperties2
-				10769, // Windows.Storage.IStorageItem2
-				10784, // Windows.Storage.IStorageItemPropertiesWithProvider
-				10820, // Windows.Storage.IStorageFilePropertiesWithAvailability
-				10860, // Windows.Storage.IStorageFile2
-				10875, // Windows.Foundation.AsyncOperationCompletedHandler`1<Windows.Storage.StorageFile>
-				10923, // Windows.ApplicationModel.Activation.IVoiceCommandActivatedEventArgs
-				10956, // Windows.Foundation.AsyncOperationCompletedHandler`1<String>
-				10998, // Windows.Foundation.IAsyncOperation`1<String>
-				11025, // Windows.UI.Popups.IMessageDialogFactory
-				11048, // Windows.UI.Popups.IMessageDialog
-				11064, // Windows.UI.Popups.IUICommand
-				11076, // Windows.Foundation.IAsyncOperation`1<Windows.UI.Popups.IUICommand>
-				11108, // Windows.Foundation.AsyncOperationCompletedHandler`1<Windows.UI.Popups.IUICommand>
-				11155, // Windows.Foundation.Collections.IVectorView`1<Windows.UI.Xaml.DependencyObject>
-				11189, // Windows.Foundation.Collections.IVectorView`1<Windows.UI.Xaml.IDependencyObject>
-				11224, // Windows.Foundation.Collections.IVectorView`1<Windows.UI.Xaml.IDependencyObject2>
-				11260, // Windows.Foundation.Collections.IVectorView`1<Windows.UI.Xaml.IUIElement>
-				11288, // Windows.Foundation.Collections.IVectorView`1<Windows.UI.Xaml.IUIElementOverrides>
-				11325, // Windows.Foundation.Collections.IVectorView`1<Windows.UI.Xaml.IUIElement2>
-				11354, // Windows.Foundation.Collections.IVectorView`1<Windows.UI.Xaml.IUIElement3>
-				11383, // Windows.Foundation.Collections.IVectorView`1<Windows.UI.Xaml.IUIElement4>
-				11412, // Windows.Globalization.ICalendarIdentifiersStatics
-				11441, // Windows.System.Threading.IThreadPoolStatics
-				11461, // Windows.UI.Core.ICoreWindowStatic
-				11480, // Windows.UI.Core.ICoreWindow
-				11493, // Windows.UI.Core.ICoreWindow2
-				11507, // Windows.UI.Core.ICorePointerRedirector
-				11531, // Windows.UI.Core.ICoreWindow3
-				11545, // Windows.ApplicationModel.Resources.Core.IResourceManagerStatics
-				11570, // Windows.ApplicationModel.Resources.Core.IResourceManager
-				11588, // Windows.ApplicationModel.Resources.Core.IResourceManager2
-				11607, // Windows.Foundation.Collections.IIterable`1<Windows.ApplicationModel.Resources.Core.NamedResource>
-				11636, // Windows.Foundation.Collections.IIterator`1<Windows.ApplicationModel.Resources.Core.NamedResource>
-				11665, // Windows.Foundation.Collections.IIterable`1<Windows.ApplicationModel.Resources.Core.INamedResource>
-				11695, // Windows.Foundation.Collections.IIterator`1<Windows.ApplicationModel.Resources.Core.INamedResource>
-				11725, // Windows.Security.Cryptography.ICryptographicBufferStatics
-				11754, // Windows.Security.Cryptography.Core.IHashAlgorithmNamesStatics
-				11782, // Windows.Security.Cryptography.Core.IHashAlgorithmProviderStatics
-				11813, // Windows.Security.Cryptography.Core.IHashAlgorithmProvider
-				11837, // Windows.ApplicationModel.IPackageStatics
-				11854, // Windows.ApplicationModel.IPackage
-				11864, // Windows.Storage.IStorageFolderStatics
-				11887, // Windows.Foundation.IAsyncOperation`1<Windows.Storage.StorageFolder>
-				11922, // Windows.Foundation.AsyncOperationCompletedHandler`1<Windows.Storage.StorageFolder>
-				11972, // Windows.Storage.IStorageFolder
+				10720, // Windows.Storage.IStorageFolder
+				10736, // Windows.Storage.IStorageItemProperties
+				10760, // Windows.Storage.IStorageItemProperties2
+				10785, // Windows.Storage.IStorageItem2
+				10800, // Windows.Storage.IStorageItemPropertiesWithProvider
+				10836, // Windows.Storage.IStorageFilePropertiesWithAvailability
+				10876, // Windows.Storage.IStorageFile2
+				10891, // Windows.Foundation.AsyncOperationCompletedHandler`1<Windows.Storage.StorageFile>
+				10939, // Windows.ApplicationModel.Activation.IVoiceCommandActivatedEventArgs
+				10972, // Windows.Foundation.AsyncOperationCompletedHandler`1<String>
+				11014, // Windows.Foundation.IAsyncOperation`1<String>
+				11041, // Windows.UI.Popups.IMessageDialogFactory
+				11064, // Windows.UI.Popups.IMessageDialog
+				11080, // Windows.UI.Popups.IUICommand
+				11092, // Windows.Foundation.IAsyncOperation`1<Windows.UI.Popups.IUICommand>
+				11124, // Windows.Foundation.AsyncOperationCompletedHandler`1<Windows.UI.Popups.IUICommand>
+				11171, // Windows.Foundation.Collections.IVectorView`1<Windows.UI.Xaml.DependencyObject>
+				11205, // Windows.Foundation.Collections.IVectorView`1<Windows.UI.Xaml.IDependencyObject>
+				11240, // Windows.Foundation.Collections.IVectorView`1<Windows.UI.Xaml.IDependencyObject2>
+				11276, // Windows.Foundation.Collections.IVectorView`1<Windows.UI.Xaml.IUIElement>
+				11304, // Windows.Foundation.Collections.IVectorView`1<Windows.UI.Xaml.IUIElementOverrides>
+				11341, // Windows.Foundation.Collections.IVectorView`1<Windows.UI.Xaml.IUIElement2>
+				11370, // Windows.Foundation.Collections.IVectorView`1<Windows.UI.Xaml.IUIElement3>
+				11399, // Windows.Foundation.Collections.IVectorView`1<Windows.UI.Xaml.IUIElement4>
+				11428, // Windows.Globalization.ICalendarIdentifiersStatics
+				11457, // Windows.System.Threading.IThreadPoolStatics
+				11477, // Windows.UI.Core.ICoreWindowStatic
+				11496, // Windows.UI.Core.ICoreWindow
+				11509, // Windows.UI.Core.ICoreWindow2
+				11523, // Windows.UI.Core.ICorePointerRedirector
+				11547, // Windows.UI.Core.ICoreWindow3
+				11561, // Windows.ApplicationModel.Resources.Core.IResourceManagerStatics
+				11586, // Windows.ApplicationModel.Resources.Core.IResourceManager
+				11604, // Windows.ApplicationModel.Resources.Core.IResourceManager2
+				11623, // Windows.Foundation.Collections.IIterable`1<Windows.ApplicationModel.Resources.Core.NamedResource>
+				11652, // Windows.Foundation.Collections.IIterator`1<Windows.ApplicationModel.Resources.Core.NamedResource>
+				11681, // Windows.Foundation.Collections.IIterable`1<Windows.ApplicationModel.Resources.Core.INamedResource>
+				11711, // Windows.Foundation.Collections.IIterator`1<Windows.ApplicationModel.Resources.Core.INamedResource>
+				11741, // Windows.Security.Cryptography.ICryptographicBufferStatics
+				11770, // Windows.Security.Cryptography.Core.IHashAlgorithmNamesStatics
+				11798, // Windows.Security.Cryptography.Core.IHashAlgorithmProviderStatics
+				11829, // Windows.Security.Cryptography.Core.IHashAlgorithmProvider
+				11853, // Windows.ApplicationModel.IPackageStatics
+				11870, // Windows.ApplicationModel.IPackage
+				11880, // Windows.Storage.IStorageFolderStatics
+				11903, // Windows.Foundation.IAsyncOperation`1<Windows.Storage.StorageFolder>
+				11938, // Windows.Foundation.AsyncOperationCompletedHandler`1<Windows.Storage.StorageFolder>
 				11988, // Windows.Storage.Search.IStorageFolderQueryOperations
 				12019, // Windows.Storage.IStorageFolder2
 				12036, // Windows.ApplicationModel.IPackage2
@@ -7335,7 +7335,15 @@ namespace McgInterop
 					MarshalIndex = 30,
 					Flags = (global::System.Runtime.InteropServices.McgInterfaceFlags.isDelegate | global::System.Runtime.InteropServices.McgInterfaceFlags.useSharedCCW_AsyncOperationCompletedHandler),
 				}, 
-				// index: 375, iid: 86664478-8029-46fe-a789-1c2f3e2ffb5c Windows.Storage.IStorageItemProperties, CCW discarded, RCW discarded
+				// index: 375, iid: 72d1cb78-b3ef-4f75-a80b-6fd9dae2944b Windows.Storage.IStorageFolder, CCW discarded
+				new global::System.Runtime.InteropServices.McgInterfaceData() {
+					ItfGuid = new global::System.Guid(1926351736, -19473, 20341, 0xA8, 0xB, 0x6F, 0xD9, 0xDA, 0xE2, 0x94, 0x4B), // {72d1cb78-b3ef-4f75-a80b-6fd9dae2944b}
+					FixupItfType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::Windows.Storage.IStorageFolder).TypeHandle), // hashcode: 055dc3b2
+					FixupDispatchClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::Windows.Storage.StorageFolder).TypeHandle),
+					CcwVtable = global::McgInterop.Intrinsics.AddrOf<global::System.Runtime.InteropServices.AddrOfGetCCWVtable>(global::McgInterop.CcwVtableData.Windows_Storage__IStorageFolder),
+					Flags = global::System.Runtime.InteropServices.McgInterfaceFlags.isIInspectable,
+				}, 
+				// index: 376, iid: 86664478-8029-46fe-a789-1c2f3e2ffb5c Windows.Storage.IStorageItemProperties, CCW discarded, RCW discarded
 				new global::System.Runtime.InteropServices.McgInterfaceData() {
 					ItfGuid = new global::System.Guid(-2040118152, -32727, 18174, 0xA7, 0x89, 0x1C, 0x2F, 0x3E, 0x2F, 0xFB, 0x5C), // {86664478-8029-46fe-a789-1c2f3e2ffb5c}
 					FixupItfType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::Windows.Storage.IStorageItemProperties).TypeHandle), // hashcode: 1c739d41
@@ -7343,7 +7351,7 @@ namespace McgInterop
 					CcwVtable = global::McgInterop.Intrinsics.AddrOf<global::System.Runtime.InteropServices.AddrOfGetCCWVtable>(global::McgInterop.CcwVtableData.Windows_Storage__IStorageItemProperties),
 					Flags = global::System.Runtime.InteropServices.McgInterfaceFlags.isIInspectable,
 				}, 
-				// index: 376, iid: 8e86a951-04b9-4bd2-929d-fef3f71621d0 Windows.Storage.IStorageItemProperties2, CCW discarded, RCW discarded
+				// index: 377, iid: 8e86a951-04b9-4bd2-929d-fef3f71621d0 Windows.Storage.IStorageItemProperties2, CCW discarded, RCW discarded
 				new global::System.Runtime.InteropServices.McgInterfaceData() {
 					ItfGuid = new global::System.Guid(-1903777455, 1209, 19410, 0x92, 0x9D, 0xFE, 0xF3, 0xF7, 0x16, 0x21, 0xD0), // {8e86a951-04b9-4bd2-929d-fef3f71621d0}
 					FixupItfType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::Windows.Storage.IStorageItemProperties2).TypeHandle), // hashcode: d543a42f
@@ -7351,7 +7359,7 @@ namespace McgInterop
 					CcwVtable = global::McgInterop.Intrinsics.AddrOf<global::System.Runtime.InteropServices.AddrOfGetCCWVtable>(global::McgInterop.CcwVtableData.Windows_Storage__IStorageItemProperties2),
 					Flags = global::System.Runtime.InteropServices.McgInterfaceFlags.isIInspectable,
 				}, 
-				// index: 377, iid: 53f926d2-083c-4283-b45b-81c007237e44 Windows.Storage.IStorageItem2, CCW discarded, RCW discarded
+				// index: 378, iid: 53f926d2-083c-4283-b45b-81c007237e44 Windows.Storage.IStorageItem2, CCW discarded, RCW discarded
 				new global::System.Runtime.InteropServices.McgInterfaceData() {
 					ItfGuid = new global::System.Guid(1408837330, 2108, 17027, 0xB4, 0x5B, 0x81, 0xC0, 0x7, 0x23, 0x7E, 0x44), // {53f926d2-083c-4283-b45b-81c007237e44}
 					FixupItfType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::Windows.Storage.IStorageItem2).TypeHandle), // hashcode: 6142f1de
@@ -7359,7 +7367,7 @@ namespace McgInterop
 					CcwVtable = global::McgInterop.Intrinsics.AddrOf<global::System.Runtime.InteropServices.AddrOfGetCCWVtable>(global::McgInterop.CcwVtableData.Windows_Storage__IStorageItem2),
 					Flags = global::System.Runtime.InteropServices.McgInterfaceFlags.isIInspectable,
 				}, 
-				// index: 378, iid: 861bf39b-6368-4dee-b40e-74684a5ce714 Windows.Storage.IStorageItemPropertiesWithProvider, CCW discarded, RCW discarded
+				// index: 379, iid: 861bf39b-6368-4dee-b40e-74684a5ce714 Windows.Storage.IStorageItemPropertiesWithProvider, CCW discarded, RCW discarded
 				new global::System.Runtime.InteropServices.McgInterfaceData() {
 					ItfGuid = new global::System.Guid(-2044988517, 25448, 19950, 0xB4, 0xE, 0x74, 0x68, 0x4A, 0x5C, 0xE7, 0x14), // {861bf39b-6368-4dee-b40e-74684a5ce714}
 					FixupItfType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::Windows.Storage.IStorageItemPropertiesWithProvider).TypeHandle), // hashcode: b2a8030d
@@ -7367,7 +7375,7 @@ namespace McgInterop
 					CcwVtable = global::McgInterop.Intrinsics.AddrOf<global::System.Runtime.InteropServices.AddrOfGetCCWVtable>(global::McgInterop.CcwVtableData.Windows_Storage__IStorageItemPropertiesWithProvider),
 					Flags = global::System.Runtime.InteropServices.McgInterfaceFlags.isIInspectable,
 				}, 
-				// index: 379, iid: afcbbe9b-582b-4133-9648-e44ca46ee491 Windows.Storage.IStorageFilePropertiesWithAvailability, CCW discarded
+				// index: 380, iid: afcbbe9b-582b-4133-9648-e44ca46ee491 Windows.Storage.IStorageFilePropertiesWithAvailability, CCW discarded
 				new global::System.Runtime.InteropServices.McgInterfaceData() {
 					ItfGuid = new global::System.Guid(-1345601893, 22571, 16691, 0x96, 0x48, 0xE4, 0x4C, 0xA4, 0x6E, 0xE4, 0x91), // {afcbbe9b-582b-4133-9648-e44ca46ee491}
 					FixupItfType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::Windows.Storage.IStorageFilePropertiesWithAvailability).TypeHandle), // hashcode: 5bbcc2ee
@@ -7375,7 +7383,7 @@ namespace McgInterop
 					CcwVtable = global::McgInterop.Intrinsics.AddrOf<global::System.Runtime.InteropServices.AddrOfGetCCWVtable>(global::McgInterop.CcwVtableData.Windows_Storage__IStorageFilePropertiesWithAvailability),
 					Flags = global::System.Runtime.InteropServices.McgInterfaceFlags.isIInspectable,
 				}, 
-				// index: 380, iid: 954e4bcf-0a77-42fb-b777-c2ed58a52e44 Windows.Storage.IStorageFile2, CCW discarded, RCW discarded
+				// index: 381, iid: 954e4bcf-0a77-42fb-b777-c2ed58a52e44 Windows.Storage.IStorageFile2, CCW discarded, RCW discarded
 				new global::System.Runtime.InteropServices.McgInterfaceData() {
 					ItfGuid = new global::System.Guid(-1790030897, 2679, 17147, 0xB7, 0x77, 0xC2, 0xED, 0x58, 0xA5, 0x2E, 0x44), // {954e4bcf-0a77-42fb-b777-c2ed58a52e44}
 					FixupItfType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::Windows.Storage.IStorageFile2).TypeHandle), // hashcode: 61b55d51
@@ -7383,14 +7391,14 @@ namespace McgInterop
 					CcwVtable = global::McgInterop.Intrinsics.AddrOf<global::System.Runtime.InteropServices.AddrOfGetCCWVtable>(global::McgInterop.CcwVtableData.Windows_Storage__IStorageFile2),
 					Flags = global::System.Runtime.InteropServices.McgInterfaceFlags.isIInspectable,
 				}, 
-				// index: 381, iid: e521c894-2c26-5946-9e61-2b5e188d01ed Windows.Foundation.AsyncOperationCompletedHandler<Windows.Storage.StorageFile>
+				// index: 382, iid: e521c894-2c26-5946-9e61-2b5e188d01ed Windows.Foundation.AsyncOperationCompletedHandler<Windows.Storage.StorageFile>
 				new global::System.Runtime.InteropServices.McgInterfaceData() {
 					ItfGuid = new global::System.Guid(-450770796, 11302, 22854, 0x9E, 0x61, 0x2B, 0x5E, 0x18, 0x8D, 0x1, 0xED), // pinterface({fcdcf02c-e5d8-4478-915a-4d90b74b83a5};rc(Windows.Storage.StorageFile;{fa3f6186-4214-428c-a64c-14c9ac7315ea}))
 					FixupItfType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::Windows.Foundation.AsyncOperationCompletedHandler<global::Windows.Storage.StorageFile>).TypeHandle), // hashcode: db4749c0
 					MarshalIndex = 29,
 					Flags = (global::System.Runtime.InteropServices.McgInterfaceFlags.isDelegate | global::System.Runtime.InteropServices.McgInterfaceFlags.useSharedCCW_AsyncOperationCompletedHandler),
 				}, 
-				// index: 382, iid: ab92dcfd-8d43-4de6-9775-20704b581b00 Windows.ApplicationModel.Activation.IVoiceCommandActivatedEventArgs, CCW discarded
+				// index: 383, iid: ab92dcfd-8d43-4de6-9775-20704b581b00 Windows.ApplicationModel.Activation.IVoiceCommandActivatedEventArgs, CCW discarded
 				new global::System.Runtime.InteropServices.McgInterfaceData() {
 					ItfGuid = new global::System.Guid(-1416438531, -29373, 19942, 0x97, 0x75, 0x20, 0x70, 0x4B, 0x58, 0x1B, 0x0), // {ab92dcfd-8d43-4de6-9775-20704b581b00}
 					FixupItfType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::Windows.ApplicationModel.Activation.IVoiceCommandActivatedEventArgs).TypeHandle), // hashcode: d1e91ca9
@@ -7398,14 +7406,14 @@ namespace McgInterop
 					CcwVtable = global::McgInterop.Intrinsics.AddrOf<global::System.Runtime.InteropServices.AddrOfGetCCWVtable>(global::McgInterop.CcwVtableData.Windows_ApplicationModel_Activation__IVoiceCommandActivatedEventArgs),
 					Flags = global::System.Runtime.InteropServices.McgInterfaceFlags.isIInspectable,
 				}, 
-				// index: 383, iid: b79a741f-7fb5-50ae-9e99-911201ec3d41 Windows.Foundation.AsyncOperationCompletedHandler<string>
+				// index: 384, iid: b79a741f-7fb5-50ae-9e99-911201ec3d41 Windows.Foundation.AsyncOperationCompletedHandler<string>
 				new global::System.Runtime.InteropServices.McgInterfaceData() {
 					ItfGuid = new global::System.Guid(-1214614497, 32693, 20654, 0x9E, 0x99, 0x91, 0x12, 0x1, 0xEC, 0x3D, 0x41), // pinterface({fcdcf02c-e5d8-4478-915a-4d90b74b83a5};string)
 					FixupItfType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::Windows.Foundation.AsyncOperationCompletedHandler<string>).TypeHandle), // hashcode: 18c8f219
 					MarshalIndex = 14,
 					Flags = (global::System.Runtime.InteropServices.McgInterfaceFlags.isDelegate | global::System.Runtime.InteropServices.McgInterfaceFlags.useSharedCCW_AsyncOperationCompletedHandler),
 				}, 
-				// index: 384, iid: 3e1fe603-f897-5263-b328-0806426b8a79 Windows.Foundation.IAsyncOperation<string>, CCW discarded
+				// index: 385, iid: 3e1fe603-f897-5263-b328-0806426b8a79 Windows.Foundation.IAsyncOperation<string>, CCW discarded
 				new global::System.Runtime.InteropServices.McgInterfaceData() {
 					ItfGuid = new global::System.Guid(1042277891, -1897, 21091, 0xB3, 0x28, 0x8, 0x6, 0x42, 0x6B, 0x8A, 0x79), // pinterface({9fc2b0bb-e446-44e2-aa61-9cab8f636af2};string)
 					FixupItfType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::Windows.Foundation.IAsyncOperation<string>).TypeHandle), // hashcode: 5832e201
@@ -7413,7 +7421,7 @@ namespace McgInterop
 					CcwVtable = global::McgInterop.Intrinsics.AddrOf<global::System.Runtime.InteropServices.AddrOfGetCCWVtable>(global::McgInterop.CcwVtableData.Windows_Foundation__IAsyncOperation_A_string_V_),
 					Flags = global::System.Runtime.InteropServices.McgInterfaceFlags.isIInspectable,
 				}, 
-				// index: 385, iid: 2d161777-a66f-4ea5-bb87-793ffa4941f2 Windows.UI.Popups.IMessageDialogFactory, CCW discarded
+				// index: 386, iid: 2d161777-a66f-4ea5-bb87-793ffa4941f2 Windows.UI.Popups.IMessageDialogFactory, CCW discarded
 				new global::System.Runtime.InteropServices.McgInterfaceData() {
 					ItfGuid = new global::System.Guid(756422519, -22929, 20133, 0xBB, 0x87, 0x79, 0x3F, 0xFA, 0x49, 0x41, 0xF2), // {2d161777-a66f-4ea5-bb87-793ffa4941f2}
 					FixupItfType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::Windows.UI.Popups.IMessageDialogFactory).TypeHandle), // hashcode: a1d3bdf0
@@ -7421,7 +7429,7 @@ namespace McgInterop
 					CcwVtable = global::McgInterop.Intrinsics.AddrOf<global::System.Runtime.InteropServices.AddrOfGetCCWVtable>(global::McgInterop.CcwVtableData.Windows_UI_Popups__IMessageDialogFactory),
 					Flags = global::System.Runtime.InteropServices.McgInterfaceFlags.isIInspectable,
 				}, 
-				// index: 386, iid: 33f59b01-5325-43ab-9ab3-bdae440e4121 Windows.UI.Popups.IMessageDialog, CCW discarded
+				// index: 387, iid: 33f59b01-5325-43ab-9ab3-bdae440e4121 Windows.UI.Popups.IMessageDialog, CCW discarded
 				new global::System.Runtime.InteropServices.McgInterfaceData() {
 					ItfGuid = new global::System.Guid(871734017, 21285, 17323, 0x9A, 0xB3, 0xBD, 0xAE, 0x44, 0xE, 0x41, 0x21), // {33f59b01-5325-43ab-9ab3-bdae440e4121}
 					FixupItfType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::Windows.UI.Popups.IMessageDialog).TypeHandle), // hashcode: 49588117
@@ -7429,7 +7437,7 @@ namespace McgInterop
 					CcwVtable = global::McgInterop.Intrinsics.AddrOf<global::System.Runtime.InteropServices.AddrOfGetCCWVtable>(global::McgInterop.CcwVtableData.Windows_UI_Popups__IMessageDialog),
 					Flags = global::System.Runtime.InteropServices.McgInterfaceFlags.isIInspectable,
 				}, 
-				// index: 387, iid: 4ff93a75-4145-47ff-ac7f-dff1c1fa5b0f Windows.UI.Popups.IUICommand, CCW discarded, RCW discarded
+				// index: 388, iid: 4ff93a75-4145-47ff-ac7f-dff1c1fa5b0f Windows.UI.Popups.IUICommand, CCW discarded, RCW discarded
 				new global::System.Runtime.InteropServices.McgInterfaceData() {
 					ItfGuid = new global::System.Guid(1341733493, 16709, 18431, 0xAC, 0x7F, 0xDF, 0xF1, 0xC1, 0xFA, 0x5B, 0xF), // {4ff93a75-4145-47ff-ac7f-dff1c1fa5b0f}
 					FixupItfType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::Windows.UI.Popups.IUICommand).TypeHandle), // hashcode: cfc9a06d
@@ -7437,7 +7445,7 @@ namespace McgInterop
 					CcwVtable = global::McgInterop.Intrinsics.AddrOf<global::System.Runtime.InteropServices.AddrOfGetCCWVtable>(global::McgInterop.CcwVtableData.Windows_UI_Popups__IUICommand),
 					Flags = global::System.Runtime.InteropServices.McgInterfaceFlags.isIInspectable,
 				}, 
-				// index: 388, iid: b8770535-6a4b-52b1-b578-f3cdc5007a1f Windows.Foundation.IAsyncOperation<Windows.UI.Popups.IUICommand>, CCW discarded
+				// index: 389, iid: b8770535-6a4b-52b1-b578-f3cdc5007a1f Windows.Foundation.IAsyncOperation<Windows.UI.Popups.IUICommand>, CCW discarded
 				new global::System.Runtime.InteropServices.McgInterfaceData() {
 					ItfGuid = new global::System.Guid(-1200159435, 27211, 21169, 0xB5, 0x78, 0xF3, 0xCD, 0xC5, 0x0, 0x7A, 0x1F), // pinterface({9fc2b0bb-e446-44e2-aa61-9cab8f636af2};{4ff93a75-4145-47ff-ac7f-dff1c1fa5b0f})
 					FixupItfType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::Windows.Foundation.IAsyncOperation<global::Windows.UI.Popups.IUICommand>).TypeHandle), // hashcode: 782e86c2
@@ -7445,14 +7453,14 @@ namespace McgInterop
 					CcwVtable = global::McgInterop.Intrinsics.AddrOf<global::System.Runtime.InteropServices.AddrOfGetCCWVtable>(global::McgInterop.CcwVtableData.Windows_Foundation__IAsyncOperation_A_Windows_UI_Popups_IUICommand_V_),
 					Flags = global::System.Runtime.InteropServices.McgInterfaceFlags.isIInspectable,
 				}, 
-				// index: 389, iid: dd33fd5b-a24d-5a44-91fe-dd6441770103 Windows.Foundation.AsyncOperationCompletedHandler<Windows.UI.Popups.IUICommand>
+				// index: 390, iid: dd33fd5b-a24d-5a44-91fe-dd6441770103 Windows.Foundation.AsyncOperationCompletedHandler<Windows.UI.Popups.IUICommand>
 				new global::System.Runtime.InteropServices.McgInterfaceData() {
 					ItfGuid = new global::System.Guid(-583795365, -23987, 23108, 0x91, 0xFE, 0xDD, 0x64, 0x41, 0x77, 0x1, 0x3), // pinterface({fcdcf02c-e5d8-4478-915a-4d90b74b83a5};{4ff93a75-4145-47ff-ac7f-dff1c1fa5b0f})
 					FixupItfType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::Windows.Foundation.AsyncOperationCompletedHandler<global::Windows.UI.Popups.IUICommand>).TypeHandle), // hashcode: b6c46ace
 					MarshalIndex = 31,
 					Flags = (global::System.Runtime.InteropServices.McgInterfaceFlags.isDelegate | global::System.Runtime.InteropServices.McgInterfaceFlags.useSharedCCW_AsyncOperationCompletedHandler),
 				}, 
-				// index: 390, iid: fe750d77-1307-5df2-a021-1c7a8d6b80ad System.Collections.Generic.IReadOnlyList<Windows.UI.Xaml.DependencyObject>, CCW discarded
+				// index: 391, iid: fe750d77-1307-5df2-a021-1c7a8d6b80ad System.Collections.Generic.IReadOnlyList<Windows.UI.Xaml.DependencyObject>, CCW discarded
 				new global::System.Runtime.InteropServices.McgInterfaceData() {
 					ItfGuid = new global::System.Guid(-25883273, 4871, 24050, 0xA0, 0x21, 0x1C, 0x7A, 0x8D, 0x6B, 0x80, 0xAD), // pinterface({bbe1fa4c-b0e3-4583-baef-1f1b2e483e56};rc(Windows.UI.Xaml.DependencyObject;{5c526665-f60e-4912-af59-5fe0680f089d}))
 					FixupItfType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Generic.IReadOnlyList<global::Windows.UI.Xaml.DependencyObject>).TypeHandle), // hashcode: de7e7b4b
@@ -7461,7 +7469,7 @@ namespace McgInterop
 					Flags = global::System.Runtime.InteropServices.McgInterfaceFlags.isIInspectable,
 					FixupDynamicAdapterClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Runtime.InteropServices.WindowsRuntime.IVectorViewSharedReferenceTypesDynamicAdapter<global::Windows.UI.Xaml.DependencyObject>).TypeHandle),
 				}, 
-				// index: 391, iid: 724bd94e-a094-5e1d-9bda-8de976bfb46d System.Collections.Generic.IReadOnlyList<Windows.UI.Xaml.IDependencyObject>, CCW discarded
+				// index: 392, iid: 724bd94e-a094-5e1d-9bda-8de976bfb46d System.Collections.Generic.IReadOnlyList<Windows.UI.Xaml.IDependencyObject>, CCW discarded
 				new global::System.Runtime.InteropServices.McgInterfaceData() {
 					ItfGuid = new global::System.Guid(1917573454, -24428, 24093, 0x9B, 0xDA, 0x8D, 0xE9, 0x76, 0xBF, 0xB4, 0x6D), // pinterface({bbe1fa4c-b0e3-4583-baef-1f1b2e483e56};{5c526665-f60e-4912-af59-5fe0680f089d})
 					FixupItfType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Generic.IReadOnlyList<global::Windows.UI.Xaml.IDependencyObject>).TypeHandle), // hashcode: e1545b82
@@ -7470,7 +7478,7 @@ namespace McgInterop
 					Flags = global::System.Runtime.InteropServices.McgInterfaceFlags.isIInspectable,
 					FixupDynamicAdapterClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Runtime.InteropServices.WindowsRuntime.IVectorViewSharedReferenceTypesDynamicAdapter<global::Windows.UI.Xaml.IDependencyObject>).TypeHandle),
 				}, 
-				// index: 392, iid: 9465406f-2d01-5ade-8160-3dc7cc1d0a87 System.Collections.Generic.IReadOnlyList<Windows.UI.Xaml.IDependencyObject2>, CCW discarded
+				// index: 393, iid: 9465406f-2d01-5ade-8160-3dc7cc1d0a87 System.Collections.Generic.IReadOnlyList<Windows.UI.Xaml.IDependencyObject2>, CCW discarded
 				new global::System.Runtime.InteropServices.McgInterfaceData() {
 					ItfGuid = new global::System.Guid(-1805303697, 11521, 23262, 0x81, 0x60, 0x3D, 0xC7, 0xCC, 0x1D, 0xA, 0x87), // pinterface({bbe1fa4c-b0e3-4583-baef-1f1b2e483e56};{29fed85d-3d22-43a1-add0-17027c08b212})
 					FixupItfType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Generic.IReadOnlyList<global::Windows.UI.Xaml.IDependencyObject2>).TypeHandle), // hashcode: 7db52645
@@ -7479,7 +7487,7 @@ namespace McgInterop
 					Flags = global::System.Runtime.InteropServices.McgInterfaceFlags.isIInspectable,
 					FixupDynamicAdapterClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Runtime.InteropServices.WindowsRuntime.IVectorViewSharedReferenceTypesDynamicAdapter<global::Windows.UI.Xaml.IDependencyObject2>).TypeHandle),
 				}, 
-				// index: 393, iid: 8ff941ea-49f4-5f0a-a951-f83f03d3b29b System.Collections.Generic.IReadOnlyList<Windows.UI.Xaml.IUIElement>, CCW discarded
+				// index: 394, iid: 8ff941ea-49f4-5f0a-a951-f83f03d3b29b System.Collections.Generic.IReadOnlyList<Windows.UI.Xaml.IUIElement>, CCW discarded
 				new global::System.Runtime.InteropServices.McgInterfaceData() {
 					ItfGuid = new global::System.Guid(-1879490070, 18932, 24330, 0xA9, 0x51, 0xF8, 0x3F, 0x3, 0xD3, 0xB2, 0x9B), // pinterface({bbe1fa4c-b0e3-4583-baef-1f1b2e483e56};{676d0be9-b65c-41c6-ba40-58cf87f201c1})
 					FixupItfType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Generic.IReadOnlyList<global::Windows.UI.Xaml.IUIElement>).TypeHandle), // hashcode: 2da37dfe
@@ -7488,7 +7496,7 @@ namespace McgInterop
 					Flags = global::System.Runtime.InteropServices.McgInterfaceFlags.isIInspectable,
 					FixupDynamicAdapterClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Runtime.InteropServices.WindowsRuntime.IVectorViewSharedReferenceTypesDynamicAdapter<global::Windows.UI.Xaml.IUIElement>).TypeHandle),
 				}, 
-				// index: 394, iid: 2bf6d48a-cc03-5131-b9a2-0d752d2854f0 System.Collections.Generic.IReadOnlyList<Windows.UI.Xaml.IUIElementOverrides>, CCW discarded
+				// index: 395, iid: 2bf6d48a-cc03-5131-b9a2-0d752d2854f0 System.Collections.Generic.IReadOnlyList<Windows.UI.Xaml.IUIElementOverrides>, CCW discarded
 				new global::System.Runtime.InteropServices.McgInterfaceData() {
 					ItfGuid = new global::System.Guid(737596554, -13309, 20785, 0xB9, 0xA2, 0xD, 0x75, 0x2D, 0x28, 0x54, 0xF0), // pinterface({bbe1fa4c-b0e3-4583-baef-1f1b2e483e56};{608d2f1d-7858-4aeb-89e4-b54e2c7ed3d3})
 					FixupItfType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Generic.IReadOnlyList<global::Windows.UI.Xaml.IUIElementOverrides>).TypeHandle), // hashcode: 2ae2956e
@@ -7497,7 +7505,7 @@ namespace McgInterop
 					Flags = global::System.Runtime.InteropServices.McgInterfaceFlags.isIInspectable,
 					FixupDynamicAdapterClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Runtime.InteropServices.WindowsRuntime.IVectorViewSharedReferenceTypesDynamicAdapter<global::Windows.UI.Xaml.IUIElementOverrides>).TypeHandle),
 				}, 
-				// index: 395, iid: e4a540dc-4916-58fe-969a-5a2b933d2d12 System.Collections.Generic.IReadOnlyList<Windows.UI.Xaml.IUIElement2>, CCW discarded
+				// index: 396, iid: e4a540dc-4916-58fe-969a-5a2b933d2d12 System.Collections.Generic.IReadOnlyList<Windows.UI.Xaml.IUIElement2>, CCW discarded
 				new global::System.Runtime.InteropServices.McgInterfaceData() {
 					ItfGuid = new global::System.Guid(-458932004, 18710, 22782, 0x96, 0x9A, 0x5A, 0x2B, 0x93, 0x3D, 0x2D, 0x12), // pinterface({bbe1fa4c-b0e3-4583-baef-1f1b2e483e56};{676d0bf9-b66c-41d6-ba50-58cf87f201d1})
 					FixupItfType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Generic.IReadOnlyList<global::Windows.UI.Xaml.IUIElement2>).TypeHandle), // hashcode: 63cb8353
@@ -7506,7 +7514,7 @@ namespace McgInterop
 					Flags = global::System.Runtime.InteropServices.McgInterfaceFlags.isIInspectable,
 					FixupDynamicAdapterClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Runtime.InteropServices.WindowsRuntime.IVectorViewSharedReferenceTypesDynamicAdapter<global::Windows.UI.Xaml.IUIElement2>).TypeHandle),
 				}, 
-				// index: 396, iid: 53e5c10a-ed79-58e8-b57f-6745531d79bf System.Collections.Generic.IReadOnlyList<Windows.UI.Xaml.IUIElement3>, CCW discarded
+				// index: 397, iid: 53e5c10a-ed79-58e8-b57f-6745531d79bf System.Collections.Generic.IReadOnlyList<Windows.UI.Xaml.IUIElement3>, CCW discarded
 				new global::System.Runtime.InteropServices.McgInterfaceData() {
 					ItfGuid = new global::System.Guid(1407566090, -4743, 22760, 0xB5, 0x7F, 0x67, 0x45, 0x53, 0x1D, 0x79, 0xBF), // pinterface({bbe1fa4c-b0e3-4583-baef-1f1b2e483e56};{bc2b28f1-26f2-4aab-b256-3b5350881e37})
 					FixupItfType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Generic.IReadOnlyList<global::Windows.UI.Xaml.IUIElement3>).TypeHandle), // hashcode: 574bea54
@@ -7515,7 +7523,7 @@ namespace McgInterop
 					Flags = global::System.Runtime.InteropServices.McgInterfaceFlags.isIInspectable,
 					FixupDynamicAdapterClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Runtime.InteropServices.WindowsRuntime.IVectorViewSharedReferenceTypesDynamicAdapter<global::Windows.UI.Xaml.IUIElement3>).TypeHandle),
 				}, 
-				// index: 397, iid: 70800bb3-8239-5513-9ed6-af37163cabfc System.Collections.Generic.IReadOnlyList<Windows.UI.Xaml.IUIElement4>, CCW discarded
+				// index: 398, iid: 70800bb3-8239-5513-9ed6-af37163cabfc System.Collections.Generic.IReadOnlyList<Windows.UI.Xaml.IUIElement4>, CCW discarded
 				new global::System.Runtime.InteropServices.McgInterfaceData() {
 					ItfGuid = new global::System.Guid(1887439795, -32199, 21779, 0x9E, 0xD6, 0xAF, 0x37, 0x16, 0x3C, 0xAB, 0xFC), // pinterface({bbe1fa4c-b0e3-4583-baef-1f1b2e483e56};{69145cd4-199a-4657-9e57-e99e8f136712})
 					FixupItfType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Generic.IReadOnlyList<global::Windows.UI.Xaml.IUIElement4>).TypeHandle), // hashcode: 58ce6d59
@@ -7524,7 +7532,7 @@ namespace McgInterop
 					Flags = global::System.Runtime.InteropServices.McgInterfaceFlags.isIInspectable,
 					FixupDynamicAdapterClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Runtime.InteropServices.WindowsRuntime.IVectorViewSharedReferenceTypesDynamicAdapter<global::Windows.UI.Xaml.IUIElement4>).TypeHandle),
 				}, 
-				// index: 398, iid: 80653f68-2cb2-4c1f-b590-f0f52bf4fd1a Windows.Globalization.ICalendarIdentifiersStatics, CCW discarded
+				// index: 399, iid: 80653f68-2cb2-4c1f-b590-f0f52bf4fd1a Windows.Globalization.ICalendarIdentifiersStatics, CCW discarded
 				new global::System.Runtime.InteropServices.McgInterfaceData() {
 					ItfGuid = new global::System.Guid(-2140848280, 11442, 19487, 0xB5, 0x90, 0xF0, 0xF5, 0x2B, 0xF4, 0xFD, 0x1A), // {80653f68-2cb2-4c1f-b590-f0f52bf4fd1a}
 					FixupItfType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::Windows.Globalization.ICalendarIdentifiersStatics).TypeHandle), // hashcode: afa5b58b
@@ -7532,7 +7540,7 @@ namespace McgInterop
 					CcwVtable = global::McgInterop.Intrinsics.AddrOf<global::System.Runtime.InteropServices.AddrOfGetCCWVtable>(global::McgInterop.CcwVtableData.Windows_Globalization__ICalendarIdentifiersStatics),
 					Flags = global::System.Runtime.InteropServices.McgInterfaceFlags.isIInspectable,
 				}, 
-				// index: 399, iid: b6bf67dd-84bd-44f8-ac1c-93ebcb9dba91 Windows.System.Threading.IThreadPoolStatics, CCW discarded
+				// index: 400, iid: b6bf67dd-84bd-44f8-ac1c-93ebcb9dba91 Windows.System.Threading.IThreadPoolStatics, CCW discarded
 				new global::System.Runtime.InteropServices.McgInterfaceData() {
 					ItfGuid = new global::System.Guid(-1228970019, -31555, 17656, 0xAC, 0x1C, 0x93, 0xEB, 0xCB, 0x9D, 0xBA, 0x91), // {b6bf67dd-84bd-44f8-ac1c-93ebcb9dba91}
 					FixupItfType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::Windows.System.Threading.IThreadPoolStatics).TypeHandle), // hashcode: 68a8df65
@@ -7540,7 +7548,7 @@ namespace McgInterop
 					CcwVtable = global::McgInterop.Intrinsics.AddrOf<global::System.Runtime.InteropServices.AddrOfGetCCWVtable>(global::McgInterop.CcwVtableData.Windows_System_Threading__IThreadPoolStatics),
 					Flags = global::System.Runtime.InteropServices.McgInterfaceFlags.isIInspectable,
 				}, 
-				// index: 400, iid: 4d239005-3c2a-41b1-9022-536bb9cf93b1 Windows.UI.Core.ICoreWindowStatic, CCW discarded
+				// index: 401, iid: 4d239005-3c2a-41b1-9022-536bb9cf93b1 Windows.UI.Core.ICoreWindowStatic, CCW discarded
 				new global::System.Runtime.InteropServices.McgInterfaceData() {
 					ItfGuid = new global::System.Guid(1294176261, 15402, 16817, 0x90, 0x22, 0x53, 0x6B, 0xB9, 0xCF, 0x93, 0xB1), // {4d239005-3c2a-41b1-9022-536bb9cf93b1}
 					FixupItfType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::Windows.UI.Core.ICoreWindowStatic).TypeHandle), // hashcode: e9c62b9d
@@ -7548,7 +7556,7 @@ namespace McgInterop
 					CcwVtable = global::McgInterop.Intrinsics.AddrOf<global::System.Runtime.InteropServices.AddrOfGetCCWVtable>(global::McgInterop.CcwVtableData.Windows_UI_Core__ICoreWindowStatic),
 					Flags = global::System.Runtime.InteropServices.McgInterfaceFlags.isIInspectable,
 				}, 
-				// index: 401, iid: 79b9d5f2-879e-4b89-b798-79e47598030c Windows.UI.Core.ICoreWindow, CCW discarded
+				// index: 402, iid: 79b9d5f2-879e-4b89-b798-79e47598030c Windows.UI.Core.ICoreWindow, CCW discarded
 				new global::System.Runtime.InteropServices.McgInterfaceData() {
 					ItfGuid = new global::System.Guid(2042222066, -30818, 19337, 0xB7, 0x98, 0x79, 0xE4, 0x75, 0x98, 0x3, 0xC), // {79b9d5f2-879e-4b89-b798-79e47598030c}
 					FixupItfType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::Windows.UI.Core.ICoreWindow).TypeHandle), // hashcode: 8c4ad48d
@@ -7556,7 +7564,7 @@ namespace McgInterop
 					CcwVtable = global::McgInterop.Intrinsics.AddrOf<global::System.Runtime.InteropServices.AddrOfGetCCWVtable>(global::McgInterop.CcwVtableData.Windows_UI_Core__ICoreWindow),
 					Flags = global::System.Runtime.InteropServices.McgInterfaceFlags.isIInspectable,
 				}, 
-				// index: 402, iid: 7c2b1b85-6917-4361-9c02-0d9e3a420b95 Windows.UI.Core.ICoreWindow2, CCW discarded, RCW discarded
+				// index: 403, iid: 7c2b1b85-6917-4361-9c02-0d9e3a420b95 Windows.UI.Core.ICoreWindow2, CCW discarded, RCW discarded
 				new global::System.Runtime.InteropServices.McgInterfaceData() {
 					ItfGuid = new global::System.Guid(2083199877, 26903, 17249, 0x9C, 0x2, 0xD, 0x9E, 0x3A, 0x42, 0xB, 0x95), // {7c2b1b85-6917-4361-9c02-0d9e3a420b95}
 					FixupItfType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::Windows.UI.Core.ICoreWindow2).TypeHandle), // hashcode: 49b03789
@@ -7564,7 +7572,7 @@ namespace McgInterop
 					CcwVtable = global::McgInterop.Intrinsics.AddrOf<global::System.Runtime.InteropServices.AddrOfGetCCWVtable>(global::McgInterop.CcwVtableData.Windows_UI_Core__ICoreWindow2),
 					Flags = global::System.Runtime.InteropServices.McgInterfaceFlags.isIInspectable,
 				}, 
-				// index: 403, iid: 8f9d0c94-5688-4b0c-a9f1-f931f7fa3dc3 Windows.UI.Core.ICorePointerRedirector, CCW discarded, RCW discarded
+				// index: 404, iid: 8f9d0c94-5688-4b0c-a9f1-f931f7fa3dc3 Windows.UI.Core.ICorePointerRedirector, CCW discarded, RCW discarded
 				new global::System.Runtime.InteropServices.McgInterfaceData() {
 					ItfGuid = new global::System.Guid(-1885533036, 22152, 19212, 0xA9, 0xF1, 0xF9, 0x31, 0xF7, 0xFA, 0x3D, 0xC3), // {8f9d0c94-5688-4b0c-a9f1-f931f7fa3dc3}
 					FixupItfType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::Windows.UI.Core.ICorePointerRedirector).TypeHandle), // hashcode: d3125b91
@@ -7572,7 +7580,7 @@ namespace McgInterop
 					CcwVtable = global::McgInterop.Intrinsics.AddrOf<global::System.Runtime.InteropServices.AddrOfGetCCWVtable>(global::McgInterop.CcwVtableData.Windows_UI_Core__ICorePointerRedirector),
 					Flags = global::System.Runtime.InteropServices.McgInterfaceFlags.isIInspectable,
 				}, 
-				// index: 404, iid: 32c20dd8-faef-4375-a2ab-32640e4815c7 Windows.UI.Core.ICoreWindow3, CCW discarded, RCW discarded
+				// index: 405, iid: 32c20dd8-faef-4375-a2ab-32640e4815c7 Windows.UI.Core.ICoreWindow3, CCW discarded, RCW discarded
 				new global::System.Runtime.InteropServices.McgInterfaceData() {
 					ItfGuid = new global::System.Guid(851578328, -1297, 17269, 0xA2, 0xAB, 0x32, 0x64, 0xE, 0x48, 0x15, 0xC7), // {32c20dd8-faef-4375-a2ab-32640e4815c7}
 					FixupItfType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::Windows.UI.Core.ICoreWindow3).TypeHandle), // hashcode: 49b03688
@@ -7580,7 +7588,7 @@ namespace McgInterop
 					CcwVtable = global::McgInterop.Intrinsics.AddrOf<global::System.Runtime.InteropServices.AddrOfGetCCWVtable>(global::McgInterop.CcwVtableData.Windows_UI_Core__ICoreWindow3),
 					Flags = global::System.Runtime.InteropServices.McgInterfaceFlags.isIInspectable,
 				}, 
-				// index: 405, iid: 1cc0fdfc-69ee-4e43-9901-47f12687baf7 Windows.ApplicationModel.Resources.Core.IResourceManagerStatics, CCW discarded
+				// index: 406, iid: 1cc0fdfc-69ee-4e43-9901-47f12687baf7 Windows.ApplicationModel.Resources.Core.IResourceManagerStatics, CCW discarded
 				new global::System.Runtime.InteropServices.McgInterfaceData() {
 					ItfGuid = new global::System.Guid(482409980, 27118, 20035, 0x99, 0x1, 0x47, 0xF1, 0x26, 0x87, 0xBA, 0xF7), // {1cc0fdfc-69ee-4e43-9901-47f12687baf7}
 					FixupItfType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::Windows.ApplicationModel.Resources.Core.IResourceManagerStatics).TypeHandle), // hashcode: b94c8737
@@ -7588,7 +7596,7 @@ namespace McgInterop
 					CcwVtable = global::McgInterop.Intrinsics.AddrOf<global::System.Runtime.InteropServices.AddrOfGetCCWVtable>(global::McgInterop.CcwVtableData.Windows_ApplicationModel_Resources_Core__IResourceManagerStatics),
 					Flags = global::System.Runtime.InteropServices.McgInterfaceFlags.isIInspectable,
 				}, 
-				// index: 406, iid: f744d97b-9988-44fb-abd6-5378844cfa8b Windows.ApplicationModel.Resources.Core.IResourceManager, CCW discarded
+				// index: 407, iid: f744d97b-9988-44fb-abd6-5378844cfa8b Windows.ApplicationModel.Resources.Core.IResourceManager, CCW discarded
 				new global::System.Runtime.InteropServices.McgInterfaceData() {
 					ItfGuid = new global::System.Guid(-146482821, -26232, 17659, 0xAB, 0xD6, 0x53, 0x78, 0x84, 0x4C, 0xFA, 0x8B), // {f744d97b-9988-44fb-abd6-5378844cfa8b}
 					FixupItfType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::Windows.ApplicationModel.Resources.Core.IResourceManager).TypeHandle), // hashcode: dcf1cdeb
@@ -7596,7 +7604,7 @@ namespace McgInterop
 					CcwVtable = global::McgInterop.Intrinsics.AddrOf<global::System.Runtime.InteropServices.AddrOfGetCCWVtable>(global::McgInterop.CcwVtableData.Windows_ApplicationModel_Resources_Core__IResourceManager),
 					Flags = global::System.Runtime.InteropServices.McgInterfaceFlags.isIInspectable,
 				}, 
-				// index: 407, iid: 9d66fe6c-a4d7-4c23-9e85-675f304c252d Windows.ApplicationModel.Resources.Core.IResourceManager2, CCW discarded, RCW discarded
+				// index: 408, iid: 9d66fe6c-a4d7-4c23-9e85-675f304c252d Windows.ApplicationModel.Resources.Core.IResourceManager2, CCW discarded, RCW discarded
 				new global::System.Runtime.InteropServices.McgInterfaceData() {
 					ItfGuid = new global::System.Guid(-1654194580, -23337, 19491, 0x9E, 0x85, 0x67, 0x5F, 0x30, 0x4C, 0x25, 0x2D), // {9d66fe6c-a4d7-4c23-9e85-675f304c252d}
 					FixupItfType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::Windows.ApplicationModel.Resources.Core.IResourceManager2).TypeHandle), // hashcode: e72e44bc
@@ -7604,7 +7612,7 @@ namespace McgInterop
 					CcwVtable = global::McgInterop.Intrinsics.AddrOf<global::System.Runtime.InteropServices.AddrOfGetCCWVtable>(global::McgInterop.CcwVtableData.Windows_ApplicationModel_Resources_Core__IResourceManager2),
 					Flags = global::System.Runtime.InteropServices.McgInterfaceFlags.isIInspectable,
 				}, 
-				// index: 408, iid: e80d3d9d-96c9-579e-8e42-d550700de925 System.Collections.Generic.IEnumerable<Windows.ApplicationModel.Resources.Core.NamedResource>, CCW discarded
+				// index: 409, iid: e80d3d9d-96c9-579e-8e42-d550700de925 System.Collections.Generic.IEnumerable<Windows.ApplicationModel.Resources.Core.NamedResource>, CCW discarded
 				new global::System.Runtime.InteropServices.McgInterfaceData() {
 					ItfGuid = new global::System.Guid(-401785443, -26935, 22430, 0x8E, 0x42, 0xD5, 0x50, 0x70, 0xD, 0xE9, 0x25), // pinterface({faa585ea-6214-4217-afda-7f46de5869b3};rc(Windows.ApplicationModel.Resources.Core.NamedResource;{1c98c219-0b13-4240-89a5-d495dc189a00}))
 					FixupItfType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Generic.IEnumerable<global::Windows.ApplicationModel.Resources.Core.NamedResource>).TypeHandle), // hashcode: c050ef38
@@ -7613,7 +7621,7 @@ namespace McgInterop
 					Flags = global::System.Runtime.InteropServices.McgInterfaceFlags.isIInspectable,
 					FixupDynamicAdapterClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Runtime.InteropServices.WindowsRuntime.IIterableSharedReferenceTypesDynamicAdapter<global::Windows.ApplicationModel.Resources.Core.NamedResource>).TypeHandle),
 				}, 
-				// index: 409, iid: 0c5a605f-a7f1-5030-a179-9fd363caf3b5 Windows.Foundation.Collections.IIterator<Windows.ApplicationModel.Resources.Core.NamedResource>, CCW discarded
+				// index: 410, iid: 0c5a605f-a7f1-5030-a179-9fd363caf3b5 Windows.Foundation.Collections.IIterator<Windows.ApplicationModel.Resources.Core.NamedResource>, CCW discarded
 				new global::System.Runtime.InteropServices.McgInterfaceData() {
 					ItfGuid = new global::System.Guid(207249503, -22543, 20528, 0xA1, 0x79, 0x9F, 0xD3, 0x63, 0xCA, 0xF3, 0xB5), // pinterface({6a79e863-4300-459a-9966-cbb660963ee1};rc(Windows.ApplicationModel.Resources.Core.NamedResource;{1c98c219-0b13-4240-89a5-d495dc189a00}))
 					FixupItfType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::Windows.Foundation.Collections.IIterator<global::Windows.ApplicationModel.Resources.Core.NamedResource>).TypeHandle), // hashcode: 03ff96bc
@@ -7621,7 +7629,7 @@ namespace McgInterop
 					CcwVtable = global::McgInterop.Intrinsics.AddrOf<global::System.Runtime.InteropServices.AddrOfGetCCWVtable>(global::McgInterop.CcwVtableData.Windows_Foundation_Collections__IIterator_A_Windows_ApplicationModel_Resources_Core_NamedResource_V_),
 					Flags = global::System.Runtime.InteropServices.McgInterfaceFlags.isIInspectable,
 				}, 
-				// index: 410, iid: 11547d4e-b25c-57a9-9256-4f66959cee3c System.Collections.Generic.IEnumerable<Windows.ApplicationModel.Resources.Core.INamedResource>, CCW discarded
+				// index: 411, iid: 11547d4e-b25c-57a9-9256-4f66959cee3c System.Collections.Generic.IEnumerable<Windows.ApplicationModel.Resources.Core.INamedResource>, CCW discarded
 				new global::System.Runtime.InteropServices.McgInterfaceData() {
 					ItfGuid = new global::System.Guid(290749774, -19876, 22441, 0x92, 0x56, 0x4F, 0x66, 0x95, 0x9C, 0xEE, 0x3C), // pinterface({faa585ea-6214-4217-afda-7f46de5869b3};{1c98c219-0b13-4240-89a5-d495dc189a00})
 					FixupItfType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Collections.Generic.IEnumerable<global::Windows.ApplicationModel.Resources.Core.INamedResource>).TypeHandle), // hashcode: 94257f14
@@ -7630,7 +7638,7 @@ namespace McgInterop
 					Flags = global::System.Runtime.InteropServices.McgInterfaceFlags.isIInspectable,
 					FixupDynamicAdapterClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::System.Runtime.InteropServices.WindowsRuntime.IIterableSharedReferenceTypesDynamicAdapter<global::Windows.ApplicationModel.Resources.Core.INamedResource>).TypeHandle),
 				}, 
-				// index: 411, iid: 740f00fd-aaa5-568d-8a17-1189b73cb99c Windows.Foundation.Collections.IIterator<Windows.ApplicationModel.Resources.Core.INamedResource>, CCW discarded
+				// index: 412, iid: 740f00fd-aaa5-568d-8a17-1189b73cb99c Windows.Foundation.Collections.IIterator<Windows.ApplicationModel.Resources.Core.INamedResource>, CCW discarded
 				new global::System.Runtime.InteropServices.McgInterfaceData() {
 					ItfGuid = new global::System.Guid(1947140349, -21851, 22157, 0x8A, 0x17, 0x11, 0x89, 0xB7, 0x3C, 0xB9, 0x9C), // pinterface({6a79e863-4300-459a-9966-cbb660963ee1};{1c98c219-0b13-4240-89a5-d495dc189a00})
 					FixupItfType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::Windows.Foundation.Collections.IIterator<global::Windows.ApplicationModel.Resources.Core.INamedResource>).TypeHandle), // hashcode: 77d736a0
@@ -7638,7 +7646,7 @@ namespace McgInterop
 					CcwVtable = global::McgInterop.Intrinsics.AddrOf<global::System.Runtime.InteropServices.AddrOfGetCCWVtable>(global::McgInterop.CcwVtableData.Windows_Foundation_Collections__IIterator_A_Windows_ApplicationModel_Resources_Core_INamedResource_V_),
 					Flags = global::System.Runtime.InteropServices.McgInterfaceFlags.isIInspectable,
 				}, 
-				// index: 412, iid: 320b7e22-3cb0-4cdf-8663-1d28910065eb Windows.Security.Cryptography.ICryptographicBufferStatics, CCW discarded
+				// index: 413, iid: 320b7e22-3cb0-4cdf-8663-1d28910065eb Windows.Security.Cryptography.ICryptographicBufferStatics, CCW discarded
 				new global::System.Runtime.InteropServices.McgInterfaceData() {
 					ItfGuid = new global::System.Guid(839613986, 15536, 19679, 0x86, 0x63, 0x1D, 0x28, 0x91, 0x0, 0x65, 0xEB), // {320b7e22-3cb0-4cdf-8663-1d28910065eb}
 					FixupItfType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::Windows.Security.Cryptography.ICryptographicBufferStatics).TypeHandle), // hashcode: 93803144
@@ -7646,7 +7654,7 @@ namespace McgInterop
 					CcwVtable = global::McgInterop.Intrinsics.AddrOf<global::System.Runtime.InteropServices.AddrOfGetCCWVtable>(global::McgInterop.CcwVtableData.Windows_Security_Cryptography__ICryptographicBufferStatics),
 					Flags = global::System.Runtime.InteropServices.McgInterfaceFlags.isIInspectable,
 				}, 
-				// index: 413, iid: 6b5e0516-de96-4f0a-8d57-dcc9dae36c76 Windows.Security.Cryptography.Core.IHashAlgorithmNamesStatics, CCW discarded
+				// index: 414, iid: 6b5e0516-de96-4f0a-8d57-dcc9dae36c76 Windows.Security.Cryptography.Core.IHashAlgorithmNamesStatics, CCW discarded
 				new global::System.Runtime.InteropServices.McgInterfaceData() {
 					ItfGuid = new global::System.Guid(1801323798, -8554, 20234, 0x8D, 0x57, 0xDC, 0xC9, 0xDA, 0xE3, 0x6C, 0x76), // {6b5e0516-de96-4f0a-8d57-dcc9dae36c76}
 					FixupItfType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::Windows.Security.Cryptography.Core.IHashAlgorithmNamesStatics).TypeHandle), // hashcode: bf1820b5
@@ -7654,7 +7662,7 @@ namespace McgInterop
 					CcwVtable = global::McgInterop.Intrinsics.AddrOf<global::System.Runtime.InteropServices.AddrOfGetCCWVtable>(global::McgInterop.CcwVtableData.Windows_Security_Cryptography_Core__IHashAlgorithmNamesStatics),
 					Flags = global::System.Runtime.InteropServices.McgInterfaceFlags.isIInspectable,
 				}, 
-				// index: 414, iid: 9fac9741-5cc4-4336-ae38-6212b75a915a Windows.Security.Cryptography.Core.IHashAlgorithmProviderStatics, CCW discarded
+				// index: 415, iid: 9fac9741-5cc4-4336-ae38-6212b75a915a Windows.Security.Cryptography.Core.IHashAlgorithmProviderStatics, CCW discarded
 				new global::System.Runtime.InteropServices.McgInterfaceData() {
 					ItfGuid = new global::System.Guid(-1616079039, 23748, 17206, 0xAE, 0x38, 0x62, 0x12, 0xB7, 0x5A, 0x91, 0x5A), // {9fac9741-5cc4-4336-ae38-6212b75a915a}
 					FixupItfType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::Windows.Security.Cryptography.Core.IHashAlgorithmProviderStatics).TypeHandle), // hashcode: 4fdf71da
@@ -7662,7 +7670,7 @@ namespace McgInterop
 					CcwVtable = global::McgInterop.Intrinsics.AddrOf<global::System.Runtime.InteropServices.AddrOfGetCCWVtable>(global::McgInterop.CcwVtableData.Windows_Security_Cryptography_Core__IHashAlgorithmProviderStatics),
 					Flags = global::System.Runtime.InteropServices.McgInterfaceFlags.isIInspectable,
 				}, 
-				// index: 415, iid: be9b3080-b2c3-422b-bce1-ec90efb5d7b5 Windows.Security.Cryptography.Core.IHashAlgorithmProvider, CCW discarded
+				// index: 416, iid: be9b3080-b2c3-422b-bce1-ec90efb5d7b5 Windows.Security.Cryptography.Core.IHashAlgorithmProvider, CCW discarded
 				new global::System.Runtime.InteropServices.McgInterfaceData() {
 					ItfGuid = new global::System.Guid(-1097125760, -19773, 16939, 0xBC, 0xE1, 0xEC, 0x90, 0xEF, 0xB5, 0xD7, 0xB5), // {be9b3080-b2c3-422b-bce1-ec90efb5d7b5}
 					FixupItfType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::Windows.Security.Cryptography.Core.IHashAlgorithmProvider).TypeHandle), // hashcode: b9655d15
@@ -7670,7 +7678,7 @@ namespace McgInterop
 					CcwVtable = global::McgInterop.Intrinsics.AddrOf<global::System.Runtime.InteropServices.AddrOfGetCCWVtable>(global::McgInterop.CcwVtableData.Windows_Security_Cryptography_Core__IHashAlgorithmProvider),
 					Flags = global::System.Runtime.InteropServices.McgInterfaceFlags.isIInspectable,
 				}, 
-				// index: 416, iid: 4e534bdf-2960-4878-97a4-9624deb72f2d Windows.ApplicationModel.IPackageStatics, CCW discarded
+				// index: 417, iid: 4e534bdf-2960-4878-97a4-9624deb72f2d Windows.ApplicationModel.IPackageStatics, CCW discarded
 				new global::System.Runtime.InteropServices.McgInterfaceData() {
 					ItfGuid = new global::System.Guid(1314081759, 10592, 18552, 0x97, 0xA4, 0x96, 0x24, 0xDE, 0xB7, 0x2F, 0x2D), // {4e534bdf-2960-4878-97a4-9624deb72f2d}
 					FixupItfType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::Windows.ApplicationModel.IPackageStatics).TypeHandle), // hashcode: 49cb1e14
@@ -7678,7 +7686,7 @@ namespace McgInterop
 					CcwVtable = global::McgInterop.Intrinsics.AddrOf<global::System.Runtime.InteropServices.AddrOfGetCCWVtable>(global::McgInterop.CcwVtableData.Windows_ApplicationModel__IPackageStatics),
 					Flags = global::System.Runtime.InteropServices.McgInterfaceFlags.isIInspectable,
 				}, 
-				// index: 417, iid: 163c792f-bd75-413c-bf23-b1fe7b95d825 Windows.ApplicationModel.IPackage, CCW discarded
+				// index: 418, iid: 163c792f-bd75-413c-bf23-b1fe7b95d825 Windows.ApplicationModel.IPackage, CCW discarded
 				new global::System.Runtime.InteropServices.McgInterfaceData() {
 					ItfGuid = new global::System.Guid(373061935, -17035, 16700, 0xBF, 0x23, 0xB1, 0xFE, 0x7B, 0x95, 0xD8, 0x25), // {163c792f-bd75-413c-bf23-b1fe7b95d825}
 					FixupItfType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::Windows.ApplicationModel.IPackage).TypeHandle), // hashcode: 88cd91a3
@@ -7686,7 +7694,7 @@ namespace McgInterop
 					CcwVtable = global::McgInterop.Intrinsics.AddrOf<global::System.Runtime.InteropServices.AddrOfGetCCWVtable>(global::McgInterop.CcwVtableData.Windows_ApplicationModel__IPackage),
 					Flags = global::System.Runtime.InteropServices.McgInterfaceFlags.isIInspectable,
 				}, 
-				// index: 418, iid: 08f327ff-85d5-48b9-aee9-28511e339f9f Windows.Storage.IStorageFolderStatics, CCW discarded
+				// index: 419, iid: 08f327ff-85d5-48b9-aee9-28511e339f9f Windows.Storage.IStorageFolderStatics, CCW discarded
 				new global::System.Runtime.InteropServices.McgInterfaceData() {
 					ItfGuid = new global::System.Guid(150153215, -31275, 18617, 0xAE, 0xE9, 0x28, 0x51, 0x1E, 0x33, 0x9F, 0x9F), // {08f327ff-85d5-48b9-aee9-28511e339f9f}
 					FixupItfType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::Windows.Storage.IStorageFolderStatics).TypeHandle), // hashcode: 6c123248
@@ -7694,7 +7702,7 @@ namespace McgInterop
 					CcwVtable = global::McgInterop.Intrinsics.AddrOf<global::System.Runtime.InteropServices.AddrOfGetCCWVtable>(global::McgInterop.CcwVtableData.Windows_Storage__IStorageFolderStatics),
 					Flags = global::System.Runtime.InteropServices.McgInterfaceFlags.isIInspectable,
 				}, 
-				// index: 419, iid: 6be9e7d7-e83a-5cbc-802c-1768960b52c3 Windows.Foundation.IAsyncOperation<Windows.Storage.StorageFolder>, CCW discarded
+				// index: 420, iid: 6be9e7d7-e83a-5cbc-802c-1768960b52c3 Windows.Foundation.IAsyncOperation<Windows.Storage.StorageFolder>, CCW discarded
 				new global::System.Runtime.InteropServices.McgInterfaceData() {
 					ItfGuid = new global::System.Guid(1810491351, -6086, 23740, 0x80, 0x2C, 0x17, 0x68, 0x96, 0xB, 0x52, 0xC3), // pinterface({9fc2b0bb-e446-44e2-aa61-9cab8f636af2};rc(Windows.Storage.StorageFolder;{72d1cb78-b3ef-4f75-a80b-6fd9dae2944b}))
 					FixupItfType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::Windows.Foundation.IAsyncOperation<global::Windows.Storage.StorageFolder>).TypeHandle), // hashcode: b87154d1
@@ -7702,20 +7710,12 @@ namespace McgInterop
 					CcwVtable = global::McgInterop.Intrinsics.AddrOf<global::System.Runtime.InteropServices.AddrOfGetCCWVtable>(global::McgInterop.CcwVtableData.Windows_Foundation__IAsyncOperation_A_Windows_Storage_StorageFolder_V_),
 					Flags = global::System.Runtime.InteropServices.McgInterfaceFlags.isIInspectable,
 				}, 
-				// index: 420, iid: c211026e-9e63-5452-ba54-3a07d6a96874 Windows.Foundation.AsyncOperationCompletedHandler<Windows.Storage.StorageFolder>
+				// index: 421, iid: c211026e-9e63-5452-ba54-3a07d6a96874 Windows.Foundation.AsyncOperationCompletedHandler<Windows.Storage.StorageFolder>
 				new global::System.Runtime.InteropServices.McgInterfaceData() {
 					ItfGuid = new global::System.Guid(-1039072658, -24989, 21586, 0xBA, 0x54, 0x3A, 0x7, 0xD6, 0xA9, 0x68, 0x74), // pinterface({fcdcf02c-e5d8-4478-915a-4d90b74b83a5};rc(Windows.Storage.StorageFolder;{72d1cb78-b3ef-4f75-a80b-6fd9dae2944b}))
 					FixupItfType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::Windows.Foundation.AsyncOperationCompletedHandler<global::Windows.Storage.StorageFolder>).TypeHandle), // hashcode: 56775ca1
 					MarshalIndex = 33,
 					Flags = (global::System.Runtime.InteropServices.McgInterfaceFlags.isDelegate | global::System.Runtime.InteropServices.McgInterfaceFlags.useSharedCCW_AsyncOperationCompletedHandler),
-				}, 
-				// index: 421, iid: 72d1cb78-b3ef-4f75-a80b-6fd9dae2944b Windows.Storage.IStorageFolder, CCW discarded
-				new global::System.Runtime.InteropServices.McgInterfaceData() {
-					ItfGuid = new global::System.Guid(1926351736, -19473, 20341, 0xA8, 0xB, 0x6F, 0xD9, 0xDA, 0xE2, 0x94, 0x4B), // {72d1cb78-b3ef-4f75-a80b-6fd9dae2944b}
-					FixupItfType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::Windows.Storage.IStorageFolder).TypeHandle), // hashcode: 055dc3b2
-					FixupDispatchClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::Windows.Storage.StorageFolder).TypeHandle),
-					CcwVtable = global::McgInterop.Intrinsics.AddrOf<global::System.Runtime.InteropServices.AddrOfGetCCWVtable>(global::McgInterop.CcwVtableData.Windows_Storage__IStorageFolder),
-					Flags = global::System.Runtime.InteropServices.McgInterfaceFlags.isIInspectable,
 				}, 
 				// index: 422, iid: cb43ccc9-446b-4a4f-be97-757771be5203 Windows.Storage.Search.IStorageFolderQueryOperations, CCW discarded, RCW discarded
 				new global::System.Runtime.InteropServices.McgInterfaceData() {
@@ -8997,22 +8997,22 @@ namespace McgInterop
 		[global::System.Runtime.CompilerServices.PreInitialized]
 		static readonly byte[] s_classData_Hashtable = new byte[] {
 				21, 66, 0, 87, 0, 102, 0, 132, 0, 153, 0, 192, 0, 228, 0, 246, 0, 20, 1, 47, 1, 59, 1, 77, 1, 101, 1, 116, 1, 140, 1, 179, 1, 209, 1, 245, 1, 34, 2, 55, 2, 70, 2, 91, 2, 100, 2, 133, 2, 151, 
-				2, 181, 2, 202, 2, 223, 2, 241, 2, 3, 3, 30, 3, 42, 3, 74, 3, 28, 141, 15, 51, 185, 13, 98, 169, 13, 201, 129, 13, 213, 109, 17, 223, 249, 11, 225, 45, 16, 7, 233, 14, 82, 85, 17, 120, 193, 17, 140, 165, 12, 
+				2, 181, 2, 202, 2, 223, 2, 241, 2, 3, 3, 30, 3, 42, 3, 74, 3, 28, 141, 15, 51, 185, 13, 98, 169, 13, 201, 129, 13, 213, 109, 17, 223, 249, 11, 225, 53, 16, 7, 233, 14, 82, 85, 17, 120, 193, 17, 140, 165, 12, 
 				187, 9, 17, 14, 189, 12, 67, 129, 14, 96, 205, 14, 103, 129, 16, 106, 253, 15, 110, 217, 16, 133, 89, 12, 148, 137, 16, 170, 221, 16, 174, 241, 16, 1, 69, 14, 36, 97, 11, 72, 173, 14, 151, 233, 15, 157, 221, 11, 208, 25, 
-				16, 227, 221, 13, 6, 233, 13, 68, 109, 14, 69, 33, 15, 71, 185, 11, 83, 53, 11, 111, 165, 10, 142, 217, 15, 145, 117, 11, 178, 241, 11, 193, 229, 15, 208, 137, 12, 225, 125, 14, 228, 169, 13, 12, 89, 11, 21, 117, 11, 35, 
-				85, 13, 93, 217, 14, 133, 13, 14, 140, 61, 11, 160, 177, 11, 187, 201, 15, 196, 113, 10, 197, 73, 13, 207, 149, 11, 239, 53, 10, 1, 157, 15, 52, 1, 12, 60, 5, 12, 61, 125, 9, 172, 69, 10, 224, 245, 10, 9, 125, 11, 
+				16, 227, 221, 13, 6, 233, 13, 68, 109, 14, 69, 33, 15, 71, 185, 11, 83, 53, 11, 111, 165, 10, 142, 217, 15, 145, 117, 11, 178, 241, 11, 193, 229, 15, 208, 137, 12, 225, 133, 14, 228, 169, 13, 12, 89, 11, 21, 117, 11, 35, 
+				85, 13, 93, 217, 14, 133, 21, 14, 140, 61, 11, 160, 177, 11, 187, 201, 15, 196, 113, 10, 197, 73, 13, 207, 149, 11, 239, 53, 10, 1, 157, 15, 52, 1, 12, 60, 5, 12, 61, 125, 9, 172, 69, 10, 224, 245, 10, 9, 125, 11, 
 				30, 105, 11, 72, 165, 10, 100, 1, 13, 135, 53, 12, 154, 209, 13, 172, 77, 11, 194, 161, 14, 214, 205, 14, 221, 185, 11, 4, 53, 10, 6, 1, 10, 12, 85, 12, 16, 153, 14, 94, 149, 9, 111, 193, 8, 159, 173, 10, 162, 65, 
-				11, 224, 213, 11, 104, 97, 11, 123, 69, 13, 154, 9, 11, 246, 173, 8, 25, 57, 8, 33, 129, 8, 174, 65, 9, 236, 101, 12, 243, 5, 10, 252, 189, 9, 104, 49, 9, 130, 221, 11, 144, 193, 8, 150, 61, 12, 165, 25, 10, 199, 
-				153, 8, 205, 97, 12, 213, 253, 7, 10, 233, 8, 47, 85, 12, 160, 129, 7, 178, 65, 8, 193, 249, 8, 27, 109, 9, 38, 57, 10, 83, 221, 12, 110, 57, 9, 141, 109, 7, 202, 69, 7, 207, 45, 11, 220, 209, 10, 4, 149, 7, 
-				28, 137, 10, 32, 109, 7, 49, 185, 9, 109, 237, 11, 121, 29, 7, 129, 221, 10, 217, 169, 11, 223, 177, 6, 224, 9, 10, 240, 109, 11, 242, 161, 6, 254, 117, 11, 54, 89, 11, 81, 25, 7, 90, 189, 7, 96, 13, 7, 97, 1, 
-				12, 105, 69, 7, 151, 213, 6, 180, 125, 6, 233, 249, 11, 234, 181, 11, 5, 177, 6, 62, 93, 6, 174, 77, 6, 179, 125, 11, 185, 97, 8, 220, 245, 8, 225, 17, 11, 229, 181, 9, 234, 41, 9, 240, 245, 9, 244, 109, 6, 253, 
+				11, 224, 213, 11, 104, 97, 11, 123, 69, 13, 154, 9, 11, 246, 173, 8, 25, 57, 8, 33, 129, 8, 174, 65, 9, 236, 109, 12, 243, 5, 10, 252, 189, 9, 104, 49, 9, 130, 221, 11, 144, 193, 8, 150, 61, 12, 165, 25, 10, 199, 
+				153, 8, 205, 97, 12, 213, 253, 7, 10, 233, 8, 47, 85, 12, 160, 129, 7, 178, 65, 8, 193, 249, 8, 27, 109, 9, 38, 57, 10, 83, 221, 12, 110, 57, 9, 141, 109, 7, 202, 69, 7, 207, 53, 11, 220, 209, 10, 4, 149, 7, 
+				28, 137, 10, 32, 109, 7, 49, 185, 9, 109, 237, 11, 121, 29, 7, 129, 229, 10, 217, 169, 11, 223, 177, 6, 224, 9, 10, 240, 109, 11, 242, 161, 6, 254, 117, 11, 54, 89, 11, 81, 25, 7, 90, 189, 7, 96, 13, 7, 97, 1, 
+				12, 105, 69, 7, 151, 213, 6, 180, 125, 6, 233, 249, 11, 234, 181, 11, 5, 177, 6, 62, 93, 6, 174, 77, 6, 179, 125, 11, 185, 97, 8, 220, 245, 8, 225, 17, 11, 229, 189, 9, 234, 41, 9, 240, 245, 9, 244, 109, 6, 253, 
 				29, 9, 9, 157, 6, 36, 85, 7, 53, 93, 5, 87, 205, 6, 99, 185, 5, 129, 5, 9, 142, 45, 6, 150, 137, 6, 180, 49, 8, 209, 173, 5, 215, 33, 10, 225, 157, 6, 235, 137, 7, 245, 101, 9, 247, 65, 7, 18, 85, 10, 
-				20, 233, 9, 99, 141, 7, 150, 109, 5, 151, 185, 4, 224, 109, 5, 225, 253, 6, 63, 185, 6, 83, 117, 7, 96, 49, 8, 152, 117, 4, 199, 45, 4, 18, 141, 6, 34, 141, 4, 34, 169, 5, 91, 173, 5, 129, 77, 4, 210, 137, 
-				5, 232, 93, 8, 25, 157, 5, 77, 73, 4, 108, 85, 4, 46, 97, 5, 69, 73, 4, 134, 225, 4, 144, 245, 4, 153, 33, 4, 191, 105, 4, 199, 93, 3, 199, 121, 8, 217, 61, 7, 245, 249, 5, 252, 229, 7, 1, 237, 4, 7, 
-				229, 6, 54, 193, 4, 116, 73, 3, 159, 193, 4, 224, 173, 4, 61, 9, 3, 67, 93, 5, 89, 193, 6, 117, 5, 7, 148, 225, 6, 183, 237, 4, 183, 41, 3, 209, 173, 2, 224, 89, 4, 244, 197, 6, 20, 205, 2, 35, 185, 2, 
+				20, 233, 9, 99, 141, 7, 150, 109, 5, 151, 185, 4, 224, 109, 5, 225, 253, 6, 63, 185, 6, 83, 117, 7, 96, 57, 8, 152, 117, 4, 199, 45, 4, 18, 141, 6, 34, 141, 4, 34, 169, 5, 91, 173, 5, 129, 77, 4, 210, 137, 
+				5, 232, 93, 8, 25, 157, 5, 77, 73, 4, 108, 85, 4, 46, 97, 5, 69, 73, 4, 134, 225, 4, 144, 245, 4, 153, 33, 4, 191, 105, 4, 199, 93, 3, 199, 121, 8, 217, 69, 7, 245, 249, 5, 252, 229, 7, 1, 237, 4, 7, 
+				229, 6, 54, 193, 4, 116, 73, 3, 159, 193, 4, 224, 173, 4, 61, 9, 3, 67, 93, 5, 89, 201, 6, 117, 13, 7, 148, 233, 6, 183, 237, 4, 183, 41, 3, 209, 173, 2, 224, 89, 4, 244, 93, 6, 20, 205, 2, 35, 185, 2, 
 				52, 101, 3, 83, 189, 4, 108, 161, 3, 175, 149, 2, 214, 69, 2, 22, 77, 3, 70, 157, 3, 92, 41, 2, 147, 145, 2, 169, 237, 6, 218, 125, 3, 230, 249, 2, 8, 29, 3, 87, 121, 2, 93, 249, 4, 185, 189, 3, 208, 173, 
 				1, 234, 109, 3, 53, 17, 2, 58, 65, 3, 74, 97, 2, 109, 29, 4, 179, 53, 1, 255, 237, 4, 14, 161, 4, 57, 249, 1, 107, 121, 2, 132, 37, 6, 157, 57, 3, 187, 37, 2, 197, 57, 6, 226, 49, 2, 239, 33, 2, 40, 
-				21, 3, 43, 153, 2, 147, 145, 1, 247, 197, 1, 27, 113, 2, 43, 249, 4, 69, 104, 87, 13, 2, 113, 57, 4, 115, 37, 5, 116, 113, 4, 161, 189, 4, 214, 181, 1, 215, 5, 6, 245, 177, 4, 0, 2, 4, 6, 8, 10, 12, 
+				21, 3, 43, 153, 2, 147, 145, 1, 247, 197, 1, 27, 113, 2, 43, 249, 4, 69, 104, 87, 13, 2, 113, 57, 4, 115, 37, 5, 116, 121, 4, 161, 189, 4, 214, 181, 1, 215, 5, 6, 245, 177, 4, 0, 2, 4, 6, 8, 10, 12, 
 				14, 16, 18, 20, 22, 24, 26, 28, 30, 32, 34, 36, 38, 40, 42, 44, 46, 48, 50, 52, 54, 56, 58, 60, 62, 64, 66, 68, 70, 72, 74, 76, 78, 80, 82, 84, 86, 88, 90, 92, 94, 96, 98, 100, 102, 104, 106, 108, 110, 112, 
 				114, 116, 118, 120, 122, 124, 126, 128, 130, 132, 134, 136, 138, 140, 142, 144, 146, 148, 150, 152, 154, 156, 158, 160, 162, 164, 166, 168, 170, 172, 174, 176, 178, 180, 182, 184, 186, 188, 190, 192, 194, 196, 198, 200, 202, 204, 206, 208, 210, 212, 
 				214, 216, 218, 220, 222, 224, 226, 228, 230, 232, 234, 236, 238, 240, 242, 244, 246, 248, 250, 252, 254, 1, 2, 5, 2, 9, 2, 13, 2, 17, 2, 21, 2, 25, 2, 29, 2, 33, 2, 37, 2, 41, 2, 45, 2, 49, 2, 53, 2, 57, 
@@ -9214,20 +9214,20 @@ namespace McgInterop
 				20713, // Windows.UI.Xaml.Controls.Frame
 				20720, // Windows.Storage.StorageFile
 				20733, // Windows.Storage.FileAccessMode
-				20749, // Windows.ApplicationModel.Activation.VoiceCommandActivatedEventArgs
-				20781, // Windows.UI.Popups.MessageDialog
-				20796, // Windows.Globalization.CalendarIdentifiers
-				20817, // Windows.System.Threading.ThreadPool
-				20829, // Windows.System.Threading.WorkItemPriority
-				20847, // Windows.System.Threading.WorkItemOptions
-				20864, // Windows.UI.Core.CoreWindow
-				20876, // Windows.ApplicationModel.Resources.Core.ResourceManager
-				20893, // Windows.Security.Cryptography.CryptographicBuffer
-				20914, // Windows.Security.Cryptography.Core.HashAlgorithmNames
-				20934, // Windows.Security.Cryptography.Core.HashAlgorithmProvider
-				20957, // Windows.ApplicationModel.Package
-				20966, // Windows.Storage.StorageFolder
-				20981, // Windows.Storage.CreationCollisionOption
+				20749, // Windows.Storage.CreationCollisionOption
+				20774, // Windows.ApplicationModel.Activation.VoiceCommandActivatedEventArgs
+				20806, // Windows.UI.Popups.MessageDialog
+				20821, // Windows.Globalization.CalendarIdentifiers
+				20842, // Windows.System.Threading.ThreadPool
+				20854, // Windows.System.Threading.WorkItemPriority
+				20872, // Windows.System.Threading.WorkItemOptions
+				20889, // Windows.UI.Core.CoreWindow
+				20901, // Windows.ApplicationModel.Resources.Core.ResourceManager
+				20918, // Windows.Security.Cryptography.CryptographicBuffer
+				20939, // Windows.Security.Cryptography.Core.HashAlgorithmNames
+				20959, // Windows.Security.Cryptography.Core.HashAlgorithmProvider
+				20982, // Windows.ApplicationModel.Package
+				20991, // Windows.Storage.StorageFolder
 				21006, // Windows.Foundation.Diagnostics.AsyncCausalityTracer
 				21028, // Windows.Foundation.Diagnostics.CausalityTraceLevel
 				21049, // Windows.Foundation.Diagnostics.CausalitySource
@@ -10816,23 +10816,30 @@ namespace McgInterop
 				}, 
 				// Index = 192
 				new global::System.Runtime.InteropServices.McgClassData() {
+					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::Windows.Storage.CreationCollisionOption).TypeHandle), // hashcode: 9ff058f4
+					Flags = (global::System.Runtime.InteropServices.McgClassFlags.NotComObject | global::System.Runtime.InteropServices.McgClassFlags.IsWinRT),
+					BaseClassIndex = -1,
+					DefaultInterfaceIndex = -1,
+				}, 
+				// Index = 193
+				new global::System.Runtime.InteropServices.McgClassData() {
 					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::Windows.ApplicationModel.Activation.VoiceCommandActivatedEventArgs).TypeHandle), // hashcode: 66f2f360
 					Flags = (global::System.Runtime.InteropServices.McgClassFlags.IsSealed | global::System.Runtime.InteropServices.McgClassFlags.IsWinRT 
 								| global::System.Runtime.InteropServices.McgClassFlags.MarshalingBehavior_Free 
 								| global::System.Runtime.InteropServices.McgClassFlags.GCPressureRange_WinRT_Default),
 					BaseClassIndex = -1,
-					DefaultInterfaceIndex = 382,
+					DefaultInterfaceIndex = 383,
 				}, 
-				// Index = 193
+				// Index = 194
 				new global::System.Runtime.InteropServices.McgClassData() {
 					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::Windows.UI.Popups.MessageDialog).TypeHandle), // hashcode: 4d7536d9
 					Flags = (global::System.Runtime.InteropServices.McgClassFlags.IsSealed | global::System.Runtime.InteropServices.McgClassFlags.IsWinRT 
 								| global::System.Runtime.InteropServices.McgClassFlags.MarshalingBehavior_Standard 
 								| global::System.Runtime.InteropServices.McgClassFlags.GCPressureRange_WinRT_Default),
 					BaseClassIndex = -1,
-					DefaultInterfaceIndex = 386,
+					DefaultInterfaceIndex = 387,
 				}, 
-				// Index = 194
+				// Index = 195
 				new global::System.Runtime.InteropServices.McgClassData() {
 					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::Windows.Globalization.CalendarIdentifiers).TypeHandle), // hashcode: cf269859
 					Flags = (global::System.Runtime.InteropServices.McgClassFlags.IsSealed | global::System.Runtime.InteropServices.McgClassFlags.IsWinRT 
@@ -10841,7 +10848,7 @@ namespace McgInterop
 					BaseClassIndex = -1,
 					DefaultInterfaceIndex = -1,
 				}, 
-				// Index = 195
+				// Index = 196
 				new global::System.Runtime.InteropServices.McgClassData() {
 					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::Windows.System.Threading.ThreadPool).TypeHandle), // hashcode: c061a585
 					Flags = (global::System.Runtime.InteropServices.McgClassFlags.IsSealed | global::System.Runtime.InteropServices.McgClassFlags.IsWinRT 
@@ -10850,39 +10857,39 @@ namespace McgInterop
 					BaseClassIndex = -1,
 					DefaultInterfaceIndex = -1,
 				}, 
-				// Index = 196
+				// Index = 197
 				new global::System.Runtime.InteropServices.McgClassData() {
 					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::Windows.System.Threading.WorkItemPriority).TypeHandle), // hashcode: 5974cdcf
 					Flags = (global::System.Runtime.InteropServices.McgClassFlags.NotComObject | global::System.Runtime.InteropServices.McgClassFlags.IsWinRT),
 					BaseClassIndex = -1,
 					DefaultInterfaceIndex = -1,
 				}, 
-				// Index = 197
+				// Index = 198
 				new global::System.Runtime.InteropServices.McgClassData() {
 					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::Windows.System.Threading.WorkItemOptions).TypeHandle), // hashcode: 9d06d0e5
 					Flags = (global::System.Runtime.InteropServices.McgClassFlags.NotComObject | global::System.Runtime.InteropServices.McgClassFlags.IsWinRT),
 					BaseClassIndex = -1,
 					DefaultInterfaceIndex = -1,
 				}, 
-				// Index = 198
+				// Index = 199
 				new global::System.Runtime.InteropServices.McgClassData() {
 					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::Windows.UI.Core.CoreWindow).TypeHandle), // hashcode: 3099ee81
 					Flags = (global::System.Runtime.InteropServices.McgClassFlags.IsSealed | global::System.Runtime.InteropServices.McgClassFlags.IsWinRT 
 								| global::System.Runtime.InteropServices.McgClassFlags.MarshalingBehavior_Standard 
 								| global::System.Runtime.InteropServices.McgClassFlags.GCPressureRange_WinRT_Default),
 					BaseClassIndex = -1,
-					DefaultInterfaceIndex = 401,
+					DefaultInterfaceIndex = 402,
 				}, 
-				// Index = 199
+				// Index = 200
 				new global::System.Runtime.InteropServices.McgClassData() {
 					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::Windows.ApplicationModel.Resources.Core.ResourceManager).TypeHandle), // hashcode: 305d5f74
 					Flags = (global::System.Runtime.InteropServices.McgClassFlags.IsSealed | global::System.Runtime.InteropServices.McgClassFlags.IsWinRT 
 								| global::System.Runtime.InteropServices.McgClassFlags.MarshalingBehavior_Free 
 								| global::System.Runtime.InteropServices.McgClassFlags.GCPressureRange_WinRT_Default),
 					BaseClassIndex = -1,
-					DefaultInterfaceIndex = 406,
+					DefaultInterfaceIndex = 407,
 				}, 
-				// Index = 200
+				// Index = 201
 				new global::System.Runtime.InteropServices.McgClassData() {
 					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::Windows.Security.Cryptography.CryptographicBuffer).TypeHandle), // hashcode: 05c6a4e1
 					Flags = (global::System.Runtime.InteropServices.McgClassFlags.IsSealed | global::System.Runtime.InteropServices.McgClassFlags.IsWinRT 
@@ -10891,7 +10898,7 @@ namespace McgInterop
 					BaseClassIndex = -1,
 					DefaultInterfaceIndex = -1,
 				}, 
-				// Index = 201
+				// Index = 202
 				new global::System.Runtime.InteropServices.McgClassData() {
 					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::Windows.Security.Cryptography.Core.HashAlgorithmNames).TypeHandle), // hashcode: f743b894
 					Flags = (global::System.Runtime.InteropServices.McgClassFlags.IsSealed | global::System.Runtime.InteropServices.McgClassFlags.IsWinRT 
@@ -10900,38 +10907,31 @@ namespace McgInterop
 					BaseClassIndex = -1,
 					DefaultInterfaceIndex = -1,
 				}, 
-				// Index = 202
+				// Index = 203
 				new global::System.Runtime.InteropServices.McgClassData() {
 					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::Windows.Security.Cryptography.Core.HashAlgorithmProvider).TypeHandle), // hashcode: 76cf6aec
 					Flags = (global::System.Runtime.InteropServices.McgClassFlags.IsSealed | global::System.Runtime.InteropServices.McgClassFlags.IsWinRT 
 								| global::System.Runtime.InteropServices.McgClassFlags.MarshalingBehavior_Free 
 								| global::System.Runtime.InteropServices.McgClassFlags.GCPressureRange_WinRT_Default),
 					BaseClassIndex = -1,
-					DefaultInterfaceIndex = 415,
+					DefaultInterfaceIndex = 416,
 				}, 
-				// Index = 203
+				// Index = 204
 				new global::System.Runtime.InteropServices.McgClassData() {
 					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::Windows.ApplicationModel.Package).TypeHandle), // hashcode: 5b2dc0e1
 					Flags = (global::System.Runtime.InteropServices.McgClassFlags.IsSealed | global::System.Runtime.InteropServices.McgClassFlags.IsWinRT 
 								| global::System.Runtime.InteropServices.McgClassFlags.MarshalingBehavior_Free 
 								| global::System.Runtime.InteropServices.McgClassFlags.GCPressureRange_WinRT_Default),
 					BaseClassIndex = -1,
-					DefaultInterfaceIndex = 417,
+					DefaultInterfaceIndex = 418,
 				}, 
-				// Index = 204
+				// Index = 205
 				new global::System.Runtime.InteropServices.McgClassData() {
 					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::Windows.Storage.StorageFolder).TypeHandle), // hashcode: 83875875
 					Flags = (global::System.Runtime.InteropServices.McgClassFlags.IsSealed | global::System.Runtime.InteropServices.McgClassFlags.IsWinRT 
 								| global::System.Runtime.InteropServices.McgClassFlags.GCPressureRange_WinRT_Default),
 					BaseClassIndex = -1,
-					DefaultInterfaceIndex = 421,
-				}, 
-				// Index = 205
-				new global::System.Runtime.InteropServices.McgClassData() {
-					FixupClassType = new global::Internal.Runtime.CompilerServices.FixupRuntimeTypeHandle(typeof(global::Windows.Storage.CreationCollisionOption).TypeHandle), // hashcode: 9ff058f4
-					Flags = (global::System.Runtime.InteropServices.McgClassFlags.NotComObject | global::System.Runtime.InteropServices.McgClassFlags.IsWinRT),
-					BaseClassIndex = -1,
-					DefaultInterfaceIndex = -1,
+					DefaultInterfaceIndex = 375,
 				}, 
 				// Index = 206
 				new global::System.Runtime.InteropServices.McgClassData() {
@@ -16057,6 +16057,7 @@ namespace McgInterop
 		    145, I, I, n, p, u, t, S, t, r, e, a, m, R, e, f, e, r, e, n, c, e, 0, 
 		    130, I, A, s, y, n, c, O, p, e, r, a, t, i, o, n, 96, 49, 60, 145, I, R, a, n, d, o, m, A, c, c, e, s, s, S, t, r, e, a, m, 62, 0, 
 		    130, A, s, y, n, c, O, p, e, r, a, t, i, o, n, C, o, m, p, l, e, t, e, d, H, a, n, d, l, e, r, 96, 49, 60, 145, I, R, a, n, d, o, m, A, c, c, e, s, s, S, t, r, e, a, m, 62, 0, 
+		    154, I, S, t, o, r, a, g, e, F, o, l, d, e, r, 0, 
 		    154, I, S, t, o, r, a, g, e, I, t, e, m, P, r, o, p, e, r, t, i, e, s, 0, 
 		    154, I, S, t, o, r, a, g, e, I, t, e, m, P, r, o, p, e, r, t, i, e, s, 50, 0, 
 		    154, I, S, t, o, r, a, g, e, I, t, e, m, 50, 0, 
@@ -16103,7 +16104,6 @@ namespace McgInterop
 		    154, I, S, t, o, r, a, g, e, F, o, l, d, e, r, S, t, a, t, i, c, s, 0, 
 		    130, I, A, s, y, n, c, O, p, e, r, a, t, i, o, n, 96, 49, 60, 154, S, t, o, r, a, g, e, F, o, l, d, e, r, 62, 0, 
 		    130, A, s, y, n, c, O, p, e, r, a, t, i, o, n, C, o, m, p, l, e, t, e, d, H, a, n, d, l, e, r, 96, 49, 60, 154, S, t, o, r, a, g, e, F, o, l, d, e, r, 62, 0, 
-		    154, I, S, t, o, r, a, g, e, F, o, l, d, e, r, 0, 
 		    159, I, S, t, o, r, a, g, e, F, o, l, d, e, r, Q, u, e, r, y, O, p, e, r, a, t, i, o, n, s, 0, 
 		    154, I, S, t, o, r, a, g, e, F, o, l, d, e, r, 50, 0, 
 		    133, I, P, a, c, k, a, g, e, 50, 0, 
@@ -16431,6 +16431,7 @@ namespace McgInterop
 		    139, F, r, a, m, e, 0, 
 		    154, S, t, o, r, a, g, e, F, i, l, e, 0, 
 		    154, F, i, l, e, A, c, c, e, s, s, M, o, d, e, 0, 
+		    154, C, r, e, a, t, i, o, n, C, o, l, l, i, s, i, o, n, O, p, t, i, o, n, 0, 
 		    134, V, o, i, c, e, C, o, m, m, a, n, d, A, c, t, i, v, a, t, e, d, E, v, e, n, t, A, r, g, s, 0, 
 		    156, M, e, s, s, a, g, e, D, i, a, l, o, g, 0, 
 		    150, C, a, l, e, n, d, a, r, I, d, e, n, t, i, f, i, e, r, s, 0, 
@@ -16444,7 +16445,6 @@ namespace McgInterop
 		    158, H, a, s, h, A, l, g, o, r, i, t, h, m, P, r, o, v, i, d, e, r, 0, 
 		    133, P, a, c, k, a, g, e, 0, 
 		    154, S, t, o, r, a, g, e, F, o, l, d, e, r, 0, 
-		    154, C, r, e, a, t, i, o, n, C, o, l, l, i, s, i, o, n, O, p, t, i, o, n, 0, 
 		    155, A, s, y, n, c, C, a, u, s, a, l, i, t, y, T, r, a, c, e, r, 0, 
 		    155, C, a, u, s, a, l, i, t, y, T, r, a, c, e, L, e, v, e, l, 0, 
 		    155, C, a, u, s, a, l, i, t, y, S, o, u, r, c, e, 0, 
@@ -18289,149 +18289,149 @@ namespace McgInterop
 			[global::System.Runtime.CompilerServices.TypeHandleFixup(20896, typeof(global::Windows.Foundation.IAsyncOperation_A_Windows_Storage_Streams_IRandomAccessStream_V___Impl.DispatchClass))]
 			[global::System.Runtime.CompilerServices.MethodAddrFixup(20936, typeof(global::McgInterop.CcwVtableData), "Windows_Foundation__IAsyncOperation_A_Windows_Storage_Streams_IRandomAccessStream_V_")]
 			[global::System.Runtime.CompilerServices.TypeHandleFixup(20944, typeof(global::Windows.Foundation.AsyncOperationCompletedHandler<global::Windows.Storage.Streams.IRandomAccessStream>))]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(21000, typeof(global::Windows.Storage.IStorageItemProperties))]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(21008, typeof(global::System.Runtime.CompilerServices.DependencyReductionTypeRemoved))]
-			[global::System.Runtime.CompilerServices.MethodAddrFixup(21048, typeof(global::McgInterop.CcwVtableData), "Windows_Storage__IStorageItemProperties")]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(21056, typeof(global::Windows.Storage.IStorageItemProperties2))]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(21000, typeof(global::Windows.Storage.IStorageFolder))]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(21008, typeof(global::Windows.Storage.StorageFolder))]
+			[global::System.Runtime.CompilerServices.MethodAddrFixup(21048, typeof(global::McgInterop.CcwVtableData), "Windows_Storage__IStorageFolder")]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(21056, typeof(global::Windows.Storage.IStorageItemProperties))]
 			[global::System.Runtime.CompilerServices.TypeHandleFixup(21064, typeof(global::System.Runtime.CompilerServices.DependencyReductionTypeRemoved))]
-			[global::System.Runtime.CompilerServices.MethodAddrFixup(21104, typeof(global::McgInterop.CcwVtableData), "Windows_Storage__IStorageItemProperties2")]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(21112, typeof(global::Windows.Storage.IStorageItem2))]
+			[global::System.Runtime.CompilerServices.MethodAddrFixup(21104, typeof(global::McgInterop.CcwVtableData), "Windows_Storage__IStorageItemProperties")]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(21112, typeof(global::Windows.Storage.IStorageItemProperties2))]
 			[global::System.Runtime.CompilerServices.TypeHandleFixup(21120, typeof(global::System.Runtime.CompilerServices.DependencyReductionTypeRemoved))]
-			[global::System.Runtime.CompilerServices.MethodAddrFixup(21160, typeof(global::McgInterop.CcwVtableData), "Windows_Storage__IStorageItem2")]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(21168, typeof(global::Windows.Storage.IStorageItemPropertiesWithProvider))]
+			[global::System.Runtime.CompilerServices.MethodAddrFixup(21160, typeof(global::McgInterop.CcwVtableData), "Windows_Storage__IStorageItemProperties2")]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(21168, typeof(global::Windows.Storage.IStorageItem2))]
 			[global::System.Runtime.CompilerServices.TypeHandleFixup(21176, typeof(global::System.Runtime.CompilerServices.DependencyReductionTypeRemoved))]
-			[global::System.Runtime.CompilerServices.MethodAddrFixup(21216, typeof(global::McgInterop.CcwVtableData), "Windows_Storage__IStorageItemPropertiesWithProvider")]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(21224, typeof(global::Windows.Storage.IStorageFilePropertiesWithAvailability))]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(21232, typeof(global::Windows.Storage.StorageFile))]
-			[global::System.Runtime.CompilerServices.MethodAddrFixup(21272, typeof(global::McgInterop.CcwVtableData), "Windows_Storage__IStorageFilePropertiesWithAvailability")]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(21280, typeof(global::Windows.Storage.IStorageFile2))]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(21288, typeof(global::System.Runtime.CompilerServices.DependencyReductionTypeRemoved))]
-			[global::System.Runtime.CompilerServices.MethodAddrFixup(21328, typeof(global::McgInterop.CcwVtableData), "Windows_Storage__IStorageFile2")]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(21336, typeof(global::Windows.Foundation.AsyncOperationCompletedHandler<global::Windows.Storage.StorageFile>))]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(21392, typeof(global::Windows.ApplicationModel.Activation.IVoiceCommandActivatedEventArgs))]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(21400, typeof(global::Windows.ApplicationModel.Activation.VoiceCommandActivatedEventArgs))]
-			[global::System.Runtime.CompilerServices.MethodAddrFixup(21440, typeof(global::McgInterop.CcwVtableData), "Windows_ApplicationModel_Activation__IVoiceCommandActivatedEventArgs")]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(21448, typeof(global::Windows.Foundation.AsyncOperationCompletedHandler<string>))]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(21504, typeof(global::Windows.Foundation.IAsyncOperation<string>))]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(21512, typeof(global::Windows.Foundation.IAsyncOperation_A_string_V___Impl.DispatchClass))]
-			[global::System.Runtime.CompilerServices.MethodAddrFixup(21552, typeof(global::McgInterop.CcwVtableData), "Windows_Foundation__IAsyncOperation_A_string_V_")]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(21560, typeof(global::Windows.UI.Popups.IMessageDialogFactory))]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(21568, typeof(global::Windows.UI.Popups.IMessageDialogFactory__Impl.DispatchClass))]
-			[global::System.Runtime.CompilerServices.MethodAddrFixup(21608, typeof(global::McgInterop.CcwVtableData), "Windows_UI_Popups__IMessageDialogFactory")]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(21616, typeof(global::Windows.UI.Popups.IMessageDialog))]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(21624, typeof(global::Windows.UI.Popups.MessageDialog))]
-			[global::System.Runtime.CompilerServices.MethodAddrFixup(21664, typeof(global::McgInterop.CcwVtableData), "Windows_UI_Popups__IMessageDialog")]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(21672, typeof(global::Windows.UI.Popups.IUICommand))]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(21680, typeof(global::System.Runtime.CompilerServices.DependencyReductionTypeRemoved))]
-			[global::System.Runtime.CompilerServices.MethodAddrFixup(21720, typeof(global::McgInterop.CcwVtableData), "Windows_UI_Popups__IUICommand")]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(21728, typeof(global::Windows.Foundation.IAsyncOperation<global::Windows.UI.Popups.IUICommand>))]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(21736, typeof(global::Windows.Foundation.IAsyncOperation_A_Windows_UI_Popups_IUICommand_V___Impl.DispatchClass))]
-			[global::System.Runtime.CompilerServices.MethodAddrFixup(21776, typeof(global::McgInterop.CcwVtableData), "Windows_Foundation__IAsyncOperation_A_Windows_UI_Popups_IUICommand_V_")]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(21784, typeof(global::Windows.Foundation.AsyncOperationCompletedHandler<global::Windows.UI.Popups.IUICommand>))]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(21840, typeof(global::System.Collections.Generic.IReadOnlyList<global::Windows.UI.Xaml.DependencyObject>))]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(21848, typeof(global::System.Collections.Generic.IReadOnlyList_A_Windows_UI_Xaml_DependencyObject_V___Impl.DispatchClass))]
-			[global::System.Runtime.CompilerServices.MethodAddrFixup(21888, typeof(global::McgInterop.CcwVtableData), "Windows_Foundation_Collections__IVectorView_A_Windows_UI_Xaml_DependencyObject_V_")]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(21856, typeof(global::System.Runtime.InteropServices.WindowsRuntime.IVectorViewSharedReferenceTypesDynamicAdapter<global::Windows.UI.Xaml.DependencyObject>))]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(21896, typeof(global::System.Collections.Generic.IReadOnlyList<global::Windows.UI.Xaml.IDependencyObject>))]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(21904, typeof(global::System.Collections.Generic.IReadOnlyList_A_Windows_UI_Xaml_IDependencyObject_V___Impl.DispatchClass))]
-			[global::System.Runtime.CompilerServices.MethodAddrFixup(21944, typeof(global::McgInterop.CcwVtableData), "Windows_Foundation_Collections__IVectorView_A_Windows_UI_Xaml_IDependencyObject_V_")]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(21912, typeof(global::System.Runtime.InteropServices.WindowsRuntime.IVectorViewSharedReferenceTypesDynamicAdapter<global::Windows.UI.Xaml.IDependencyObject>))]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(21952, typeof(global::System.Collections.Generic.IReadOnlyList<global::Windows.UI.Xaml.IDependencyObject2>))]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(21960, typeof(global::System.Collections.Generic.IReadOnlyList_A_Windows_UI_Xaml_IDependencyObject2_V___Impl.DispatchClass))]
-			[global::System.Runtime.CompilerServices.MethodAddrFixup(22000, typeof(global::McgInterop.CcwVtableData), "Windows_Foundation_Collections__IVectorView_A_Windows_UI_Xaml_IDependencyObject2_V_")]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(21968, typeof(global::System.Runtime.InteropServices.WindowsRuntime.IVectorViewSharedReferenceTypesDynamicAdapter<global::Windows.UI.Xaml.IDependencyObject2>))]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(22008, typeof(global::System.Collections.Generic.IReadOnlyList<global::Windows.UI.Xaml.IUIElement>))]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(22016, typeof(global::System.Collections.Generic.IReadOnlyList_A_Windows_UI_Xaml_IUIElement_V___Impl.DispatchClass))]
-			[global::System.Runtime.CompilerServices.MethodAddrFixup(22056, typeof(global::McgInterop.CcwVtableData), "Windows_Foundation_Collections__IVectorView_A_Windows_UI_Xaml_IUIElement_V_")]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(22024, typeof(global::System.Runtime.InteropServices.WindowsRuntime.IVectorViewSharedReferenceTypesDynamicAdapter<global::Windows.UI.Xaml.IUIElement>))]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(22064, typeof(global::System.Collections.Generic.IReadOnlyList<global::Windows.UI.Xaml.IUIElementOverrides>))]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(22072, typeof(global::System.Collections.Generic.IReadOnlyList_A_Windows_UI_Xaml_IUIElementOverrides_V___Impl.DispatchClass))]
-			[global::System.Runtime.CompilerServices.MethodAddrFixup(22112, typeof(global::McgInterop.CcwVtableData), "Windows_Foundation_Collections__IVectorView_A_Windows_UI_Xaml_IUIElementOverrides_V_")]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(22080, typeof(global::System.Runtime.InteropServices.WindowsRuntime.IVectorViewSharedReferenceTypesDynamicAdapter<global::Windows.UI.Xaml.IUIElementOverrides>))]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(22120, typeof(global::System.Collections.Generic.IReadOnlyList<global::Windows.UI.Xaml.IUIElement2>))]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(22128, typeof(global::System.Collections.Generic.IReadOnlyList_A_Windows_UI_Xaml_IUIElement2_V___Impl.DispatchClass))]
-			[global::System.Runtime.CompilerServices.MethodAddrFixup(22168, typeof(global::McgInterop.CcwVtableData), "Windows_Foundation_Collections__IVectorView_A_Windows_UI_Xaml_IUIElement2_V_")]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(22136, typeof(global::System.Runtime.InteropServices.WindowsRuntime.IVectorViewSharedReferenceTypesDynamicAdapter<global::Windows.UI.Xaml.IUIElement2>))]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(22176, typeof(global::System.Collections.Generic.IReadOnlyList<global::Windows.UI.Xaml.IUIElement3>))]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(22184, typeof(global::System.Collections.Generic.IReadOnlyList_A_Windows_UI_Xaml_IUIElement3_V___Impl.DispatchClass))]
-			[global::System.Runtime.CompilerServices.MethodAddrFixup(22224, typeof(global::McgInterop.CcwVtableData), "Windows_Foundation_Collections__IVectorView_A_Windows_UI_Xaml_IUIElement3_V_")]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(22192, typeof(global::System.Runtime.InteropServices.WindowsRuntime.IVectorViewSharedReferenceTypesDynamicAdapter<global::Windows.UI.Xaml.IUIElement3>))]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(22232, typeof(global::System.Collections.Generic.IReadOnlyList<global::Windows.UI.Xaml.IUIElement4>))]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(22240, typeof(global::System.Collections.Generic.IReadOnlyList_A_Windows_UI_Xaml_IUIElement4_V___Impl.DispatchClass))]
-			[global::System.Runtime.CompilerServices.MethodAddrFixup(22280, typeof(global::McgInterop.CcwVtableData), "Windows_Foundation_Collections__IVectorView_A_Windows_UI_Xaml_IUIElement4_V_")]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(22248, typeof(global::System.Runtime.InteropServices.WindowsRuntime.IVectorViewSharedReferenceTypesDynamicAdapter<global::Windows.UI.Xaml.IUIElement4>))]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(22288, typeof(global::Windows.Globalization.ICalendarIdentifiersStatics))]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(22296, typeof(global::Windows.Globalization.ICalendarIdentifiersStatics__Impl.DispatchClass))]
-			[global::System.Runtime.CompilerServices.MethodAddrFixup(22336, typeof(global::McgInterop.CcwVtableData), "Windows_Globalization__ICalendarIdentifiersStatics")]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(22344, typeof(global::Windows.System.Threading.IThreadPoolStatics))]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(22352, typeof(global::Windows.System.Threading.IThreadPoolStatics__Impl.DispatchClass))]
-			[global::System.Runtime.CompilerServices.MethodAddrFixup(22392, typeof(global::McgInterop.CcwVtableData), "Windows_System_Threading__IThreadPoolStatics")]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(22400, typeof(global::Windows.UI.Core.ICoreWindowStatic))]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(22408, typeof(global::Windows.UI.Core.ICoreWindowStatic__Impl.DispatchClass))]
-			[global::System.Runtime.CompilerServices.MethodAddrFixup(22448, typeof(global::McgInterop.CcwVtableData), "Windows_UI_Core__ICoreWindowStatic")]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(22456, typeof(global::Windows.UI.Core.ICoreWindow))]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(22464, typeof(global::Windows.UI.Core.CoreWindow))]
-			[global::System.Runtime.CompilerServices.MethodAddrFixup(22504, typeof(global::McgInterop.CcwVtableData), "Windows_UI_Core__ICoreWindow")]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(22512, typeof(global::Windows.UI.Core.ICoreWindow2))]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(22520, typeof(global::System.Runtime.CompilerServices.DependencyReductionTypeRemoved))]
-			[global::System.Runtime.CompilerServices.MethodAddrFixup(22560, typeof(global::McgInterop.CcwVtableData), "Windows_UI_Core__ICoreWindow2")]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(22568, typeof(global::Windows.UI.Core.ICorePointerRedirector))]
+			[global::System.Runtime.CompilerServices.MethodAddrFixup(21216, typeof(global::McgInterop.CcwVtableData), "Windows_Storage__IStorageItem2")]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(21224, typeof(global::Windows.Storage.IStorageItemPropertiesWithProvider))]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(21232, typeof(global::System.Runtime.CompilerServices.DependencyReductionTypeRemoved))]
+			[global::System.Runtime.CompilerServices.MethodAddrFixup(21272, typeof(global::McgInterop.CcwVtableData), "Windows_Storage__IStorageItemPropertiesWithProvider")]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(21280, typeof(global::Windows.Storage.IStorageFilePropertiesWithAvailability))]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(21288, typeof(global::Windows.Storage.StorageFile))]
+			[global::System.Runtime.CompilerServices.MethodAddrFixup(21328, typeof(global::McgInterop.CcwVtableData), "Windows_Storage__IStorageFilePropertiesWithAvailability")]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(21336, typeof(global::Windows.Storage.IStorageFile2))]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(21344, typeof(global::System.Runtime.CompilerServices.DependencyReductionTypeRemoved))]
+			[global::System.Runtime.CompilerServices.MethodAddrFixup(21384, typeof(global::McgInterop.CcwVtableData), "Windows_Storage__IStorageFile2")]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(21392, typeof(global::Windows.Foundation.AsyncOperationCompletedHandler<global::Windows.Storage.StorageFile>))]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(21448, typeof(global::Windows.ApplicationModel.Activation.IVoiceCommandActivatedEventArgs))]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(21456, typeof(global::Windows.ApplicationModel.Activation.VoiceCommandActivatedEventArgs))]
+			[global::System.Runtime.CompilerServices.MethodAddrFixup(21496, typeof(global::McgInterop.CcwVtableData), "Windows_ApplicationModel_Activation__IVoiceCommandActivatedEventArgs")]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(21504, typeof(global::Windows.Foundation.AsyncOperationCompletedHandler<string>))]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(21560, typeof(global::Windows.Foundation.IAsyncOperation<string>))]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(21568, typeof(global::Windows.Foundation.IAsyncOperation_A_string_V___Impl.DispatchClass))]
+			[global::System.Runtime.CompilerServices.MethodAddrFixup(21608, typeof(global::McgInterop.CcwVtableData), "Windows_Foundation__IAsyncOperation_A_string_V_")]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(21616, typeof(global::Windows.UI.Popups.IMessageDialogFactory))]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(21624, typeof(global::Windows.UI.Popups.IMessageDialogFactory__Impl.DispatchClass))]
+			[global::System.Runtime.CompilerServices.MethodAddrFixup(21664, typeof(global::McgInterop.CcwVtableData), "Windows_UI_Popups__IMessageDialogFactory")]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(21672, typeof(global::Windows.UI.Popups.IMessageDialog))]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(21680, typeof(global::Windows.UI.Popups.MessageDialog))]
+			[global::System.Runtime.CompilerServices.MethodAddrFixup(21720, typeof(global::McgInterop.CcwVtableData), "Windows_UI_Popups__IMessageDialog")]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(21728, typeof(global::Windows.UI.Popups.IUICommand))]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(21736, typeof(global::System.Runtime.CompilerServices.DependencyReductionTypeRemoved))]
+			[global::System.Runtime.CompilerServices.MethodAddrFixup(21776, typeof(global::McgInterop.CcwVtableData), "Windows_UI_Popups__IUICommand")]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(21784, typeof(global::Windows.Foundation.IAsyncOperation<global::Windows.UI.Popups.IUICommand>))]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(21792, typeof(global::Windows.Foundation.IAsyncOperation_A_Windows_UI_Popups_IUICommand_V___Impl.DispatchClass))]
+			[global::System.Runtime.CompilerServices.MethodAddrFixup(21832, typeof(global::McgInterop.CcwVtableData), "Windows_Foundation__IAsyncOperation_A_Windows_UI_Popups_IUICommand_V_")]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(21840, typeof(global::Windows.Foundation.AsyncOperationCompletedHandler<global::Windows.UI.Popups.IUICommand>))]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(21896, typeof(global::System.Collections.Generic.IReadOnlyList<global::Windows.UI.Xaml.DependencyObject>))]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(21904, typeof(global::System.Collections.Generic.IReadOnlyList_A_Windows_UI_Xaml_DependencyObject_V___Impl.DispatchClass))]
+			[global::System.Runtime.CompilerServices.MethodAddrFixup(21944, typeof(global::McgInterop.CcwVtableData), "Windows_Foundation_Collections__IVectorView_A_Windows_UI_Xaml_DependencyObject_V_")]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(21912, typeof(global::System.Runtime.InteropServices.WindowsRuntime.IVectorViewSharedReferenceTypesDynamicAdapter<global::Windows.UI.Xaml.DependencyObject>))]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(21952, typeof(global::System.Collections.Generic.IReadOnlyList<global::Windows.UI.Xaml.IDependencyObject>))]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(21960, typeof(global::System.Collections.Generic.IReadOnlyList_A_Windows_UI_Xaml_IDependencyObject_V___Impl.DispatchClass))]
+			[global::System.Runtime.CompilerServices.MethodAddrFixup(22000, typeof(global::McgInterop.CcwVtableData), "Windows_Foundation_Collections__IVectorView_A_Windows_UI_Xaml_IDependencyObject_V_")]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(21968, typeof(global::System.Runtime.InteropServices.WindowsRuntime.IVectorViewSharedReferenceTypesDynamicAdapter<global::Windows.UI.Xaml.IDependencyObject>))]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(22008, typeof(global::System.Collections.Generic.IReadOnlyList<global::Windows.UI.Xaml.IDependencyObject2>))]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(22016, typeof(global::System.Collections.Generic.IReadOnlyList_A_Windows_UI_Xaml_IDependencyObject2_V___Impl.DispatchClass))]
+			[global::System.Runtime.CompilerServices.MethodAddrFixup(22056, typeof(global::McgInterop.CcwVtableData), "Windows_Foundation_Collections__IVectorView_A_Windows_UI_Xaml_IDependencyObject2_V_")]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(22024, typeof(global::System.Runtime.InteropServices.WindowsRuntime.IVectorViewSharedReferenceTypesDynamicAdapter<global::Windows.UI.Xaml.IDependencyObject2>))]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(22064, typeof(global::System.Collections.Generic.IReadOnlyList<global::Windows.UI.Xaml.IUIElement>))]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(22072, typeof(global::System.Collections.Generic.IReadOnlyList_A_Windows_UI_Xaml_IUIElement_V___Impl.DispatchClass))]
+			[global::System.Runtime.CompilerServices.MethodAddrFixup(22112, typeof(global::McgInterop.CcwVtableData), "Windows_Foundation_Collections__IVectorView_A_Windows_UI_Xaml_IUIElement_V_")]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(22080, typeof(global::System.Runtime.InteropServices.WindowsRuntime.IVectorViewSharedReferenceTypesDynamicAdapter<global::Windows.UI.Xaml.IUIElement>))]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(22120, typeof(global::System.Collections.Generic.IReadOnlyList<global::Windows.UI.Xaml.IUIElementOverrides>))]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(22128, typeof(global::System.Collections.Generic.IReadOnlyList_A_Windows_UI_Xaml_IUIElementOverrides_V___Impl.DispatchClass))]
+			[global::System.Runtime.CompilerServices.MethodAddrFixup(22168, typeof(global::McgInterop.CcwVtableData), "Windows_Foundation_Collections__IVectorView_A_Windows_UI_Xaml_IUIElementOverrides_V_")]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(22136, typeof(global::System.Runtime.InteropServices.WindowsRuntime.IVectorViewSharedReferenceTypesDynamicAdapter<global::Windows.UI.Xaml.IUIElementOverrides>))]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(22176, typeof(global::System.Collections.Generic.IReadOnlyList<global::Windows.UI.Xaml.IUIElement2>))]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(22184, typeof(global::System.Collections.Generic.IReadOnlyList_A_Windows_UI_Xaml_IUIElement2_V___Impl.DispatchClass))]
+			[global::System.Runtime.CompilerServices.MethodAddrFixup(22224, typeof(global::McgInterop.CcwVtableData), "Windows_Foundation_Collections__IVectorView_A_Windows_UI_Xaml_IUIElement2_V_")]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(22192, typeof(global::System.Runtime.InteropServices.WindowsRuntime.IVectorViewSharedReferenceTypesDynamicAdapter<global::Windows.UI.Xaml.IUIElement2>))]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(22232, typeof(global::System.Collections.Generic.IReadOnlyList<global::Windows.UI.Xaml.IUIElement3>))]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(22240, typeof(global::System.Collections.Generic.IReadOnlyList_A_Windows_UI_Xaml_IUIElement3_V___Impl.DispatchClass))]
+			[global::System.Runtime.CompilerServices.MethodAddrFixup(22280, typeof(global::McgInterop.CcwVtableData), "Windows_Foundation_Collections__IVectorView_A_Windows_UI_Xaml_IUIElement3_V_")]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(22248, typeof(global::System.Runtime.InteropServices.WindowsRuntime.IVectorViewSharedReferenceTypesDynamicAdapter<global::Windows.UI.Xaml.IUIElement3>))]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(22288, typeof(global::System.Collections.Generic.IReadOnlyList<global::Windows.UI.Xaml.IUIElement4>))]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(22296, typeof(global::System.Collections.Generic.IReadOnlyList_A_Windows_UI_Xaml_IUIElement4_V___Impl.DispatchClass))]
+			[global::System.Runtime.CompilerServices.MethodAddrFixup(22336, typeof(global::McgInterop.CcwVtableData), "Windows_Foundation_Collections__IVectorView_A_Windows_UI_Xaml_IUIElement4_V_")]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(22304, typeof(global::System.Runtime.InteropServices.WindowsRuntime.IVectorViewSharedReferenceTypesDynamicAdapter<global::Windows.UI.Xaml.IUIElement4>))]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(22344, typeof(global::Windows.Globalization.ICalendarIdentifiersStatics))]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(22352, typeof(global::Windows.Globalization.ICalendarIdentifiersStatics__Impl.DispatchClass))]
+			[global::System.Runtime.CompilerServices.MethodAddrFixup(22392, typeof(global::McgInterop.CcwVtableData), "Windows_Globalization__ICalendarIdentifiersStatics")]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(22400, typeof(global::Windows.System.Threading.IThreadPoolStatics))]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(22408, typeof(global::Windows.System.Threading.IThreadPoolStatics__Impl.DispatchClass))]
+			[global::System.Runtime.CompilerServices.MethodAddrFixup(22448, typeof(global::McgInterop.CcwVtableData), "Windows_System_Threading__IThreadPoolStatics")]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(22456, typeof(global::Windows.UI.Core.ICoreWindowStatic))]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(22464, typeof(global::Windows.UI.Core.ICoreWindowStatic__Impl.DispatchClass))]
+			[global::System.Runtime.CompilerServices.MethodAddrFixup(22504, typeof(global::McgInterop.CcwVtableData), "Windows_UI_Core__ICoreWindowStatic")]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(22512, typeof(global::Windows.UI.Core.ICoreWindow))]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(22520, typeof(global::Windows.UI.Core.CoreWindow))]
+			[global::System.Runtime.CompilerServices.MethodAddrFixup(22560, typeof(global::McgInterop.CcwVtableData), "Windows_UI_Core__ICoreWindow")]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(22568, typeof(global::Windows.UI.Core.ICoreWindow2))]
 			[global::System.Runtime.CompilerServices.TypeHandleFixup(22576, typeof(global::System.Runtime.CompilerServices.DependencyReductionTypeRemoved))]
-			[global::System.Runtime.CompilerServices.MethodAddrFixup(22616, typeof(global::McgInterop.CcwVtableData), "Windows_UI_Core__ICorePointerRedirector")]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(22624, typeof(global::Windows.UI.Core.ICoreWindow3))]
+			[global::System.Runtime.CompilerServices.MethodAddrFixup(22616, typeof(global::McgInterop.CcwVtableData), "Windows_UI_Core__ICoreWindow2")]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(22624, typeof(global::Windows.UI.Core.ICorePointerRedirector))]
 			[global::System.Runtime.CompilerServices.TypeHandleFixup(22632, typeof(global::System.Runtime.CompilerServices.DependencyReductionTypeRemoved))]
-			[global::System.Runtime.CompilerServices.MethodAddrFixup(22672, typeof(global::McgInterop.CcwVtableData), "Windows_UI_Core__ICoreWindow3")]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(22680, typeof(global::Windows.ApplicationModel.Resources.Core.IResourceManagerStatics))]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(22688, typeof(global::Windows.ApplicationModel.Resources.Core.IResourceManagerStatics__Impl.DispatchClass))]
-			[global::System.Runtime.CompilerServices.MethodAddrFixup(22728, typeof(global::McgInterop.CcwVtableData), "Windows_ApplicationModel_Resources_Core__IResourceManagerStatics")]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(22736, typeof(global::Windows.ApplicationModel.Resources.Core.IResourceManager))]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(22744, typeof(global::Windows.ApplicationModel.Resources.Core.ResourceManager))]
-			[global::System.Runtime.CompilerServices.MethodAddrFixup(22784, typeof(global::McgInterop.CcwVtableData), "Windows_ApplicationModel_Resources_Core__IResourceManager")]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(22792, typeof(global::Windows.ApplicationModel.Resources.Core.IResourceManager2))]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(22800, typeof(global::System.Runtime.CompilerServices.DependencyReductionTypeRemoved))]
-			[global::System.Runtime.CompilerServices.MethodAddrFixup(22840, typeof(global::McgInterop.CcwVtableData), "Windows_ApplicationModel_Resources_Core__IResourceManager2")]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(22848, typeof(global::System.Collections.Generic.IEnumerable<global::Windows.ApplicationModel.Resources.Core.NamedResource>))]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(22856, typeof(global::System.Collections.Generic.IEnumerable_A_Windows_ApplicationModel_Resources_Core_NamedResource_V___Impl.DispatchClass))]
-			[global::System.Runtime.CompilerServices.MethodAddrFixup(22896, typeof(global::McgInterop.CcwVtableData), "Windows_Foundation_Collections__IIterable_A_Windows_ApplicationModel_Resources_Core_NamedResource_V_")]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(22864, typeof(global::System.Runtime.InteropServices.WindowsRuntime.IIterableSharedReferenceTypesDynamicAdapter<global::Windows.ApplicationModel.Resources.Core.NamedResource>))]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(22904, typeof(global::Windows.Foundation.Collections.IIterator<global::Windows.ApplicationModel.Resources.Core.NamedResource>))]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(22912, typeof(global::Windows.Foundation.Collections.IIterator_A_Windows_ApplicationModel_Resources_Core_NamedResource_V___Impl.DispatchClass))]
-			[global::System.Runtime.CompilerServices.MethodAddrFixup(22952, typeof(global::McgInterop.CcwVtableData), "Windows_Foundation_Collections__IIterator_A_Windows_ApplicationModel_Resources_Core_NamedResource_V_")]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(22960, typeof(global::System.Collections.Generic.IEnumerable<global::Windows.ApplicationModel.Resources.Core.INamedResource>))]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(22968, typeof(global::System.Collections.Generic.IEnumerable_A_Windows_ApplicationModel_Resources_Core_INamedResource_V___Impl.DispatchClass))]
-			[global::System.Runtime.CompilerServices.MethodAddrFixup(23008, typeof(global::McgInterop.CcwVtableData), "Windows_Foundation_Collections__IIterable_A_Windows_ApplicationModel_Resources_Core_INamedResource_V_")]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(22976, typeof(global::System.Runtime.InteropServices.WindowsRuntime.IIterableSharedReferenceTypesDynamicAdapter<global::Windows.ApplicationModel.Resources.Core.INamedResource>))]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(23016, typeof(global::Windows.Foundation.Collections.IIterator<global::Windows.ApplicationModel.Resources.Core.INamedResource>))]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(23024, typeof(global::Windows.Foundation.Collections.IIterator_A_Windows_ApplicationModel_Resources_Core_INamedResource_V___Impl.DispatchClass))]
-			[global::System.Runtime.CompilerServices.MethodAddrFixup(23064, typeof(global::McgInterop.CcwVtableData), "Windows_Foundation_Collections__IIterator_A_Windows_ApplicationModel_Resources_Core_INamedResource_V_")]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(23072, typeof(global::Windows.Security.Cryptography.ICryptographicBufferStatics))]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(23080, typeof(global::Windows.Security.Cryptography.ICryptographicBufferStatics__Impl.DispatchClass))]
-			[global::System.Runtime.CompilerServices.MethodAddrFixup(23120, typeof(global::McgInterop.CcwVtableData), "Windows_Security_Cryptography__ICryptographicBufferStatics")]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(23128, typeof(global::Windows.Security.Cryptography.Core.IHashAlgorithmNamesStatics))]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(23136, typeof(global::Windows.Security.Cryptography.Core.IHashAlgorithmNamesStatics__Impl.DispatchClass))]
-			[global::System.Runtime.CompilerServices.MethodAddrFixup(23176, typeof(global::McgInterop.CcwVtableData), "Windows_Security_Cryptography_Core__IHashAlgorithmNamesStatics")]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(23184, typeof(global::Windows.Security.Cryptography.Core.IHashAlgorithmProviderStatics))]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(23192, typeof(global::Windows.Security.Cryptography.Core.IHashAlgorithmProviderStatics__Impl.DispatchClass))]
-			[global::System.Runtime.CompilerServices.MethodAddrFixup(23232, typeof(global::McgInterop.CcwVtableData), "Windows_Security_Cryptography_Core__IHashAlgorithmProviderStatics")]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(23240, typeof(global::Windows.Security.Cryptography.Core.IHashAlgorithmProvider))]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(23248, typeof(global::Windows.Security.Cryptography.Core.HashAlgorithmProvider))]
-			[global::System.Runtime.CompilerServices.MethodAddrFixup(23288, typeof(global::McgInterop.CcwVtableData), "Windows_Security_Cryptography_Core__IHashAlgorithmProvider")]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(23296, typeof(global::Windows.ApplicationModel.IPackageStatics))]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(23304, typeof(global::Windows.ApplicationModel.IPackageStatics__Impl.DispatchClass))]
-			[global::System.Runtime.CompilerServices.MethodAddrFixup(23344, typeof(global::McgInterop.CcwVtableData), "Windows_ApplicationModel__IPackageStatics")]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(23352, typeof(global::Windows.ApplicationModel.IPackage))]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(23360, typeof(global::Windows.ApplicationModel.Package))]
-			[global::System.Runtime.CompilerServices.MethodAddrFixup(23400, typeof(global::McgInterop.CcwVtableData), "Windows_ApplicationModel__IPackage")]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(23408, typeof(global::Windows.Storage.IStorageFolderStatics))]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(23416, typeof(global::Windows.Storage.IStorageFolderStatics__Impl.DispatchClass))]
-			[global::System.Runtime.CompilerServices.MethodAddrFixup(23456, typeof(global::McgInterop.CcwVtableData), "Windows_Storage__IStorageFolderStatics")]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(23464, typeof(global::Windows.Foundation.IAsyncOperation<global::Windows.Storage.StorageFolder>))]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(23472, typeof(global::Windows.Foundation.IAsyncOperation_A_Windows_Storage_StorageFolder_V___Impl.DispatchClass))]
-			[global::System.Runtime.CompilerServices.MethodAddrFixup(23512, typeof(global::McgInterop.CcwVtableData), "Windows_Foundation__IAsyncOperation_A_Windows_Storage_StorageFolder_V_")]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(23520, typeof(global::Windows.Foundation.AsyncOperationCompletedHandler<global::Windows.Storage.StorageFolder>))]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(23576, typeof(global::Windows.Storage.IStorageFolder))]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(23584, typeof(global::Windows.Storage.StorageFolder))]
-			[global::System.Runtime.CompilerServices.MethodAddrFixup(23624, typeof(global::McgInterop.CcwVtableData), "Windows_Storage__IStorageFolder")]
+			[global::System.Runtime.CompilerServices.MethodAddrFixup(22672, typeof(global::McgInterop.CcwVtableData), "Windows_UI_Core__ICorePointerRedirector")]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(22680, typeof(global::Windows.UI.Core.ICoreWindow3))]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(22688, typeof(global::System.Runtime.CompilerServices.DependencyReductionTypeRemoved))]
+			[global::System.Runtime.CompilerServices.MethodAddrFixup(22728, typeof(global::McgInterop.CcwVtableData), "Windows_UI_Core__ICoreWindow3")]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(22736, typeof(global::Windows.ApplicationModel.Resources.Core.IResourceManagerStatics))]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(22744, typeof(global::Windows.ApplicationModel.Resources.Core.IResourceManagerStatics__Impl.DispatchClass))]
+			[global::System.Runtime.CompilerServices.MethodAddrFixup(22784, typeof(global::McgInterop.CcwVtableData), "Windows_ApplicationModel_Resources_Core__IResourceManagerStatics")]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(22792, typeof(global::Windows.ApplicationModel.Resources.Core.IResourceManager))]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(22800, typeof(global::Windows.ApplicationModel.Resources.Core.ResourceManager))]
+			[global::System.Runtime.CompilerServices.MethodAddrFixup(22840, typeof(global::McgInterop.CcwVtableData), "Windows_ApplicationModel_Resources_Core__IResourceManager")]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(22848, typeof(global::Windows.ApplicationModel.Resources.Core.IResourceManager2))]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(22856, typeof(global::System.Runtime.CompilerServices.DependencyReductionTypeRemoved))]
+			[global::System.Runtime.CompilerServices.MethodAddrFixup(22896, typeof(global::McgInterop.CcwVtableData), "Windows_ApplicationModel_Resources_Core__IResourceManager2")]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(22904, typeof(global::System.Collections.Generic.IEnumerable<global::Windows.ApplicationModel.Resources.Core.NamedResource>))]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(22912, typeof(global::System.Collections.Generic.IEnumerable_A_Windows_ApplicationModel_Resources_Core_NamedResource_V___Impl.DispatchClass))]
+			[global::System.Runtime.CompilerServices.MethodAddrFixup(22952, typeof(global::McgInterop.CcwVtableData), "Windows_Foundation_Collections__IIterable_A_Windows_ApplicationModel_Resources_Core_NamedResource_V_")]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(22920, typeof(global::System.Runtime.InteropServices.WindowsRuntime.IIterableSharedReferenceTypesDynamicAdapter<global::Windows.ApplicationModel.Resources.Core.NamedResource>))]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(22960, typeof(global::Windows.Foundation.Collections.IIterator<global::Windows.ApplicationModel.Resources.Core.NamedResource>))]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(22968, typeof(global::Windows.Foundation.Collections.IIterator_A_Windows_ApplicationModel_Resources_Core_NamedResource_V___Impl.DispatchClass))]
+			[global::System.Runtime.CompilerServices.MethodAddrFixup(23008, typeof(global::McgInterop.CcwVtableData), "Windows_Foundation_Collections__IIterator_A_Windows_ApplicationModel_Resources_Core_NamedResource_V_")]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(23016, typeof(global::System.Collections.Generic.IEnumerable<global::Windows.ApplicationModel.Resources.Core.INamedResource>))]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(23024, typeof(global::System.Collections.Generic.IEnumerable_A_Windows_ApplicationModel_Resources_Core_INamedResource_V___Impl.DispatchClass))]
+			[global::System.Runtime.CompilerServices.MethodAddrFixup(23064, typeof(global::McgInterop.CcwVtableData), "Windows_Foundation_Collections__IIterable_A_Windows_ApplicationModel_Resources_Core_INamedResource_V_")]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(23032, typeof(global::System.Runtime.InteropServices.WindowsRuntime.IIterableSharedReferenceTypesDynamicAdapter<global::Windows.ApplicationModel.Resources.Core.INamedResource>))]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(23072, typeof(global::Windows.Foundation.Collections.IIterator<global::Windows.ApplicationModel.Resources.Core.INamedResource>))]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(23080, typeof(global::Windows.Foundation.Collections.IIterator_A_Windows_ApplicationModel_Resources_Core_INamedResource_V___Impl.DispatchClass))]
+			[global::System.Runtime.CompilerServices.MethodAddrFixup(23120, typeof(global::McgInterop.CcwVtableData), "Windows_Foundation_Collections__IIterator_A_Windows_ApplicationModel_Resources_Core_INamedResource_V_")]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(23128, typeof(global::Windows.Security.Cryptography.ICryptographicBufferStatics))]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(23136, typeof(global::Windows.Security.Cryptography.ICryptographicBufferStatics__Impl.DispatchClass))]
+			[global::System.Runtime.CompilerServices.MethodAddrFixup(23176, typeof(global::McgInterop.CcwVtableData), "Windows_Security_Cryptography__ICryptographicBufferStatics")]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(23184, typeof(global::Windows.Security.Cryptography.Core.IHashAlgorithmNamesStatics))]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(23192, typeof(global::Windows.Security.Cryptography.Core.IHashAlgorithmNamesStatics__Impl.DispatchClass))]
+			[global::System.Runtime.CompilerServices.MethodAddrFixup(23232, typeof(global::McgInterop.CcwVtableData), "Windows_Security_Cryptography_Core__IHashAlgorithmNamesStatics")]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(23240, typeof(global::Windows.Security.Cryptography.Core.IHashAlgorithmProviderStatics))]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(23248, typeof(global::Windows.Security.Cryptography.Core.IHashAlgorithmProviderStatics__Impl.DispatchClass))]
+			[global::System.Runtime.CompilerServices.MethodAddrFixup(23288, typeof(global::McgInterop.CcwVtableData), "Windows_Security_Cryptography_Core__IHashAlgorithmProviderStatics")]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(23296, typeof(global::Windows.Security.Cryptography.Core.IHashAlgorithmProvider))]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(23304, typeof(global::Windows.Security.Cryptography.Core.HashAlgorithmProvider))]
+			[global::System.Runtime.CompilerServices.MethodAddrFixup(23344, typeof(global::McgInterop.CcwVtableData), "Windows_Security_Cryptography_Core__IHashAlgorithmProvider")]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(23352, typeof(global::Windows.ApplicationModel.IPackageStatics))]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(23360, typeof(global::Windows.ApplicationModel.IPackageStatics__Impl.DispatchClass))]
+			[global::System.Runtime.CompilerServices.MethodAddrFixup(23400, typeof(global::McgInterop.CcwVtableData), "Windows_ApplicationModel__IPackageStatics")]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(23408, typeof(global::Windows.ApplicationModel.IPackage))]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(23416, typeof(global::Windows.ApplicationModel.Package))]
+			[global::System.Runtime.CompilerServices.MethodAddrFixup(23456, typeof(global::McgInterop.CcwVtableData), "Windows_ApplicationModel__IPackage")]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(23464, typeof(global::Windows.Storage.IStorageFolderStatics))]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(23472, typeof(global::Windows.Storage.IStorageFolderStatics__Impl.DispatchClass))]
+			[global::System.Runtime.CompilerServices.MethodAddrFixup(23512, typeof(global::McgInterop.CcwVtableData), "Windows_Storage__IStorageFolderStatics")]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(23520, typeof(global::Windows.Foundation.IAsyncOperation<global::Windows.Storage.StorageFolder>))]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(23528, typeof(global::Windows.Foundation.IAsyncOperation_A_Windows_Storage_StorageFolder_V___Impl.DispatchClass))]
+			[global::System.Runtime.CompilerServices.MethodAddrFixup(23568, typeof(global::McgInterop.CcwVtableData), "Windows_Foundation__IAsyncOperation_A_Windows_Storage_StorageFolder_V_")]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(23576, typeof(global::Windows.Foundation.AsyncOperationCompletedHandler<global::Windows.Storage.StorageFolder>))]
 			[global::System.Runtime.CompilerServices.TypeHandleFixup(23632, typeof(global::Windows.Storage.Search.IStorageFolderQueryOperations))]
 			[global::System.Runtime.CompilerServices.TypeHandleFixup(23640, typeof(global::System.Runtime.CompilerServices.DependencyReductionTypeRemoved))]
 			[global::System.Runtime.CompilerServices.MethodAddrFixup(23680, typeof(global::McgInterop.CcwVtableData), "Windows_Storage_Search__IStorageFolderQueryOperations")]
@@ -19362,59 +19362,59 @@ namespace McgInterop
 					0, 0, 0, 0, 0, 0, 0x18, 0x9D, 0x92, 0x43, 0xC9, 0x5E, 0x5A, 0x4B, 0x91, 0x9C, 0x42, 0x5, 0xB0, 0xC8, 0x4, 0xB6, 0x1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
 					0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xCE, 0xCE, 0xE, 0x43, 0x18, 0x14, 0x19, 0x5D, 0x81, 0xB2, 0x5D, 0xDB, 0x38, 0x16, 0x3, 0xCC, 0x1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
 					0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0x83, 0x41, 0x8C, 0x39, 0x3D, 0x79, 0x0, 0x5B, 0x81, 0x9B, 0x4A, 0xEF, 0x92, 0x48, 0x5E, 0x94, 0x4A, 0, 0x1E, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-					0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0x78, 0x44, 0x66, 0x86, 0x29, 0x80, 0xFE, 0x46, 0xA7, 0x89, 0x1C, 0x2F, 0x3E, 0x2F, 0xFB, 0x5C, 0x1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-					0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0x51, 0xA9, 0x86, 0x8E, 0xB9, 0x4, 0xD2, 0x4B, 0x92, 0x9D, 0xFE, 0xF3, 0xF7, 0x16, 0x21, 0xD0, 0x1, 0, 0, 0, 
-					0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xD2, 0x26, 0xF9, 0x53, 0x3C, 0x8, 0x83, 0x42, 0xB4, 0x5B, 0x81, 0xC0, 0x7, 0x23, 
-					0x7E, 0x44, 0x1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0x9B, 0xF3, 0x1B, 0x86, 0x68, 0x63, 0xEE, 0x4D, 
-					0xB4, 0xE, 0x74, 0x68, 0x4A, 0x5C, 0xE7, 0x14, 0x1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0x9B, 0xBE, 
-					0xCB, 0xAF, 0x2B, 0x58, 0x33, 0x41, 0x96, 0x48, 0xE4, 0x4C, 0xA4, 0x6E, 0xE4, 0x91, 0x1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-					0, 0, 0, 0, 0xCF, 0x4B, 0x4E, 0x95, 0x77, 0xA, 0xFB, 0x42, 0xB7, 0x77, 0xC2, 0xED, 0x58, 0xA5, 0x2E, 0x44, 0x1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-					0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0x94, 0xC8, 0x21, 0xE5, 0x26, 0x2C, 0x46, 0x59, 0x9E, 0x61, 0x2B, 0x5E, 0x18, 0x8D, 0x1, 0xED, 0x4A, 0, 0x1D, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-					0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFD, 0xDC, 0x92, 0xAB, 0x43, 0x8D, 0xE6, 0x4D, 0x97, 0x75, 0x20, 0x70, 0x4B, 0x58, 0x1B, 0x0, 0x1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-					0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0x1F, 0x74, 0x9A, 0xB7, 0xB5, 0x7F, 0xAE, 0x50, 0x9E, 0x99, 0x91, 0x12, 0x1, 0xEC, 0x3D, 0x41, 0x4A, 0, 0xE, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 
-					0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0x3, 0xE6, 0x1F, 0x3E, 0x97, 0xF8, 0x63, 0x52, 0xB3, 0x28, 0x8, 0x6, 0x42, 0x6B, 0x8A, 0x79, 0x1, 0, 0, 0, 0, 0, 
-					0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0x77, 0x17, 0x16, 0x2D, 0x6F, 0xA6, 0xA5, 0x4E, 0xBB, 0x87, 0x79, 0x3F, 0xFA, 0x49, 0x41, 0xF2, 
-					0x1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0x1, 0x9B, 0xF5, 0x33, 0x25, 0x53, 0xAB, 0x43, 0x9A, 0xB3, 
-					0xBD, 0xAE, 0x44, 0xE, 0x41, 0x21, 0x1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0x75, 0x3A, 0xF9, 0x4F, 
-					0x45, 0x41, 0xFF, 0x47, 0xAC, 0x7F, 0xDF, 0xF1, 0xC1, 0xFA, 0x5B, 0xF, 0x1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-					0, 0, 0x35, 0x5, 0x77, 0xB8, 0x4B, 0x6A, 0xB1, 0x52, 0xB5, 0x78, 0xF3, 0xCD, 0xC5, 0x0, 0x7A, 0x1F, 0x1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-					0, 0, 0, 0, 0, 0, 0, 0, 0x5B, 0xFD, 0x33, 0xDD, 0x4D, 0xA2, 0x44, 0x5A, 0x91, 0xFE, 0xDD, 0x64, 0x41, 0x77, 0x1, 0x3, 0x4A, 0, 0x1F, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-					0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0x77, 0xD, 0x75, 0xFE, 0x7, 0x13, 0xF2, 0x5D, 0xA0, 0x21, 0x1C, 0x7A, 0x8D, 0x6B, 0x80, 0xAD, 0x1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-					0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0x4E, 0xD9, 0x4B, 0x72, 0x94, 0xA0, 0x1D, 0x5E, 0x9B, 0xDA, 0x8D, 0xE9, 0x76, 0xBF, 0xB4, 0x6D, 0x1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-					0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0x6F, 0x40, 0x65, 0x94, 0x1, 0x2D, 0xDE, 0x5A, 0x81, 0x60, 0x3D, 0xC7, 0xCC, 0x1D, 0xA, 0x87, 0x1, 0, 0, 0, 0, 0, 0, 0, 
-					0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xEA, 0x41, 0xF9, 0x8F, 0xF4, 0x49, 0xA, 0x5F, 0xA9, 0x51, 0xF8, 0x3F, 0x3, 0xD3, 0xB2, 0x9B, 0x1, 0, 
-					0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0x8A, 0xD4, 0xF6, 0x2B, 0x3, 0xCC, 0x31, 0x51, 0xB9, 0xA2, 0xD, 0x75, 
-					0x2D, 0x28, 0x54, 0xF0, 0x1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xDC, 0x40, 0xA5, 0xE4, 0x16, 0x49, 
-					0xFE, 0x58, 0x96, 0x9A, 0x5A, 0x2B, 0x93, 0x3D, 0x2D, 0x12, 0x1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-					0xA, 0xC1, 0xE5, 0x53, 0x79, 0xED, 0xE8, 0x58, 0xB5, 0x7F, 0x67, 0x45, 0x53, 0x1D, 0x79, 0xBF, 0x1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-					0, 0, 0, 0, 0, 0, 0xB3, 0xB, 0x80, 0x70, 0x39, 0x82, 0x13, 0x55, 0x9E, 0xD6, 0xAF, 0x37, 0x16, 0x3C, 0xAB, 0xFC, 0x1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-					0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0x68, 0x3F, 0x65, 0x80, 0xB2, 0x2C, 0x1F, 0x4C, 0xB5, 0x90, 0xF0, 0xF5, 0x2B, 0xF4, 0xFD, 0x1A, 0x1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-					0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xDD, 0x67, 0xBF, 0xB6, 0xBD, 0x84, 0xF8, 0x44, 0xAC, 0x1C, 0x93, 0xEB, 0xCB, 0x9D, 0xBA, 0x91, 0x1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-					0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0x5, 0x90, 0x23, 0x4D, 0x2A, 0x3C, 0xB1, 0x41, 0x90, 0x22, 0x53, 0x6B, 0xB9, 0xCF, 0x93, 0xB1, 0x1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-					0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xF2, 0xD5, 0xB9, 0x79, 0x9E, 0x87, 0x89, 0x4B, 0xB7, 0x98, 0x79, 0xE4, 0x75, 0x98, 0x3, 0xC, 0x1, 0, 0, 0, 
-					0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0x85, 0x1B, 0x2B, 0x7C, 0x17, 0x69, 0x61, 0x43, 0x9C, 0x2, 0xD, 0x9E, 0x3A, 0x42, 
-					0xB, 0x95, 0x1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0x94, 0xC, 0x9D, 0x8F, 0x88, 0x56, 0xC, 0x4B, 
-					0xA9, 0xF1, 0xF9, 0x31, 0xF7, 0xFA, 0x3D, 0xC3, 0x1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xD8, 0xD, 
-					0xC2, 0x32, 0xEF, 0xFA, 0x75, 0x43, 0xA2, 0xAB, 0x32, 0x64, 0xE, 0x48, 0x15, 0xC7, 0x1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-					0, 0, 0, 0, 0xFC, 0xFD, 0xC0, 0x1C, 0xEE, 0x69, 0x43, 0x4E, 0x99, 0x1, 0x47, 0xF1, 0x26, 0x87, 0xBA, 0xF7, 0x1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-					0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0x7B, 0xD9, 0x44, 0xF7, 0x88, 0x99, 0xFB, 0x44, 0xAB, 0xD6, 0x53, 0x78, 0x84, 0x4C, 0xFA, 0x8B, 0x1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-					0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0x6C, 0xFE, 0x66, 0x9D, 0xD7, 0xA4, 0x23, 0x4C, 0x9E, 0x85, 0x67, 0x5F, 0x30, 0x4C, 0x25, 0x2D, 0x1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-					0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0x9D, 0x3D, 0xD, 0xE8, 0xC9, 0x96, 0x9E, 0x57, 0x8E, 0x42, 0xD5, 0x50, 0x70, 0xD, 0xE9, 0x25, 0x1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-					0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0x5F, 0x60, 0x5A, 0xC, 0xF1, 0xA7, 0x30, 0x50, 0xA1, 0x79, 0x9F, 0xD3, 0x63, 0xCA, 0xF3, 0xB5, 0x1, 0, 0, 0, 0, 0, 
-					0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0x4E, 0x7D, 0x54, 0x11, 0x5C, 0xB2, 0xA9, 0x57, 0x92, 0x56, 0x4F, 0x66, 0x95, 0x9C, 0xEE, 0x3C, 
-					0x1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFD, 0x0, 0xF, 0x74, 0xA5, 0xAA, 0x8D, 0x56, 0x8A, 0x17, 
-					0x11, 0x89, 0xB7, 0x3C, 0xB9, 0x9C, 0x1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0x22, 0x7E, 0xB, 0x32, 
-					0xB0, 0x3C, 0xDF, 0x4C, 0x86, 0x63, 0x1D, 0x28, 0x91, 0x0, 0x65, 0xEB, 0x1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-					0, 0, 0x16, 0x5, 0x5E, 0x6B, 0x96, 0xDE, 0xA, 0x4F, 0x8D, 0x57, 0xDC, 0xC9, 0xDA, 0xE3, 0x6C, 0x76, 0x1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-					0, 0, 0, 0, 0, 0, 0, 0, 0x41, 0x97, 0xAC, 0x9F, 0xC4, 0x5C, 0x36, 0x43, 0xAE, 0x38, 0x62, 0x12, 0xB7, 0x5A, 0x91, 0x5A, 0x1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-					0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0x80, 0x30, 0x9B, 0xBE, 0xC3, 0xB2, 0x2B, 0x42, 0xBC, 0xE1, 0xEC, 0x90, 0xEF, 0xB5, 0xD7, 0xB5, 0x1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-					0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xDF, 0x4B, 0x53, 0x4E, 0x60, 0x29, 0x78, 0x48, 0x97, 0xA4, 0x96, 0x24, 0xDE, 0xB7, 0x2F, 0x2D, 0x1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-					0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0x2F, 0x79, 0x3C, 0x16, 0x75, 0xBD, 0x3C, 0x41, 0xBF, 0x23, 0xB1, 0xFE, 0x7B, 0x95, 0xD8, 0x25, 0x1, 0, 0, 0, 0, 0, 0, 0, 
-					0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0x27, 0xF3, 0x8, 0xD5, 0x85, 0xB9, 0x48, 0xAE, 0xE9, 0x28, 0x51, 0x1E, 0x33, 0x9F, 0x9F, 0x1, 0, 
-					0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xD7, 0xE7, 0xE9, 0x6B, 0x3A, 0xE8, 0xBC, 0x5C, 0x80, 0x2C, 0x17, 0x68, 
-					0x96, 0xB, 0x52, 0xC3, 0x1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0x6E, 0x2, 0x11, 0xC2, 0x63, 0x9E, 
-					0x52, 0x54, 0xBA, 0x54, 0x3A, 0x7, 0xD6, 0xA9, 0x68, 0x74, 0x4A, 0, 0x21, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-					0x78, 0xCB, 0xD1, 0x72, 0xEF, 0xB3, 0x75, 0x4F, 0xA8, 0xB, 0x6F, 0xD9, 0xDA, 0xE2, 0x94, 0x4B, 0x1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+					0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0x78, 0xCB, 0xD1, 0x72, 0xEF, 0xB3, 0x75, 0x4F, 0xA8, 0xB, 0x6F, 0xD9, 0xDA, 0xE2, 0x94, 0x4B, 0x1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+					0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0x78, 0x44, 0x66, 0x86, 0x29, 0x80, 0xFE, 0x46, 0xA7, 0x89, 0x1C, 0x2F, 0x3E, 0x2F, 0xFB, 0x5C, 0x1, 0, 0, 0, 
+					0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0x51, 0xA9, 0x86, 0x8E, 0xB9, 0x4, 0xD2, 0x4B, 0x92, 0x9D, 0xFE, 0xF3, 0xF7, 0x16, 
+					0x21, 0xD0, 0x1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xD2, 0x26, 0xF9, 0x53, 0x3C, 0x8, 0x83, 0x42, 
+					0xB4, 0x5B, 0x81, 0xC0, 0x7, 0x23, 0x7E, 0x44, 0x1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0x9B, 0xF3, 
+					0x1B, 0x86, 0x68, 0x63, 0xEE, 0x4D, 0xB4, 0xE, 0x74, 0x68, 0x4A, 0x5C, 0xE7, 0x14, 0x1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+					0, 0, 0, 0, 0x9B, 0xBE, 0xCB, 0xAF, 0x2B, 0x58, 0x33, 0x41, 0x96, 0x48, 0xE4, 0x4C, 0xA4, 0x6E, 0xE4, 0x91, 0x1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+					0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xCF, 0x4B, 0x4E, 0x95, 0x77, 0xA, 0xFB, 0x42, 0xB7, 0x77, 0xC2, 0xED, 0x58, 0xA5, 0x2E, 0x44, 0x1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+					0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0x94, 0xC8, 0x21, 0xE5, 0x26, 0x2C, 0x46, 0x59, 0x9E, 0x61, 0x2B, 0x5E, 0x18, 0x8D, 0x1, 0xED, 0x4A, 0, 0x1D, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+					0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFD, 0xDC, 0x92, 0xAB, 0x43, 0x8D, 0xE6, 0x4D, 0x97, 0x75, 0x20, 0x70, 0x4B, 0x58, 0x1B, 0x0, 0x1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+					0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0x1F, 0x74, 0x9A, 0xB7, 0xB5, 0x7F, 0xAE, 0x50, 0x9E, 0x99, 0x91, 0x12, 0x1, 0xEC, 0x3D, 0x41, 0x4A, 0, 0xE, 0x0, 0, 0, 
+					0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0x3, 0xE6, 0x1F, 0x3E, 0x97, 0xF8, 0x63, 0x52, 0xB3, 0x28, 0x8, 0x6, 0x42, 0x6B, 0x8A, 0x79, 
+					0x1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0x77, 0x17, 0x16, 0x2D, 0x6F, 0xA6, 0xA5, 0x4E, 0xBB, 0x87, 
+					0x79, 0x3F, 0xFA, 0x49, 0x41, 0xF2, 0x1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0x1, 0x9B, 0xF5, 0x33, 
+					0x25, 0x53, 0xAB, 0x43, 0x9A, 0xB3, 0xBD, 0xAE, 0x44, 0xE, 0x41, 0x21, 0x1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+					0, 0, 0x75, 0x3A, 0xF9, 0x4F, 0x45, 0x41, 0xFF, 0x47, 0xAC, 0x7F, 0xDF, 0xF1, 0xC1, 0xFA, 0x5B, 0xF, 0x1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+					0, 0, 0, 0, 0, 0, 0, 0, 0x35, 0x5, 0x77, 0xB8, 0x4B, 0x6A, 0xB1, 0x52, 0xB5, 0x78, 0xF3, 0xCD, 0xC5, 0x0, 0x7A, 0x1F, 0x1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+					0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0x5B, 0xFD, 0x33, 0xDD, 0x4D, 0xA2, 0x44, 0x5A, 0x91, 0xFE, 0xDD, 0x64, 0x41, 0x77, 0x1, 0x3, 0x4A, 0, 0x1F, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+					0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0x77, 0xD, 0x75, 0xFE, 0x7, 0x13, 0xF2, 0x5D, 0xA0, 0x21, 0x1C, 0x7A, 0x8D, 0x6B, 0x80, 0xAD, 0x1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+					0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0x4E, 0xD9, 0x4B, 0x72, 0x94, 0xA0, 0x1D, 0x5E, 0x9B, 0xDA, 0x8D, 0xE9, 0x76, 0xBF, 0xB4, 0x6D, 0x1, 0, 0, 0, 0, 0, 0, 0, 
+					0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0x6F, 0x40, 0x65, 0x94, 0x1, 0x2D, 0xDE, 0x5A, 0x81, 0x60, 0x3D, 0xC7, 0xCC, 0x1D, 0xA, 0x87, 0x1, 0, 
+					0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xEA, 0x41, 0xF9, 0x8F, 0xF4, 0x49, 0xA, 0x5F, 0xA9, 0x51, 0xF8, 0x3F, 
+					0x3, 0xD3, 0xB2, 0x9B, 0x1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0x8A, 0xD4, 0xF6, 0x2B, 0x3, 0xCC, 
+					0x31, 0x51, 0xB9, 0xA2, 0xD, 0x75, 0x2D, 0x28, 0x54, 0xF0, 0x1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+					0xDC, 0x40, 0xA5, 0xE4, 0x16, 0x49, 0xFE, 0x58, 0x96, 0x9A, 0x5A, 0x2B, 0x93, 0x3D, 0x2D, 0x12, 0x1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+					0, 0, 0, 0, 0, 0, 0xA, 0xC1, 0xE5, 0x53, 0x79, 0xED, 0xE8, 0x58, 0xB5, 0x7F, 0x67, 0x45, 0x53, 0x1D, 0x79, 0xBF, 0x1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+					0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xB3, 0xB, 0x80, 0x70, 0x39, 0x82, 0x13, 0x55, 0x9E, 0xD6, 0xAF, 0x37, 0x16, 0x3C, 0xAB, 0xFC, 0x1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+					0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0x68, 0x3F, 0x65, 0x80, 0xB2, 0x2C, 0x1F, 0x4C, 0xB5, 0x90, 0xF0, 0xF5, 0x2B, 0xF4, 0xFD, 0x1A, 0x1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+					0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xDD, 0x67, 0xBF, 0xB6, 0xBD, 0x84, 0xF8, 0x44, 0xAC, 0x1C, 0x93, 0xEB, 0xCB, 0x9D, 0xBA, 0x91, 0x1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+					0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0x5, 0x90, 0x23, 0x4D, 0x2A, 0x3C, 0xB1, 0x41, 0x90, 0x22, 0x53, 0x6B, 0xB9, 0xCF, 0x93, 0xB1, 0x1, 0, 0, 0, 
+					0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xF2, 0xD5, 0xB9, 0x79, 0x9E, 0x87, 0x89, 0x4B, 0xB7, 0x98, 0x79, 0xE4, 0x75, 0x98, 
+					0x3, 0xC, 0x1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0x85, 0x1B, 0x2B, 0x7C, 0x17, 0x69, 0x61, 0x43, 
+					0x9C, 0x2, 0xD, 0x9E, 0x3A, 0x42, 0xB, 0x95, 0x1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0x94, 0xC, 
+					0x9D, 0x8F, 0x88, 0x56, 0xC, 0x4B, 0xA9, 0xF1, 0xF9, 0x31, 0xF7, 0xFA, 0x3D, 0xC3, 0x1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+					0, 0, 0, 0, 0xD8, 0xD, 0xC2, 0x32, 0xEF, 0xFA, 0x75, 0x43, 0xA2, 0xAB, 0x32, 0x64, 0xE, 0x48, 0x15, 0xC7, 0x1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+					0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFC, 0xFD, 0xC0, 0x1C, 0xEE, 0x69, 0x43, 0x4E, 0x99, 0x1, 0x47, 0xF1, 0x26, 0x87, 0xBA, 0xF7, 0x1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+					0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0x7B, 0xD9, 0x44, 0xF7, 0x88, 0x99, 0xFB, 0x44, 0xAB, 0xD6, 0x53, 0x78, 0x84, 0x4C, 0xFA, 0x8B, 0x1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+					0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0x6C, 0xFE, 0x66, 0x9D, 0xD7, 0xA4, 0x23, 0x4C, 0x9E, 0x85, 0x67, 0x5F, 0x30, 0x4C, 0x25, 0x2D, 0x1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+					0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0x9D, 0x3D, 0xD, 0xE8, 0xC9, 0x96, 0x9E, 0x57, 0x8E, 0x42, 0xD5, 0x50, 0x70, 0xD, 0xE9, 0x25, 0x1, 0, 0, 0, 0, 0, 
+					0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0x5F, 0x60, 0x5A, 0xC, 0xF1, 0xA7, 0x30, 0x50, 0xA1, 0x79, 0x9F, 0xD3, 0x63, 0xCA, 0xF3, 0xB5, 
+					0x1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0x4E, 0x7D, 0x54, 0x11, 0x5C, 0xB2, 0xA9, 0x57, 0x92, 0x56, 
+					0x4F, 0x66, 0x95, 0x9C, 0xEE, 0x3C, 0x1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFD, 0x0, 0xF, 0x74, 
+					0xA5, 0xAA, 0x8D, 0x56, 0x8A, 0x17, 0x11, 0x89, 0xB7, 0x3C, 0xB9, 0x9C, 0x1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+					0, 0, 0x22, 0x7E, 0xB, 0x32, 0xB0, 0x3C, 0xDF, 0x4C, 0x86, 0x63, 0x1D, 0x28, 0x91, 0x0, 0x65, 0xEB, 0x1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+					0, 0, 0, 0, 0, 0, 0, 0, 0x16, 0x5, 0x5E, 0x6B, 0x96, 0xDE, 0xA, 0x4F, 0x8D, 0x57, 0xDC, 0xC9, 0xDA, 0xE3, 0x6C, 0x76, 0x1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+					0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0x41, 0x97, 0xAC, 0x9F, 0xC4, 0x5C, 0x36, 0x43, 0xAE, 0x38, 0x62, 0x12, 0xB7, 0x5A, 0x91, 0x5A, 0x1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+					0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0x80, 0x30, 0x9B, 0xBE, 0xC3, 0xB2, 0x2B, 0x42, 0xBC, 0xE1, 0xEC, 0x90, 0xEF, 0xB5, 0xD7, 0xB5, 0x1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+					0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xDF, 0x4B, 0x53, 0x4E, 0x60, 0x29, 0x78, 0x48, 0x97, 0xA4, 0x96, 0x24, 0xDE, 0xB7, 0x2F, 0x2D, 0x1, 0, 0, 0, 0, 0, 0, 0, 
+					0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0x2F, 0x79, 0x3C, 0x16, 0x75, 0xBD, 0x3C, 0x41, 0xBF, 0x23, 0xB1, 0xFE, 0x7B, 0x95, 0xD8, 0x25, 0x1, 0, 
+					0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0x27, 0xF3, 0x8, 0xD5, 0x85, 0xB9, 0x48, 0xAE, 0xE9, 0x28, 0x51, 
+					0x1E, 0x33, 0x9F, 0x9F, 0x1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xD7, 0xE7, 0xE9, 0x6B, 0x3A, 0xE8, 
+					0xBC, 0x5C, 0x80, 0x2C, 0x17, 0x68, 0x96, 0xB, 0x52, 0xC3, 0x1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+					0x6E, 0x2, 0x11, 0xC2, 0x63, 0x9E, 0x52, 0x54, 0xBA, 0x54, 0x3A, 0x7, 0xD6, 0xA9, 0x68, 0x74, 0x4A, 0, 0x21, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
 					0, 0, 0, 0, 0, 0, 0xC9, 0xCC, 0x43, 0xCB, 0x6B, 0x44, 0x4F, 0x4A, 0xBE, 0x97, 0x75, 0x77, 0x71, 0xBE, 0x52, 0x3, 0x1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
 					0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xB9, 0xE8, 0x27, 0xE8, 0xD9, 0x8, 0x8E, 0x4A, 0xA0, 0xAC, 0xFE, 0x5E, 0xD3, 0xCB, 0xBB, 0xD3, 0x1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
 					0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xB6, 0x2F, 0x61, 0xA6, 0x88, 0x76, 0xCE, 0x4A, 0x95, 0xFB, 0x35, 0x95, 0x38, 0xE7, 0xAA, 0x1, 0x1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
@@ -19783,20 +19783,20 @@ namespace McgInterop
 			[global::System.Runtime.CompilerServices.TypeHandleFixup(9072, typeof(global::Windows.UI.Xaml.Controls.Frame))]
 			[global::System.Runtime.CompilerServices.TypeHandleFixup(9120, typeof(global::Windows.Storage.StorageFile))]
 			[global::System.Runtime.CompilerServices.TypeHandleFixup(9168, typeof(global::Windows.Storage.FileAccessMode))]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(9216, typeof(global::Windows.ApplicationModel.Activation.VoiceCommandActivatedEventArgs))]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(9264, typeof(global::Windows.UI.Popups.MessageDialog))]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(9312, typeof(global::Windows.Globalization.CalendarIdentifiers))]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(9360, typeof(global::Windows.System.Threading.ThreadPool))]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(9408, typeof(global::Windows.System.Threading.WorkItemPriority))]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(9456, typeof(global::Windows.System.Threading.WorkItemOptions))]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(9504, typeof(global::Windows.UI.Core.CoreWindow))]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(9552, typeof(global::Windows.ApplicationModel.Resources.Core.ResourceManager))]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(9600, typeof(global::Windows.Security.Cryptography.CryptographicBuffer))]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(9648, typeof(global::Windows.Security.Cryptography.Core.HashAlgorithmNames))]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(9696, typeof(global::Windows.Security.Cryptography.Core.HashAlgorithmProvider))]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(9744, typeof(global::Windows.ApplicationModel.Package))]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(9792, typeof(global::Windows.Storage.StorageFolder))]
-			[global::System.Runtime.CompilerServices.TypeHandleFixup(9840, typeof(global::Windows.Storage.CreationCollisionOption))]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(9216, typeof(global::Windows.Storage.CreationCollisionOption))]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(9264, typeof(global::Windows.ApplicationModel.Activation.VoiceCommandActivatedEventArgs))]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(9312, typeof(global::Windows.UI.Popups.MessageDialog))]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(9360, typeof(global::Windows.Globalization.CalendarIdentifiers))]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(9408, typeof(global::Windows.System.Threading.ThreadPool))]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(9456, typeof(global::Windows.System.Threading.WorkItemPriority))]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(9504, typeof(global::Windows.System.Threading.WorkItemOptions))]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(9552, typeof(global::Windows.UI.Core.CoreWindow))]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(9600, typeof(global::Windows.ApplicationModel.Resources.Core.ResourceManager))]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(9648, typeof(global::Windows.Security.Cryptography.CryptographicBuffer))]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(9696, typeof(global::Windows.Security.Cryptography.Core.HashAlgorithmNames))]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(9744, typeof(global::Windows.Security.Cryptography.Core.HashAlgorithmProvider))]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(9792, typeof(global::Windows.ApplicationModel.Package))]
+			[global::System.Runtime.CompilerServices.TypeHandleFixup(9840, typeof(global::Windows.Storage.StorageFolder))]
 			[global::System.Runtime.CompilerServices.TypeHandleFixup(9888, typeof(global::Windows.Foundation.Diagnostics.AsyncCausalityTracer))]
 			[global::System.Runtime.CompilerServices.TypeHandleFixup(9936, typeof(global::Windows.Foundation.Diagnostics.CausalityTraceLevel))]
 			[global::System.Runtime.CompilerServices.TypeHandleFixup(9984, typeof(global::Windows.Foundation.Diagnostics.CausalitySource))]
@@ -20036,20 +20036,20 @@ namespace McgInterop
 					0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0x86, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0x6F, 0x0, 0, 0, 
 					0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0x68, 0x1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xC4, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0, 0, 0, 0, 
 					0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0x72, 0x1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xA0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0, 0, 0, 0, 0, 0, 
-					0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xC6, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0, 0, 0, 0, 0, 0, 0, 0, 
-					0, 0, 0, 0, 0, 0, 0x7E, 0x1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xC7, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-					0, 0, 0, 0, 0x82, 0x1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xC6, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-					0, 0, 0xFF, 0xFF, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xC6, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-					0xFF, 0xFF, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xA0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 
+					0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xA0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0, 0, 0, 0, 0, 0, 0, 0, 
+					0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xC6, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+					0, 0, 0, 0, 0x7F, 0x1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xC7, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+					0, 0, 0x83, 0x1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xC6, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+					0xFF, 0xFF, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xC6, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 
 					0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xA0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0, 0, 
-					0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xC7, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0x91, 0x1, 0, 0, 0, 0, 
-					0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xC6, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0x96, 0x1, 0, 0, 0, 0, 0, 0, 
-					0, 0, 0, 0, 0, 0, 0, 0, 0xC6, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0, 0, 0, 0, 0, 0, 0, 0, 
+					0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xA0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0, 0, 0, 0, 
+					0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xC7, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0x92, 0x1, 0, 0, 0, 0, 0, 0, 
+					0, 0, 0, 0, 0, 0, 0, 0, 0xC6, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0x97, 0x1, 0, 0, 0, 0, 0, 0, 0, 0, 
 					0, 0, 0, 0, 0, 0, 0xC6, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-					0, 0, 0, 0, 0xC6, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0x9F, 0x1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-					0, 0, 0xC6, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xA1, 0x1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-					0xC4, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xA5, 0x1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xA0, 0x0, 
-					0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xC6, 0x0, 0x0, 0x0, 
+					0, 0, 0, 0, 0xC6, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+					0, 0, 0xC6, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xA0, 0x1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+					0xC6, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xA2, 0x1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xC4, 0x0, 
+					0x0, 0x0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0x77, 0x1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xC6, 0x0, 0x0, 0x0, 
 					0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xA0, 0x0, 0x0, 0x0, 0, 0, 
 					0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xA0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 
 					0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xA0, 0x0, 0x0, 0x0, 0, 0, 0, 0, 0, 0, 

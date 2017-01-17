@@ -28,118 +28,122 @@
     <AppXManifest Include="C:\JarvisControlCenter\JarvisControlCenter\bin\x64\Release\ilc\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-01-14T11:48:19.262</Modified>
+      <Modified>2017-01-17T01:45:31.076</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\JarvisControlCenter\JarvisControlCenter\bin\x64\Release\ilc\3erParty\dotNetFx45_Full_setup.exe">
       <PackagePath>3erParty\dotNetFx45_Full_setup.exe</PackagePath>
-      <Modified>2017-01-13T12:32:28.324</Modified>
+      <Modified>2017-01-16T21:53:30.539</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\JarvisControlCenter\JarvisControlCenter\bin\x64\Release\ilc\Assets\backgroudJarvis.jpg">
       <PackagePath>Assets\backgroudJarvis.jpg</PackagePath>
-      <Modified>2017-01-13T12:32:28.473</Modified>
+      <Modified>2017-01-16T21:53:30.709</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\JarvisControlCenter\JarvisControlCenter\bin\x64\Release\ilc\Assets\backgroudJarvis.png">
       <PackagePath>Assets\backgroudJarvis.png</PackagePath>
-      <Modified>2017-01-13T12:32:28.481</Modified>
+      <Modified>2017-01-16T21:53:30.717</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\JarvisControlCenter\JarvisControlCenter\bin\x64\Release\ilc\Assets\backgroundJarvisVertical.png">
       <PackagePath>Assets\backgroundJarvisVertical.png</PackagePath>
-      <Modified>2017-01-13T12:32:28.484</Modified>
+      <Modified>2017-01-16T21:53:30.720</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\JarvisControlCenter\JarvisControlCenter\bin\x64\Release\ilc\Assets\BadgeLogo.scale-100.jpg">
       <PackagePath>Assets\BadgeLogo.scale-100.jpg</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-01-13T12:32:28.486</Modified>
+      <Modified>2017-01-16T21:53:30.721</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\JarvisControlCenter\JarvisControlCenter\bin\x64\Release\ilc\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
-      <Modified>2017-01-13T12:32:28.487</Modified>
+      <Modified>2017-01-16T21:53:30.722</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\JarvisControlCenter\JarvisControlCenter\bin\x64\Release\ilc\Assets\SplashScreen.scale-100.jpg">
       <PackagePath>Assets\SplashScreen.scale-100.jpg</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-01-13T12:32:28.495</Modified>
+      <Modified>2017-01-16T21:53:30.732</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\JarvisControlCenter\JarvisControlCenter\bin\x64\Release\ilc\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
-      <Modified>2017-01-13T12:32:28.496</Modified>
+      <Modified>2017-01-16T21:53:30.733</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\JarvisControlCenter\JarvisControlCenter\bin\x64\Release\ilc\Assets\Square150x150Logo.scale-100.jpg">
       <PackagePath>Assets\Square150x150Logo.scale-100.jpg</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-01-13T12:32:28.497</Modified>
+      <Modified>2017-01-16T21:53:30.734</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\JarvisControlCenter\JarvisControlCenter\bin\x64\Release\ilc\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
-      <Modified>2017-01-13T12:32:28.498</Modified>
+      <Modified>2017-01-16T21:53:30.735</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\JarvisControlCenter\JarvisControlCenter\bin\x64\Release\ilc\Assets\Square310x310Logo.scale-100.jpg">
       <PackagePath>Assets\Square310x310Logo.scale-100.jpg</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-01-13T12:32:28.499</Modified>
+      <Modified>2017-01-16T21:53:30.736</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\JarvisControlCenter\JarvisControlCenter\bin\x64\Release\ilc\Assets\Square44x44Logo.scale-100.jpg">
       <PackagePath>Assets\Square44x44Logo.scale-100.jpg</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-01-13T12:32:28.500</Modified>
+      <Modified>2017-01-16T21:53:30.737</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\JarvisControlCenter\JarvisControlCenter\bin\x64\Release\ilc\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
-      <Modified>2017-01-13T12:32:28.501</Modified>
+      <Modified>2017-01-16T21:53:30.738</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\JarvisControlCenter\JarvisControlCenter\bin\x64\Release\ilc\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
-      <Modified>2017-01-13T12:32:28.502</Modified>
+      <Modified>2017-01-16T21:53:30.738</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\JarvisControlCenter\JarvisControlCenter\bin\x64\Release\ilc\Assets\Square71x71Logo.scale-100.jpg">
       <PackagePath>Assets\Square71x71Logo.scale-100.jpg</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-01-13T12:32:28.503</Modified>
+      <Modified>2017-01-16T21:53:30.739</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\JarvisControlCenter\JarvisControlCenter\bin\x64\Release\ilc\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
-      <Modified>2017-01-13T12:32:28.503</Modified>
+      <Modified>2017-01-16T21:53:30.740</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\JarvisControlCenter\JarvisControlCenter\bin\x64\Release\ilc\Assets\StoreLogo.scale-100.jpg">
       <PackagePath>Assets\StoreLogo.scale-100.jpg</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-01-13T12:32:28.505</Modified>
+      <Modified>2017-01-16T21:53:30.741</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\JarvisControlCenter\JarvisControlCenter\bin\x64\Release\ilc\Assets\Wide310x150Logo.scale-100.jpg">
       <PackagePath>Assets\Wide310x150Logo.scale-100.jpg</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-01-13T12:32:28.509</Modified>
+      <Modified>2017-01-16T21:53:30.745</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\JarvisControlCenter\JarvisControlCenter\bin\x64\Release\ilc\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
-      <Modified>2017-01-13T12:32:28.509</Modified>
+      <Modified>2017-01-16T21:53:30.745</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\JarvisControlCenter\JarvisControlCenter\bin\x64\Release\ilc\clrcompression.dll">
       <PackagePath>clrcompression.dll</PackagePath>
       <Modified>2016-06-13T19:46:18.000</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\JarvisControlCenter\JarvisControlCenter\bin\x64\Release\ilc\files\VoiceCommandDefinition.xml">
+      <PackagePath>files\VoiceCommandDefinition.xml</PackagePath>
+      <Modified>2017-01-16T22:20:06.676</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\JarvisControlCenter\JarvisControlCenter\bin\x64\Release\ilc\JarvisControlCenter.dll">
       <PackagePath>JarvisControlCenter.dll</PackagePath>
-      <Modified>2017-01-14T11:48:18.736</Modified>
+      <Modified>2017-01-17T01:45:30.590</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\JarvisControlCenter\JarvisControlCenter\bin\x64\Release\ilc\JarvisControlCenter.exe">
       <PackagePath>JarvisControlCenter.exe</PackagePath>
-      <Modified>2017-01-14T11:48:19.234</Modified>
+      <Modified>2017-01-17T01:45:31.052</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\JarvisControlCenter\JarvisControlCenter\bin\x64\Release\ilc\JarvisControlCenter.pdb">
       <PackagePath>JarvisControlCenter.pdb</PackagePath>
-      <Modified>2017-01-14T11:48:19.232</Modified>
+      <Modified>2017-01-17T01:45:31.048</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\JarvisControlCenter\JarvisControlCenter\bin\x64\Release\ilc\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-01-14T11:37:15.122</Modified>
+      <Modified>2017-01-17T01:38:00.379</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\JarvisControlCenter\JarvisControlCenter\bin\x64\Release\ilc\VoiceCommandDefinition.xml">
       <PackagePath>VoiceCommandDefinition.xml</PackagePath>
-      <Modified>2017-01-11T00:22:32.125</Modified>
+      <Modified>2017-01-16T21:53:33.163</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

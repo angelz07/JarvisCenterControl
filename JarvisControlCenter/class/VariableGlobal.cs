@@ -82,7 +82,7 @@ namespace JarvisControlCenter
 
 
 
-        public string recordNewInfosApp(string newIpFhem, string newPortFhem, string newLoginFhem, string newIpPassFhem)
+        public async Task<string> recordNewInfosApp(string newIpFhem, string newPortFhem, string newLoginFhem, string newIpPassFhem)
         {
             string retour = "false";
 
@@ -99,20 +99,20 @@ namespace JarvisControlCenter
 
             try
             {
-                /*
-                 *  string output = JsonConvert.SerializeObject(infosAooJson);
-                  string fileName = "infosApplication.json";
-                  var localFolder = ApplicationData.Current.LocalFolder;
-                  var localFile = await localFolder.CreateFileAsync(fileName, CreationCollisionOption.ReplaceExisting);
 
-                  var fileBytes = System.Text.Encoding.UTF8.GetBytes(output);
-                  using (var s = await localFile.OpenStreamForWriteAsync())
-                  {
-                      s.Write(fileBytes, 0, fileBytes.Length);
-                  }
-                  */
+                string output = JsonConvert.SerializeObject(infosAooJson);
+                string fileName = "infosApplication.json";
+                var localFolder = ApplicationData.Current.LocalFolder;
+                var localFile = await localFolder.CreateFileAsync(fileName, CreationCollisionOption.ReplaceExisting);
 
-                retour = "output= ";
+                var fileBytes = Encoding.UTF8.GetBytes(output);
+                using (var s = await localFile.OpenStreamForWriteAsync())
+                {
+                    s.Write(fileBytes, 0, fileBytes.Length);
+                }
+
+
+                retour = "Enregistrement des Infos Fait réalisé.";
             }
             catch (Exception e)
             {
@@ -124,8 +124,8 @@ namespace JarvisControlCenter
 
         }
 
-        
 
        
+
     }
 }

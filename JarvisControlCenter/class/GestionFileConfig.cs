@@ -15,13 +15,14 @@ namespace JarvisControlCenter
         private static VariableGlobals variableGlobals = new VariableGlobals();
 
         public StorageFolder storageFolder = ApplicationData.Current.LocalFolder;
+        private static ConsoleLogInfos consoleLogInfos = new ConsoleLogInfos();
 
         public async Task<string> initializeFileJson()
         {
             string retour = "";
             string devicesJson = "devices.json";
             string infosApplicationJson = "infosApplication.json";
-            string logsJson = "logs.json";
+            string voiceCommandDefinition = "VoiceCommandDefinition.xml";
 
             try
             {
@@ -29,12 +30,12 @@ namespace JarvisControlCenter
                 string isDeviceJson = await isFilePresent(devicesJson);
                 if (isDeviceJson == "true")
                 {
-                    string isCorrect = await testIfDeviceJsonCorrect(devicesJson);
+                   /* string isCorrect = await testIfDeviceJsonCorrect(devicesJson);
                     if (isCorrect != "true")
                     {
                         string result = await copyFileConfig(devicesJson);
                         retour = retour + " Result copy devicesJson: " + result;
-                    }
+                    }*/
                 }
                 else
                 {
@@ -46,12 +47,12 @@ namespace JarvisControlCenter
                 string isInfosApplicationJson = await isFilePresent(infosApplicationJson);
                 if (isInfosApplicationJson == "true")
                 {
-                    string isCorrect = await testIfInfosApplicationCorrect(infosApplicationJson);
+                    /*string isCorrect = await testIfInfosApplicationCorrect(infosApplicationJson);
                     if (isCorrect != "true")
                     {
                         string result = await copyFileConfig(infosApplicationJson);
                         retour = retour + " Result copy infosApplicationJson: " + result;
-                    }
+                    }*/
                 }
                 else
                 {
@@ -60,22 +61,23 @@ namespace JarvisControlCenter
                 }// Fin infosApplication.json
 
 
-                //logs.json
-                string isLogsJson = await isFilePresent(logsJson);
-                if (isLogsJson == "true")
+                //VoiceCommandDefinition.xml
+                string isVoiceCommandDefinition = await isFilePresent(voiceCommandDefinition);
+                if (isVoiceCommandDefinition == "true")
                 {
-                    string isCorrect = await testIfLogsCorrect(logsJson);
-                    if (isCorrect != "true")
-                    {
-                        string result = await copyFileConfig(logsJson);
-                        retour = retour + " Result copy logsJson: " + result;
-                    }
+                    // string isCorrect = await testIfDeviceJsonCorrect(devicesJson);
+                    /* if (isCorrect != "true")
+                     {
+                         string result = await copyFileConfig(devicesJson);
+                         retour = retour + " Result copy devicesJson: " + result;
+                     }*/
                 }
                 else
                 {
-                    string result = await copyFileConfig(logsJson);
-                    retour = retour + " Result copy logsJson: " + result;
-                }// logs.Json
+                    // CopyPrayerFile(voiceCommandDefinition);
+                    await CopyXmlFile(voiceCommandDefinition);
+                }// VoiceCommandDefinition.xml
+
 
                 variableGlobals.configFileIsPresent = "true";
 
@@ -192,30 +194,7 @@ namespace JarvisControlCenter
         }
 
 
-        //test si logs.json est correct
-        public async Task<string> testIfLogsCorrect(string file)
-        {
-            string retour = "false";
-            try
-            {
-                //  StorageFolder storageFolder = ApplicationData.Current.LocalFolder;
-                StorageFile path = await storageFolder.GetFileAsync(file);
-                string jsonFile = await Windows.Storage.FileIO.ReadTextAsync(path);
-
-                JObject dataJson = JObject.Parse(jsonFile);
-                var logs = dataJson["logs"];
-
-                if (logs.ToString() != null && logs.ToString() != "")
-                {
-                    retour = "true";
-                }
-            }
-            catch (Exception ex)
-            {
-                retour = ex.Message;
-            }
-            return retour;
-        }
+        
 
 
         //Copy des fichiers
@@ -247,6 +226,64 @@ namespace JarvisControlCenter
 
             return retour;
         }
+
+        async void CopyPrayerFile(string file)
+        {
+            //get the storage for your app 
+            StorageFolder store = ApplicationData.Current.LocalFolder;
+            StorageFile prayerFile = null;
+            try
+            {
+                prayerFile = await storageFolder.GetFileAsync(file);
+            }
+            catch (FileNotFoundException ex)
+            {
+                // Debug.WriteLine(ex.Message);
+                consoleLogInfos.addLineToLogs("error", "CopyPrayerFile: " + ex.Message);
+            }
+
+            if (prayerFile == null)
+            {
+                //get the file from Assets
+                string path = "files\\" + file;
+                StorageFolder install = Windows.ApplicationModel.Package.Current.InstalledLocation;
+                StorageFile installFile = await install.GetFileAsync(path);
+
+               await installFile.CopyAsync(store);
+
+            }
+        }
+
+
+        public async Task<string> CopyXmlFile(string fileName)
+        {
+            string retour = "false";
+            try
+            {
+                string xml = File.ReadAllText(fileName).ToString();
+               
+
+                var localFolder = ApplicationData.Current.LocalFolder;
+                var localFile = await localFolder.CreateFileAsync(fileName, CreationCollisionOption.ReplaceExisting);
+
+                var fileBytes = System.Text.Encoding.UTF8.GetBytes(xml);
+                using (var s = await localFile.OpenStreamForWriteAsync())
+                {
+                    s.Write(fileBytes, 0, fileBytes.Length);
+                }
+
+                retour = "true";
+            }
+            catch (Exception ex)
+            {
+                retour = ex.Message;
+            }
+
+            return retour;
+        }
+
+
+        
 
     }
 }

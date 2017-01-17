@@ -25597,6 +25597,20 @@ namespace Windows.Storage
 					global::System.Runtime.InteropServices.McgMarshal.ComSafeRelease(new global::System.IntPtr(((void*)unsafe_operation__retval)));
 				}
 			}
+
+			[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+			public static global::Windows.Foundation.IAsyncOperation<global::Windows.Storage.StorageFile> CopyAsync(
+						global::System.__ComObject __this, 
+						global::Windows.Storage.IStorageFolder destinationFolder)
+			{
+				global::Windows.Foundation.IAsyncOperation<global::Windows.Storage.StorageFile> __ret = global::McgInterop.ForwardComSharedStubs.Func_TArg0__TResult__<global::Windows.Storage.IStorageFile, global::Windows.Storage.IStorageFolder, global::Windows.Foundation.IAsyncOperation<global::Windows.Storage.StorageFile>>(
+									__this, 
+									destinationFolder, 
+									global::Windows.Storage.IStorageFile__Impl.Vtbl.idx_CopyOverloadDefaultNameAndOptions
+								);
+				global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
+				return __ret;
+			}
 		}
 
 		// DispatchClass for 'Windows.Storage.IStorageFile'
@@ -25628,6 +25642,17 @@ namespace Windows.Storage
 				global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
 				return __retVal;
 			}
+
+			[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+			global::Windows.Foundation.IAsyncOperation<global::Windows.Storage.StorageFile> global::Windows.Storage.IStorageFile.CopyAsync(global::Windows.Storage.IStorageFolder destinationFolder)
+			{
+				global::Windows.Foundation.IAsyncOperation<global::Windows.Storage.StorageFile> __retVal = global::Windows.Storage.IStorageFile__Impl.StubClass.CopyAsync(
+									this, 
+									destinationFolder
+								);
+				global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
+				return __retVal;
+			}
 		}
 
 		// v-table for 'Windows.Storage.IStorageFile'
@@ -25635,141 +25660,7 @@ namespace Windows.Storage
 		public unsafe partial struct Vtbl
 		{
 			internal const int idx_OpenAsync = 8;
-		}
-	}
-
-	// Windows.Storage.IStorageItemProperties
-	public unsafe static class IStorageItemProperties__Impl
-	{
-		// v-table for 'Windows.Storage.IStorageItemProperties'
-		[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.Storage.IStorageItemProperties))]
-		public unsafe partial struct Vtbl
-		{
-		}
-	}
-
-	// Windows.Storage.IStorageItemProperties2
-	public unsafe static class IStorageItemProperties2__Impl
-	{
-		// v-table for 'Windows.Storage.IStorageItemProperties2'
-		[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.Storage.IStorageItemProperties2))]
-		public unsafe partial struct Vtbl
-		{
-		}
-	}
-
-	// Windows.Storage.IStorageItem2
-	public unsafe static class IStorageItem2__Impl
-	{
-		// v-table for 'Windows.Storage.IStorageItem2'
-		[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.Storage.IStorageItem2))]
-		public unsafe partial struct Vtbl
-		{
-		}
-	}
-
-	// Windows.Storage.IStorageItemPropertiesWithProvider
-	public unsafe static class IStorageItemPropertiesWithProvider__Impl
-	{
-		// v-table for 'Windows.Storage.IStorageItemPropertiesWithProvider'
-		[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.Storage.IStorageItemPropertiesWithProvider))]
-		public unsafe partial struct Vtbl
-		{
-		}
-	}
-
-	// Windows.Storage.IStorageFilePropertiesWithAvailability
-	public unsafe static class IStorageFilePropertiesWithAvailability__Impl
-	{
-		// StubClass for 'Windows.Storage.IStorageFilePropertiesWithAvailability'
-		public static partial class StubClass
-		{
-			[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-			public static bool get_IsAvailable(global::System.__ComObject __this)
-			{
-				bool __ret = global::McgInterop.ForwardComSharedStubs.Func_bool__<global::Windows.Storage.IStorageFilePropertiesWithAvailability>(
-									__this, 
-									global::Windows.Storage.IStorageFilePropertiesWithAvailability__Impl.Vtbl.idx_get_IsAvailable
-								);
-				global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-				return __ret;
-			}
-		}
-
-		// DispatchClass for 'Windows.Storage.IStorageFilePropertiesWithAvailability'
-		[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.Storage.IStorageFilePropertiesWithAvailability))]
-		public abstract partial class DispatchClass : global::System.__ComObject, global::Windows.Storage.IStorageFilePropertiesWithAvailability
-		{
-			[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-			[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Windows.Storage.IStorageFilePropertiesWithAvailability.IsAvailable")]
-			bool global::Windows.Storage.IStorageFilePropertiesWithAvailability.get_IsAvailable()
-			{
-				bool __retVal = global::Windows.Storage.IStorageFilePropertiesWithAvailability__Impl.StubClass.get_IsAvailable(this);
-				global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-				return __retVal;
-			}
-		}
-
-		// v-table for 'Windows.Storage.IStorageFilePropertiesWithAvailability'
-		[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.Storage.IStorageFilePropertiesWithAvailability))]
-		public unsafe partial struct Vtbl
-		{
-			internal const int idx_get_IsAvailable = 6;
-		}
-	}
-
-	// Windows.Storage.IStorageFile2
-	public unsafe static class IStorageFile2__Impl
-	{
-		// v-table for 'Windows.Storage.IStorageFile2'
-		[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.Storage.IStorageFile2))]
-		public unsafe partial struct Vtbl
-		{
-		}
-	}
-
-	// Windows.Storage.IStorageFolderStatics
-	public unsafe static class IStorageFolderStatics__Impl
-	{
-		// StubClass for 'Windows.Storage.IStorageFolderStatics'
-		public static partial class StubClass
-		{
-			[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-			public static global::Windows.Foundation.IAsyncOperation<global::Windows.Storage.StorageFolder> GetFolderFromPathAsync(
-						global::System.__ComObject __this, 
-						string path)
-			{
-				global::Windows.Foundation.IAsyncOperation<global::Windows.Storage.StorageFolder> __ret = global::McgInterop.ForwardComSharedStubs.Func_string__TResult__<global::Windows.Storage.IStorageFolderStatics, global::Windows.Foundation.IAsyncOperation<global::Windows.Storage.StorageFolder>>(
-									__this, 
-									path, 
-									global::Windows.Storage.IStorageFolderStatics__Impl.Vtbl.idx_GetFolderFromPathAsync
-								);
-				global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-				return __ret;
-			}
-		}
-
-		// DispatchClass for 'Windows.Storage.IStorageFolderStatics'
-		[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.Storage.IStorageFolderStatics))]
-		public abstract partial class DispatchClass : global::System.__ComObject, global::Windows.Storage.IStorageFolderStatics
-		{
-			[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-			global::Windows.Foundation.IAsyncOperation<global::Windows.Storage.StorageFolder> global::Windows.Storage.IStorageFolderStatics.GetFolderFromPathAsync(string path)
-			{
-				global::Windows.Foundation.IAsyncOperation<global::Windows.Storage.StorageFolder> __retVal = global::Windows.Storage.IStorageFolderStatics__Impl.StubClass.GetFolderFromPathAsync(
-									this, 
-									path
-								);
-				global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-				return __retVal;
-			}
-		}
-
-		// v-table for 'Windows.Storage.IStorageFolderStatics'
-		[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.Storage.IStorageFolderStatics))]
-		public unsafe partial struct Vtbl
-		{
-			internal const int idx_GetFolderFromPathAsync = 6;
+			internal const int idx_CopyOverloadDefaultNameAndOptions = 10;
 		}
 	}
 
@@ -25916,6 +25807,141 @@ namespace Windows.Storage
 			internal const int idx_CreateFileAsync = 7;
 			internal const int idx_GetFileAsync = 10;
 			internal const int idx_GetItemAsync = 12;
+		}
+	}
+
+	// Windows.Storage.IStorageItemProperties
+	public unsafe static class IStorageItemProperties__Impl
+	{
+		// v-table for 'Windows.Storage.IStorageItemProperties'
+		[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.Storage.IStorageItemProperties))]
+		public unsafe partial struct Vtbl
+		{
+		}
+	}
+
+	// Windows.Storage.IStorageItemProperties2
+	public unsafe static class IStorageItemProperties2__Impl
+	{
+		// v-table for 'Windows.Storage.IStorageItemProperties2'
+		[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.Storage.IStorageItemProperties2))]
+		public unsafe partial struct Vtbl
+		{
+		}
+	}
+
+	// Windows.Storage.IStorageItem2
+	public unsafe static class IStorageItem2__Impl
+	{
+		// v-table for 'Windows.Storage.IStorageItem2'
+		[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.Storage.IStorageItem2))]
+		public unsafe partial struct Vtbl
+		{
+		}
+	}
+
+	// Windows.Storage.IStorageItemPropertiesWithProvider
+	public unsafe static class IStorageItemPropertiesWithProvider__Impl
+	{
+		// v-table for 'Windows.Storage.IStorageItemPropertiesWithProvider'
+		[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.Storage.IStorageItemPropertiesWithProvider))]
+		public unsafe partial struct Vtbl
+		{
+		}
+	}
+
+	// Windows.Storage.IStorageFilePropertiesWithAvailability
+	public unsafe static class IStorageFilePropertiesWithAvailability__Impl
+	{
+		// StubClass for 'Windows.Storage.IStorageFilePropertiesWithAvailability'
+		public static partial class StubClass
+		{
+			[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+			public static bool get_IsAvailable(global::System.__ComObject __this)
+			{
+				bool __ret = global::McgInterop.ForwardComSharedStubs.Func_bool__<global::Windows.Storage.IStorageFilePropertiesWithAvailability>(
+									__this, 
+									global::Windows.Storage.IStorageFilePropertiesWithAvailability__Impl.Vtbl.idx_get_IsAvailable
+								);
+				global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
+				return __ret;
+			}
+		}
+
+		// DispatchClass for 'Windows.Storage.IStorageFilePropertiesWithAvailability'
+		[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.Storage.IStorageFilePropertiesWithAvailability))]
+		public abstract partial class DispatchClass : global::System.__ComObject, global::Windows.Storage.IStorageFilePropertiesWithAvailability
+		{
+			[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+			[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Windows.Storage.IStorageFilePropertiesWithAvailability.IsAvailable")]
+			bool global::Windows.Storage.IStorageFilePropertiesWithAvailability.get_IsAvailable()
+			{
+				bool __retVal = global::Windows.Storage.IStorageFilePropertiesWithAvailability__Impl.StubClass.get_IsAvailable(this);
+				global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
+				return __retVal;
+			}
+		}
+
+		// v-table for 'Windows.Storage.IStorageFilePropertiesWithAvailability'
+		[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.Storage.IStorageFilePropertiesWithAvailability))]
+		public unsafe partial struct Vtbl
+		{
+			internal const int idx_get_IsAvailable = 6;
+		}
+	}
+
+	// Windows.Storage.IStorageFile2
+	public unsafe static class IStorageFile2__Impl
+	{
+		// v-table for 'Windows.Storage.IStorageFile2'
+		[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.Storage.IStorageFile2))]
+		public unsafe partial struct Vtbl
+		{
+		}
+	}
+
+	// Windows.Storage.IStorageFolderStatics
+	public unsafe static class IStorageFolderStatics__Impl
+	{
+		// StubClass for 'Windows.Storage.IStorageFolderStatics'
+		public static partial class StubClass
+		{
+			[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+			public static global::Windows.Foundation.IAsyncOperation<global::Windows.Storage.StorageFolder> GetFolderFromPathAsync(
+						global::System.__ComObject __this, 
+						string path)
+			{
+				global::Windows.Foundation.IAsyncOperation<global::Windows.Storage.StorageFolder> __ret = global::McgInterop.ForwardComSharedStubs.Func_string__TResult__<global::Windows.Storage.IStorageFolderStatics, global::Windows.Foundation.IAsyncOperation<global::Windows.Storage.StorageFolder>>(
+									__this, 
+									path, 
+									global::Windows.Storage.IStorageFolderStatics__Impl.Vtbl.idx_GetFolderFromPathAsync
+								);
+				global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
+				return __ret;
+			}
+		}
+
+		// DispatchClass for 'Windows.Storage.IStorageFolderStatics'
+		[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.Storage.IStorageFolderStatics))]
+		public abstract partial class DispatchClass : global::System.__ComObject, global::Windows.Storage.IStorageFolderStatics
+		{
+			[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+			global::Windows.Foundation.IAsyncOperation<global::Windows.Storage.StorageFolder> global::Windows.Storage.IStorageFolderStatics.GetFolderFromPathAsync(string path)
+			{
+				global::Windows.Foundation.IAsyncOperation<global::Windows.Storage.StorageFolder> __retVal = global::Windows.Storage.IStorageFolderStatics__Impl.StubClass.GetFolderFromPathAsync(
+									this, 
+									path
+								);
+				global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
+				return __retVal;
+			}
+		}
+
+		// v-table for 'Windows.Storage.IStorageFolderStatics'
+		[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.Storage.IStorageFolderStatics))]
+		public unsafe partial struct Vtbl
+		{
+			internal const int idx_GetFolderFromPathAsync = 6;
 		}
 	}
 
@@ -29830,6 +29856,37 @@ namespace Windows.UI.Xaml
 			}
 
 			[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+			public static global::Windows.Foundation.Point get_RenderTransformOrigin(global::System.__ComObject __this)
+			{
+				global::Windows.Foundation.Point __ret = global::McgInterop.ForwardComSharedStubs.Func__Point__<global::Windows.UI.Xaml.IUIElement>(
+									__this, 
+									global::Windows.UI.Xaml.IUIElement__Impl.Vtbl.idx_get_RenderTransformOrigin
+								);
+				global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
+				return __ret;
+			}
+
+			// Signature, Windows.UI.Xaml.IUIElement.put_RenderTransformOrigin, [fwd] [return] [Mcg.CodeGen.ComHRESULTReturnMarshaller] void__int, [fwd] [in] [Mcg.CodeGen.BlittableValueMarshaller] Windows_Foundation_Point__Windows_Foundation__Point, 
+			[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+			public static void put_RenderTransformOrigin(
+						global::System.__ComObject __this, 
+						global::Windows.Foundation.Point value)
+			{
+				// Setup
+				int unsafe___return__;
+				// Marshalling
+				// Call to native method
+				unsafe___return__ = global::McgInterop.ComCallHelpers.ComCall__HRESULT(
+									__this, 
+									typeof(global::Windows.UI.Xaml.IUIElement).TypeHandle, 
+									global::Windows.UI.Xaml.IUIElement__Impl.Vtbl.idx_put_RenderTransformOrigin, 
+									value
+								);
+				global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
+				// Return
+			}
+
+			[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
 			public static global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken add_KeyUp(
 						global::System.__ComObject __this, 
 						global::Windows.UI.Xaml.Input.KeyEventHandler value)
@@ -30755,6 +30812,26 @@ namespace Windows.UI.Xaml
 			}
 
 			[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+			[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Windows.UI.Xaml.IUIElement.RenderTransformOrigin")]
+			global::Windows.Foundation.Point global::Windows.UI.Xaml.IUIElement.get_RenderTransformOrigin()
+			{
+				global::Windows.Foundation.Point __retVal = global::Windows.UI.Xaml.IUIElement__Impl.StubClass.get_RenderTransformOrigin(this);
+				global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
+				return __retVal;
+			}
+
+			[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+			[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "Windows.UI.Xaml.IUIElement.RenderTransformOrigin")]
+			void global::Windows.UI.Xaml.IUIElement.put_RenderTransformOrigin(global::Windows.Foundation.Point value)
+			{
+				global::Windows.UI.Xaml.IUIElement__Impl.StubClass.put_RenderTransformOrigin(
+									this, 
+									value
+								);
+				global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
+			}
+
+			[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
 			[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.EventAdd, "Windows.UI.Xaml.IUIElement.KeyUp")]
 			global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken global::Windows.UI.Xaml.IUIElement.add_KeyUp(global::Windows.UI.Xaml.Input.KeyEventHandler value)
 			{
@@ -31336,6 +31413,8 @@ namespace Windows.UI.Xaml
 		{
 			internal const int idx_get_Opacity = 9;
 			internal const int idx_put_Opacity = 10;
+			internal const int idx_get_RenderTransformOrigin = 17;
+			internal const int idx_put_RenderTransformOrigin = 18;
 			internal const int idx_add_KeyUp = 41;
 			internal const int idx_remove_KeyUp = 42;
 			internal const int idx_add_KeyDown = 43;

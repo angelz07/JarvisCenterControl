@@ -1,6 +1,9 @@
 ﻿using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using System;
+using System.IO;
+using System.Threading.Tasks;
+using Windows.Storage;
 /*using System.IO;
 using System.Text;
 using Windows.UI.Popups;
@@ -100,6 +103,36 @@ namespace JarvisControlCenter
                 
 
             }
+        }
+
+        //Copy des fichiers
+        public async Task<string> copyLogsFile()
+        {
+            string retour = "false";
+            try
+            {
+
+
+               
+                string data = JsonConvert.SerializeObject(logsVar, Formatting.Indented);
+
+                var localFolder = ApplicationData.Current.LocalFolder;
+                var localFile = await localFolder.CreateFileAsync("logs_" + DateTime.Now.ToString("ddMMyyyyHHmmss") + ".json", CreationCollisionOption.ReplaceExisting);
+
+                var fileBytes = System.Text.Encoding.UTF8.GetBytes(data);
+                using (var s = await localFile.OpenStreamForWriteAsync())
+                {
+                    s.Write(fileBytes, 0, fileBytes.Length);
+                }
+
+                retour = "true";
+            }
+            catch (Exception ex)
+            {
+                retour = ex.Message;
+            }
+
+            return retour;
         }
 
     }

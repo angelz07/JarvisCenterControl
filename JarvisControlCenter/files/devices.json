@@ -1,0 +1,73 @@
+﻿{
+	"devices": [
+		{
+			"name": "la lumière de la cuisine",
+			"id": "spot_cuisine",
+			"type": "switch",
+			"timer": "false"
+		},
+		{
+			"name": "la lumière de la salle à mangé",
+			"id": "spot_salle_a_mangee",
+			"type": "switch",
+			"timer": "true"
+		},
+		{
+			"name": "la lumière de la buanderie",
+			"id": "lumiere_plafond_buanderie",
+			"type": "switch",
+			"timer": "false"
+		},
+		{
+			"name": "la lumière du hall d'entrée",
+			"id": "spot_hall_entree",
+			"type": "switch",
+			"timer": "false"
+		},
+		{
+			"name": "le lustre de la cuisine",
+			"id": "lustre_table_cuisine",
+			"type": "switch",
+			"timer": "false"
+		},
+		{
+			"name": "la lumière de la petite buanderie",
+			"id": "lumiere_plafond_petite_buanderie",
+			"type": "switch",
+			"timer": "false"
+		},
+		{
+			"name": "le lustre de la salle à mangé",
+			"id": "lustre_salle_a_mangee",
+			"type": "switch",
+			"timer": "false"
+		},
+		{
+			"name": "la lumière de la cave",
+			"id": "lumiere_cave_plafond",
+			"type": "switch",
+			"timer": "true"
+		},
+		{
+			"name": "la lumière de la chambre",
+			"id": "lumiere_chambre1_plafond",
+			"type": "switch",
+			"timer": "false"
+		},
+		{
+			"name": "la lumière de la salle de bain",
+			"id": "lumiere_salle_de_bain_plafond",
+			"type": "switch",
+			"timer": "false"
+		},
+		{
+			"name": "la lumière du vide technique",
+			"id": "lumiere_vide_technique_plafond",
+			"type": "switch",
+			"timer": "false"
+		},
+
+
+
+	]
+}

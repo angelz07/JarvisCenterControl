@@ -437,6 +437,7 @@ C:\JarvisControlCenter\JarvisControlCenter\obj\x64\Release\ilc\intermediate\rhbi
 C:\JarvisControlCenter\JarvisControlCenter\obj\x64\Release\ilc\intermediate\sgargs.rsp
 C:\JarvisControlCenter\JarvisControlCenter\obj\x64\Release\ilc\intermediate\TransformedSRWR\System.Runtime.WindowsRuntime.dll
 C:\JarvisControlCenter\JarvisControlCenter\obj\x64\Release\ilc\intermediate\TransformedSRWR\System.Runtime.WindowsRuntime.dll.ILTransformTask.repro
-C:\JarvisControlCenter\JarvisControlCenter\bin\x64\Release\json\devices.json
-C:\JarvisControlCenter\JarvisControlCenter\bin\x64\Release\json\infosApplication.json
-C:\JarvisControlCenter\JarvisControlCenter\bin\x64\Release\json\logs.json
+C:\JarvisControlCenter\JarvisControlCenter\bin\x64\Release\files\devices.json
+C:\JarvisControlCenter\JarvisControlCenter\bin\x64\Release\files\infosApplication.json
+C:\JarvisControlCenter\JarvisControlCenter\bin\x64\Release\ilc\files\VoiceCommandDefinition.xml
+C:\JarvisControlCenter\JarvisControlCenter\obj\x64\Release\ilc\in\files\VoiceCommandDefinition.xml

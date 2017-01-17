@@ -34,8 +34,7 @@
         <Button x:ConnectionId='3' x:Name="refreshConsoleLog" Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top"                                 Opacity="0" Margin="285,665,0,-57"/>
 
 
-
-                <Grid x:ConnectionId='4' x:Name="grille_log" Height="200" VerticalAlignment="Bottom" ScrollViewer.VerticalScrollBarVisibility="Visible" Margin="100,0,10,10">
+        <Grid x:ConnectionId='4' x:Name="grille_log" Height="200" VerticalAlignment="Bottom" ScrollViewer.VerticalScrollBarVisibility="Visible" Margin="100,0,10,10">
                     <ScrollViewer x:ConnectionId='5' x:Name="scrollBarLogs" VerticalScrollMode="Enabled">
                         <TextBlock x:ConnectionId='6' 
                         x:Name="consoleLogInfosTxtBox" 
@@ -49,11 +48,11 @@
                     </ScrollViewer>
 
                 </Grid>
-           
         
 
-        
-        
+
+
+
 
 
 
