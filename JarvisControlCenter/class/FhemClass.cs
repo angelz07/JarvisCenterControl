@@ -3,6 +3,8 @@ using Newtonsoft.Json.Linq;
 using System;
 using System.IO;
 using System.Net;
+using System.Net.Http;
+using System.Text;
 using Windows.Storage;
 
 
@@ -28,7 +30,7 @@ namespace JarvisControlCenter
 
 
 
-        public async System.Threading.Tasks.Task<string[]> decryptJsonDevicesFhem(string device_texte)
+        public async System.Threading.Tasks.Task<string[]> decryptJsonDevicesFhem(string device_texte, string action)
         {
             string[] retour = new string[4];
             try
@@ -59,6 +61,7 @@ namespace JarvisControlCenter
                     }
 
                 }
+                string[] sendCmdFhemResult = sendCmdFhem(retour, action);
                 return retour;
             }
             catch (Exception ex)
@@ -126,14 +129,22 @@ namespace JarvisControlCenter
                 string urlFhem = uriB.ToString();
 
                 consoleLogInfos.addLineToLogs("requete", urlFhem);
-
-                HttpWebRequest request = (HttpWebRequest)HttpWebRequest.Create(new System.Uri(urlFhem));
-                request.Credentials = new NetworkCredential(loginFhem, passFhem);
-                var reponse = request.GetResponseAsync();
-                //consoleLogInfos.addLineToLogs("Debug", "reponse : " + reponse);
-                // request.BeginGetResponse(new AsyncCallback(ReadWebRequestCallbackFhem), request);
-                tempFeedback(name, actionDecrypt);
-                //await feedBack.feedback("ceci est un test");
+               // sendHttpRequestFhem(urlFhem, loginFhem, passFhem);
+                
+                try
+                {
+                    HttpWebRequest request = (HttpWebRequest)HttpWebRequest.Create(new System.Uri(urlFhem));
+                    request.Credentials = new NetworkCredential(loginFhem, passFhem);
+                    var reponse = request.GetResponseAsync();
+                   consoleLogInfos.addLineToLogs("Debug", "reponse : " + reponse);
+                   // request.BeginGetResponse(new AsyncCallback(ReadWebRequestCallbackFhem), request);
+                    tempFeedback(name, actionDecrypt);
+                    //await feedBack.feedback("ceci est un test");
+                }
+                catch (Exception ex) {
+                    consoleLogInfos.addLineToLogs("error", "HttpWebRequest request : " + ex.Message);
+                }
+                
             }
             catch (Exception ex)
             {
@@ -157,19 +168,21 @@ namespace JarvisControlCenter
             return retour;
         }
 
+        
+
 
         private static void ReadWebRequestCallbackFhem(IAsyncResult callbackResult)
         {
-            try
+           /* try
             {
                 HttpWebRequest myRequest = (HttpWebRequest)callbackResult.AsyncState;
-
+            
                 using (HttpWebResponse myResponse = (HttpWebResponse)myRequest.EndGetResponse(callbackResult))
                 {
                     using (StreamReader httpwebStreamReader = new StreamReader(myResponse.GetResponseStream()))
                     {
-                        string results = httpwebStreamReader.ReadToEnd();
-                        consoleLogInfos.addLineToLogs("debug", "results = " + results);
+                      //  string results = httpwebStreamReader.ReadToEnd();
+                       // consoleLogInfos.addLineToLogs("debug", "results = " + results);
 
                     }
                 }
@@ -180,6 +193,7 @@ namespace JarvisControlCenter
                 consoleLogInfos.addLineToLogs("error", " ReadWebRequestCallbackFhem : " + ex.Message);
                 
             }
+            */
         }
 
     }// Fin internal class Fhem

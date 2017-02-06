@@ -9793,6 +9793,31 @@ namespace Windows.ApplicationModel.Activation
 	}
 }
 
+namespace Windows.ApplicationModel.Background
+{
+	// Windows.ApplicationModel.Background.IBackgroundTaskInstance
+	public unsafe static class IBackgroundTaskInstance__Impl
+	{
+		// v-table for 'Windows.ApplicationModel.Background.IBackgroundTaskInstance'
+		[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.ApplicationModel.Background.IBackgroundTaskInstance))]
+		public unsafe partial struct Vtbl
+		{
+			internal const int idx_get_Task = 7;
+		}
+	}
+
+	// Windows.ApplicationModel.Background.IBackgroundTaskRegistration
+	public unsafe static class IBackgroundTaskRegistration__Impl
+	{
+		// v-table for 'Windows.ApplicationModel.Background.IBackgroundTaskRegistration'
+		[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.ApplicationModel.Background.IBackgroundTaskRegistration))]
+		public unsafe partial struct Vtbl
+		{
+			internal const int idx_get_Name = 7;
+		}
+	}
+}
+
 namespace Windows.ApplicationModel.Core
 {
 	// Windows.ApplicationModel.Core.ICoreApplicationView
@@ -47803,7 +47828,6 @@ namespace Windows.Web.Http.Headers
 	}
 }
 
-
 // Interop_mincore_CPINFOEXW__System_Text_Encoding_CodePages
 public unsafe static class Interop_mincore_CPINFOEXW__System_Text_Encoding_CodePages__Impl
 {
@@ -47993,3 +48017,4 @@ public unsafe static class Interop_mincore_WIN32_FIND_DATA__System_IO_FileSystem
 public unsafe static class Interop_mincore_FILE_TIME__System_IO_FileSystem__Impl
 {
 }
+

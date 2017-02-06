@@ -9,7 +9,7 @@
     <SolutionConfiguration>Release|x64</SolutionConfiguration>
     <PackageArchitecture>x64</PackageArchitecture>
     <PackageIdentityName>2b859d5c-a6ec-424e-a07e-b96599645cca</PackageIdentityName>
-    <PackageIdentityPublisher>CN=Telecom4all</PackageIdentityPublisher>
+    <PackageIdentityPublisher>CN=2D3CB00C-C053-4D36-9BAC-5EC05A195228</PackageIdentityPublisher>
     <IntermediateOutputPath>C:\JarvisControlCenter\JarvisControlCenter\obj\x64\Release\</IntermediateOutputPath>
     <RemoteDeploymentType></RemoteDeploymentType>
     <PackageRegistrationPath></PackageRegistrationPath>
@@ -22,9 +22,6 @@
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\JarvisControlCenter\JarvisControlCenter\bin\x64\Release\ilc\3erParty\dotNetFx45_Full_setup.exe">
-      <PackagePath>3erParty\dotNetFx45_Full_setup.exe</PackagePath>
-    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\JarvisControlCenter\JarvisControlCenter\bin\x64\Release\ilc\Assets\backgroudJarvis.jpg">
       <PackagePath>Assets\backgroudJarvis.jpg</PackagePath>
     </AppxPackagedFile>
@@ -34,12 +31,33 @@
     <AppxPackagedFile Include="C:\JarvisControlCenter\JarvisControlCenter\bin\x64\Release\ilc\Assets\backgroundJarvisVertical.png">
       <PackagePath>Assets\backgroundJarvisVertical.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\JarvisControlCenter\JarvisControlCenter\bin\x64\Release\ilc\Assets\BadgeLogo.jpg">
+      <PackagePath>Assets\BadgeLogo.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\JarvisControlCenter\JarvisControlCenter\bin\x64\Release\ilc\Assets\BadgeLogo.png">
+      <PackagePath>Assets\BadgeLogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\JarvisControlCenter\JarvisControlCenter\bin\x64\Release\ilc\Assets\BadgeLogo.scale-100.jpg">
       <PackagePath>Assets\BadgeLogo.scale-100.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\JarvisControlCenter\JarvisControlCenter\bin\x64\Release\ilc\Assets\BadgeLogo.scale-100.png">
+      <PackagePath>Assets\BadgeLogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\JarvisControlCenter\JarvisControlCenter\bin\x64\Release\ilc\Assets\BadgeLogo.scale-200.png">
+      <PackagePath>Assets\BadgeLogo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\JarvisControlCenter\JarvisControlCenter\bin\x64\Release\ilc\Assets\BadgeLogo48.png">
+      <PackagePath>Assets\BadgeLogo48.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\JarvisControlCenter\JarvisControlCenter\bin\x64\Release\ilc\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\JarvisControlCenter\JarvisControlCenter\bin\x64\Release\ilc\Assets\SplashScreen.jpg">
+      <PackagePath>Assets\SplashScreen.jpg</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\JarvisControlCenter\JarvisControlCenter\bin\x64\Release\ilc\Assets\SplashScreen.scale-100.jpg">
       <PackagePath>Assets\SplashScreen.scale-100.jpg</PackagePath>
@@ -48,6 +66,10 @@
     <AppxPackagedFile Include="C:\JarvisControlCenter\JarvisControlCenter\bin\x64\Release\ilc\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\JarvisControlCenter\JarvisControlCenter\bin\x64\Release\ilc\Assets\Square150x150Logo.jpg">
+      <PackagePath>Assets\Square150x150Logo.jpg</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\JarvisControlCenter\JarvisControlCenter\bin\x64\Release\ilc\Assets\Square150x150Logo.scale-100.jpg">
       <PackagePath>Assets\Square150x150Logo.scale-100.jpg</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
@@ -55,8 +77,16 @@
     <AppxPackagedFile Include="C:\JarvisControlCenter\JarvisControlCenter\bin\x64\Release\ilc\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\JarvisControlCenter\JarvisControlCenter\bin\x64\Release\ilc\Assets\Square310x310Logo.jpg">
+      <PackagePath>Assets\Square310x310Logo.jpg</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\JarvisControlCenter\JarvisControlCenter\bin\x64\Release\ilc\Assets\Square310x310Logo.scale-100.jpg">
       <PackagePath>Assets\Square310x310Logo.scale-100.jpg</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\JarvisControlCenter\JarvisControlCenter\bin\x64\Release\ilc\Assets\Square44x44Logo.jpg">
+      <PackagePath>Assets\Square44x44Logo.jpg</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\JarvisControlCenter\JarvisControlCenter\bin\x64\Release\ilc\Assets\Square44x44Logo.scale-100.jpg">
@@ -69,15 +99,23 @@
     <AppxPackagedFile Include="C:\JarvisControlCenter\JarvisControlCenter\bin\x64\Release\ilc\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\JarvisControlCenter\JarvisControlCenter\bin\x64\Release\ilc\Assets\Square71x71Logo.jpg">
+      <PackagePath>Assets\Square71x71Logo.jpg</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\JarvisControlCenter\JarvisControlCenter\bin\x64\Release\ilc\Assets\Square71x71Logo.scale-100.jpg">
       <PackagePath>Assets\Square71x71Logo.scale-100.jpg</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\JarvisControlCenter\JarvisControlCenter\bin\x64\Release\ilc\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\JarvisControlCenter\JarvisControlCenter\bin\x64\Release\ilc\Assets\StoreLogo.scale-100.jpg">
       <PackagePath>Assets\StoreLogo.scale-100.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\JarvisControlCenter\JarvisControlCenter\bin\x64\Release\ilc\Assets\Wide310x150Logo.jpg">
+      <PackagePath>Assets\Wide310x150Logo.jpg</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\JarvisControlCenter\JarvisControlCenter\bin\x64\Release\ilc\Assets\Wide310x150Logo.scale-100.jpg">

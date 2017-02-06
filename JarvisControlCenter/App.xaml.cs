@@ -8,6 +8,7 @@ using Windows.UI.Xaml.Navigation;
 using Windows.Media.SpeechRecognition;
 using Windows.ApplicationModel.VoiceCommands;
 using Windows.Storage;
+using Windows.ApplicationModel.Background;
 
 
 /*
@@ -51,6 +52,7 @@ namespace JarvisControlCenter
         private static ConsoleLogInfos consoleLogInfos = new ConsoleLogInfos();
         private static FhemClass fhemClass = new FhemClass();
         public StorageFolder storageFolder = ApplicationData.Current.LocalFolder;
+        private bool _cancelRequested;
 
         public string thisVar { get; internal set; }
 
@@ -144,8 +146,8 @@ namespace JarvisControlCenter
                         string action = this.SemanticInterpretation("actionDomo", speechRecognitionResult);
                         string device = this.SemanticInterpretation("deviceFhem", speechRecognitionResult);
 
-                        string[] infos = await fhemClass.decryptJsonDevicesFhem(device);
-                        string[] sendCmdFhemResult = fhemClass.sendCmdFhem(infos, action);
+                        string[] infos = await fhemClass.decryptJsonDevicesFhem(device, action);
+                       // string[] sendCmdFhemResult = fhemClass.sendCmdFhem(infos, action);
 
                         break;
                     default:
@@ -188,6 +190,14 @@ namespace JarvisControlCenter
         }
 
 
+        private void OnCanceled(IBackgroundTaskInstance sender, BackgroundTaskCancellationReason reason)
+        {
+            // TODO: Add code to notify the background task that it is cancelled.
+            _cancelRequested = true;
+
+            consoleLogInfos.addLineToLogs("infos", "Background " + sender.Task.Name + " Cancel Requested...");
+            //Debug.WriteLine("Background " + sender.Task.Name + " Cancel Requested...");
+        }
     }
 
 
